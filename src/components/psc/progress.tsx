@@ -5,7 +5,7 @@ import { useLocalStorage } from "~/hooks/useLocalStorage";
 import { ChecklistContext } from "~/store/checklist-context";
 import type { Priority, Sections, Section } from '~/types/PSC';
 import Icon from '~/components/core/icon';
-import { builtinModules } from "module";
+// import { builtinModules } from "module";
 
 /**
  * Component for client-side user progress metrics.
