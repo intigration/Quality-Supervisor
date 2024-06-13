@@ -13,7 +13,7 @@ export default defineConfig((): UserConfig => {
       viteStaticCopy({
         targets: [
           {
-            src: '../personal-security-checklist.yml',
+            src: 'personal-security-checklist.yml',
             dest: 'public'
           }
         ]
