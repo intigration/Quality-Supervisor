@@ -1777,102 +1777,36 @@
         recipient's phone number.
     - point: Stay Alert
       priority: Essential
-      details: Be aware of your surroundings and assess potential risks in new
+      details: >
+        Be aware of your surroundings and assess potential risks in new
         environments.
     - point: Secure Perimeter
       priority: Essential
-      details: Ensure physical security of locations storing personal info devices,
+      details: >
+        Ensure physical security of locations storing personal info devices,
         minimizing external access and using intrusion detection systems.
     - point: Physically Secure Devices
       priority: Essential
-      details: Use physical security measures like Kensington locks, webcam covers,
-        and privacy screens for devices.
+      details: >
+        Ensure physical security of locations storing personal info devices,
+        minimizing external access and using intrusion detection systems.
     - point: Keep Devices Out of Direct Sight
       priority: Essential
-      details: Prevent devices from being visible from outside to mitigate risks from
-        lasers and theft.
+      details: >
+        Ensure physical security of locations storing personal info devices,
+        minimizing external access and using intrusion detection systems.
     - point: Protect your PIN
       priority: Essential
-      details: Shield your PIN entry from onlookers and cameras, and clean
-        touchscreens after use.
+      details: >
+        Ensure physical security of locations storing personal info devices,
+        minimizing external access and using intrusion detection systems.
     - point: Check for Skimmers
       priority: Essential
-      details: Inspect ATMs and public devices for skimming devices and tampering
-        signs before use.
+      details: >
+        Ensure physical security of locations storing personal info devices,
+        minimizing external access and using intrusion detection systems.
     - point: Protect your Home Address
       priority: Optional
       details: Use alternative locations, forwarding addresses, and anonymous payment
         methods to protect your home address.
-    - point: Use a PIN, Not Biometrics
-      priority: Advanced
-      details: Prefer PINs over biometrics for device security in situations where
-        legal coercion to unlock devices may occur.
-    - point: Reduce exposure to CCTV
-      priority: Advanced
-      details: Wear disguises and choose routes with fewer cameras to avoid
-        surveillance.
-    - point: Anti-Facial Recognition Clothing
-      priority: Advanced
-      details: Wear clothing with patterns that trick facial-recognition technology.
-    - point: Reduce Night Vision Exposure
-      priority: Advanced
-      details: Use IR light sources or reflective glasses to obstruct night vision
-        cameras.
-    - point: Protect your DNA
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Purpose
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Expiry date
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Business unit
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Contact person (remediation)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Last seen active
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Contact person (escalation)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Is web app behind enterprise WAF (yes/no)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Does it have login? (yes/no)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Is it SSL/TLS encrypted (yes/no)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Internal/external app? (internal/external)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Date added in inventory
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Next review date
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Web app priority/criticality (GDPR or other)
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-    - point: Is scanned in company’s primary vulnerability scanner? (yes/no)
   color: lime
