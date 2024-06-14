@@ -2062,5 +2062,35 @@
     - point: Protect your DNA
       priority: Advanced
       details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
+      
+    - point: Purpose
+    
+    - point: Expiry date
+    
+    - point: Business unit
+    
+    - point: Contact person (remediation)
+    
+    - point: Last seen active
+    
+    - point: Contact person (escalation)
+
+    - point: Is web app behind enterprise WAF (yes/no)
+    
+    - point: Does it have login? (yes/no)
+    
+    - point: Is it SSL/TLS encrypted (yes/no)
+    
+    - point: Internal/external app? (internal/external)
+    
+    - point: Date added in inventory
+    
+    - point: Next review date
+    
+    - point: Web app priority/criticality (GDPR or other)
+    
+    - point: Is scanned in company’s primary vulnerability scanner? (yes/no)
+    
 
   color: lime
