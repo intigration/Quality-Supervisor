@@ -1811,9 +1811,13 @@
         methods to protect your home address.
     - point: Audit your design and implementation with unit/integration tests
         coverage.
+      priority: Optional
     - point: Use a code review process and disregard self-approval.
+      priority: Optional
     - point: Ensure that all components of your services are statically scanned by AV
         software before pushing to production, including vendor libraries and
         other dependencies.
+      priority: Optional
     - point: Design a rollback solution for deployments.
+      priority: Optional
   color: lime
