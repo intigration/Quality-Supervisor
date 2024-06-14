@@ -1809,4 +1809,11 @@
       priority: Optional
       details: Use alternative locations, forwarding addresses, and anonymous payment
         methods to protect your home address.
+    - point: Audit your design and implementation with unit/integration tests
+        coverage.
+    - point: Use a code review process and disregard self-approval.
+    - point: Ensure that all components of your services are statically scanned by AV
+        software before pushing to production, including vendor libraries and
+        other dependencies.
+    - point: Design a rollback solution for deployments.
   color: lime
