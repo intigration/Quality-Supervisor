@@ -2065,31 +2065,57 @@
       eb application URL (homepage)
       
     - point: Purpose
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
     - point: Expiry date
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
     - point: Business unit
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)  
     - point: Contact person (remediation)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
     - point: Last seen active
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
     - point: Contact person (escalation)
-
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)
     - point: Is web app behind enterprise WAF (yes/no)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Does it have login? (yes/no)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Is it SSL/TLS encrypted (yes/no)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Internal/external app? (internal/external)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Date added in inventory
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Next review date
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Web app priority/criticality (GDPR or other)
-    
+      priority: Advanced
+      details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+      eb application URL (homepage)    
     - point: Is scanned in company’s primary vulnerability scanner? (yes/no)
     
 
