@@ -15,14 +15,16 @@ export default component$(() => {
           <p class="subtitle pb-6">An out-of-box continous quality and security compliance framework</p>
           <img src="framework.png" width={1100} height={1080} />
 
-          <a href="https://github.com/lissy93/personal-security-checklist">
+          <a href="https://github.com/intigration/quality-supervisor">
             <button class="btn btn-primary">
               <Icon icon="home" width={20} height={20}  />
              </button> 
              </a>
+          <a href="mailto:engr.farhan@icloud.com">
             <button class="btn btn-secondary">
               <Icon icon="email" width={20} height={20}   />
             </button>
+          </a>
             <button class="btn">
               <Icon icon="linkedin" width={20} height={20}  />
               {/* View on GitHub */}

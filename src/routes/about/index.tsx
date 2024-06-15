@@ -21,7 +21,7 @@ export default component$(() => {
   };
 
   const contributorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://api.github.com/repos/lissy93/personal-security-checklist/contributors?per_page=100';
+    const url = 'https://api.github.com/repos/intigration/ocr/contributors?per_page=100';
     const response = await fetch(url);
     if (!response.ok) {
       // throw new Error('Failed to fetch contributors');
@@ -137,8 +137,20 @@ export default component$(() => {
       <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2" id="author">About the Author</h2>
           <p>
-            me, <a href="https://engr-farhan.netlify.app" class="link link-primary">Muhammad Farhan</a>
-            - with a lot of help from the community.
+            Hi, This is <a href="https://engr-farhan.netlify.app" class="link link-primary">Muhammad Farhan</a>
+            <br />▶ Demonstrated ability to create innovative AI solutions for diverse applications such as natural language processing, computer vision, and autonomous systems.
+
+            <br />▶ Having hands on product development experience in IoT domain, specifically covered back-end development using Java, Python and related open source technologies.
+
+<br />▶ Experience in Agile software development using SCRUM.
+
+<br />▶ Expertise in Python, JavaScript, TypeScript, ReactJS, VueJS, Selenium, Postman, Playwright, Electron, Angular, Spring, ReadyAPI, Hibernate, MongoDB, MySQL and Cassandra.
+
+<br />▶ Proficient in design and development of software applications especially in software as a service (SaaS) layer and micro-services.
+
+<br />▶ Exposed to designing system level database, restful services.
+
+<br />▶ Having hands on experience in build automation using Jenkins, Gitlab CI, Circle CI
           </p>
           <br />
           <div class="ml-4 float-right">
