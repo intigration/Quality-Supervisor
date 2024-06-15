@@ -13,10 +13,11 @@ export default component$(() => {
           <p>Dashboard</p>
           <h1 class="text-5xl font-bold">Quality Supervisor</h1>
           <p class="subtitle pb-6">An out-of-box continous quality and security compliance framework</p>
-          <img src="framework.png" width={1100} height={1080} />
+          {/* <img src="framework.png" width={1100} height={1080} /> */}
+          <img src="/farhan.png" width={400} height={400}></img>
 
           <a href="https://github.com/intigration/quality-supervisor">
-            <button class="btn btn-primary">
+            <button class="btn btn- btn-bg">
               <Icon icon="home" width={20} height={20}  />
              </button> 
              </a>

@@ -1,8 +1,8 @@
 import { component$, useResource$, Resource } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import Framework from "~/components/starter/icons/framework";
+// import Framework from "~/components/starter/icons/framework";
 
-import Icon from "~/components/core/icon";
+import img from "~/components/core/images";
 import { projects, socials, intro, contributing, license } from './about-content';
 import { marked } from "marked";
 
@@ -42,18 +42,19 @@ export default component$(() => {
 
   return (
     <div class="m-4 md:mx-16">
-      <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
+      {/* <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2">About the Security Checklist</h2>
         {intro.map((paragraph, index) => (
           <p class="mb-2" key={index}>{paragraph}</p>
         ))}        
-      </article>
+      </article> */}
+      <div class="divider"></div>
+       <img src="/download.png" width={800} height={700}></img>
+      {/* <Framework style="transform: scale(0.9)"  width={1300} height={1080}  /> */}
+ 
       <div class="divider"></div>
 
-      <Framework class="bg-back mx-auto max-w-[1600px] m-8 rounded-lg shadow-md" style="transform: scale(0.9)"  width={1300} height={1080}  />
-   
-      <div class="divider"></div>
-
+{/*
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2">Acknowledgments</h2>
 
@@ -130,9 +131,9 @@ export default component$(() => {
         </div>
 
       </article>
-      <div class="divider"></div>
+      <div class="divider"></div> */}
 
-      <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
+      {/* <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2" id="author">About the Author</h2>
           <p>
             This project was originally started by
@@ -179,11 +180,11 @@ export default component$(() => {
             or <a href="https://github.com/lissy93" class="link link-primary">follow me on GitHub</a>
           </p>
 
-      </article>
+      </article> */}
 
       <div class="divider"></div>
 
-      <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
+      {/* <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2">License</h2>
         <p>
           This project is split-licensed, with the checklist content (located
@@ -214,7 +215,7 @@ export default component$(() => {
           </div>
         </details>
 
-      </article>
+      </article> */}
 
     </div>
   );
