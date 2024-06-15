@@ -35,12 +35,12 @@ export default component$(() => {
         <div class="flex-1">
           <div class="flex-none md:hidden">
             <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
-            <img src="imfarhan.svg" width="204" height="44"></img>
+            <img src="../../imfarhan.svg" width="204" height="44"></img>
             </label>
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
-            <img src="imfarhan.svg" width="204" height="44" />              </label>
+            <img src="../../imfarhan.svg" width="204" height="44" />              </label>
             <h1>AI Accelerated Quality -PRO</h1>
           </a>
         </div>
@@ -65,9 +65,9 @@ export default component$(() => {
               </details>
             </li>
             <li>
-            <a href={`/article`}
+            <a href={`/automation`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                <Icon icon="github" width={16} height={16}  />Articles
+                <Icon icon="github" width={16} height={16}  />Automations
               </a>
             </li>
             <li>
@@ -125,13 +125,13 @@ Supervisor          </h2>
             </ul>
           </li>
           <li>
-            <a href="/article">
-              <Icon class="mr-2" icon="articles" width={16} height={16} />Articles
+            <a href="/automation">
+              <Icon class="mr-2" icon="articles" width={16} height={16} />Automations
             </a>
             <ul>
               {articles.map(article => (
                 <li key={article.slug}>
-                  <a href={`/article/${article.slug}`}>{article.title}</a>
+                  <a href={`/automation/${article.slug}`}>{article.title}</a>
                 </li>
               ))}
             </ul>
