@@ -1,0 +1,235 @@
+﻿/*******************************************
+    JsTree Styles
+*/
+
+.jstree-default .jstree-hovered {
+    /* background: #ffce94; */
+    font-weight: bold;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0 0 0 0px;
+    color: #00457D;
+}
+
+.jstree-default .jstree-clicked {
+    /* background: #f7931e; */
+    font-weight: bold;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0 0 0 0px;
+    color: #00457D;
+}
+
+/* jQuery General */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: 1px solid #00457D;
+    background: #d1e3f4; /*url(images/ui-bg_flat_75_dbe9f2_40x100.png) 50% 50% repeat-x;*/
+    font-weight: normal;
+    color: #00457D;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid #00457D;
+    background: #d1e3f4; /*url(images/ui-bg_flat_65_dbe9f2_40x100.png) 50% 50% repeat-x;*/
+    font-weight: normal;
+    color: #00457D;
+}
+
+.ui-widget-header {
+    border-color: #00457D !important;
+    background: #FFFFFF !important;
+}
+
+.ui-state-hover .ui-button-text {
+    color: #00457D;
+}
+
+input.ui-button.ui-state-hover {
+    color: #00457D;
+}
+
+/* jQuery UI Dialogs */
+/* .ui-dialog-titlebar
+{
+    border-top-color: #FFFFFF !important;
+    border-left-color: #FFFFFF !important;
+    border-right-color: #FFFFFF !important;
+    background: #d1e3f4 !important;
+    border-bottom-color: #d1e3f4 !important;
+}*/
+
+/* jQuery UI Tabs Navigation */
+
+.ui-tabs {
+    position: relative; /*padding: .2em;*/
+    padding: 0px;
+    zoom: 1;
+    width: 100% !important;
+}
+    /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+    .ui-tabs .ui-tabs-nav {
+        margin: 0 !important;
+        padding: 0 !important; /*padding-bottom: 1px !important;*/
+        padding-bottom: 1px !important;
+        border-top-color: #FFFFFF !important;
+        border-left-color: #FFFFFF !important;
+        border-right-color: #FFFFFF !important;
+        border-bottom-color: #00457D !important;
+    }
+
+        .ui-tabs .ui-tabs-nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 1px;
+            margin: 0 .2em 0 0;
+            border-bottom: 0 !important;
+            padding: 0;
+            white-space: nowrap;
+            background: #FFFFFF;
+        }
+
+            .ui-tabs .ui-tabs-nav li a {
+                font-size: 0.9em;
+                float: left;
+                padding: .5em .5em;
+                text-decoration: none;
+            }
+
+            .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+                margin-bottom: 0;
+                padding-bottom: 1px;
+                background: #00457D;
+                border-color: #00457D;
+            }
+
+                .ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+                    color: #FFFFFF; /*color: #d1e3f4;*/
+                    font-weight: bold;
+                }
+            /* Tab Hover */
+            .ui-tabs .ui-tabs-nav li.ui-state-hover {
+                margin-bottom: 0;
+                padding-bottom: 1px;
+                background: #00457D;
+                border-color: #00457D;
+                color: #FFFFFF;
+            }
+
+                .ui-tabs .ui-tabs-nav li.ui-state-hover a {
+                    color: #FFFFFF;
+                }
+
+            .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+                cursor: text;
+            }
+
+            .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+                cursor: pointer;
+            }
+    /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+    .ui-tabs .ui-tabs-panel {
+        display: block;
+        border-width: 0;
+        padding: 1em 1.4em;
+        background: none;
+    }
+
+    .ui-tabs .ui-tabs-hide {
+        display: none !important;
+    }
+
+#ListDisplay {
+    margin: 0px !important;
+    border: 0px !important;
+}
+
+.ui-button {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    font-size: 8pt !important;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/*!
+ * jQuery UI Accordion 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+.ui-accordion .ui-accordion-header {
+    border: 0px solid #ffffff !important; /*changed from 1px*/
+}
+
+.ui-accordion .ui-accordion-header-active {
+    border: 1px solid #00457D !important;
+    color: #00457D !important;
+    border-bottom: 0 !important;
+}
+
+.ui-accordion .ui-state-active a {
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #00457D;
+}
+
+.ui-accordion .ui-state-hover a {
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #00457D;
+}
+
+.ui-accordion .ui-accordion-header a {
+    display: block;
+    font-size: 1em;
+    padding: .5em .5em .5em .7em;
+}
+
+.ui-accordion-icons .ui-accordion-header a {
+    padding-left: 2.2em;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 5px 6px;
+    border: 1px solid #ffffff !important;
+}
+
+.ui-accordion .ui-accordion-content-active {
+    display: block;
+}
+
+.ui-tabs-nav li.ui-tabs-selected, .ui-tabs-nav .ui-state-hover {
+    padding-bottom: 0 !important;
+}
+
+.dataTables_wrapper {
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+}
+
+.TableViewLink {
+    text-decoration: none;
+    color: #555555;
+}
+
+    .TableViewLink:hover {
+        color: #00457d;
+    }

@@ -3293,7 +3293,6 @@
       priority: Advanced
       details: >-
         For online purchases, consider using alias details, forwarding email addresses, VOIP numbers, and secure delivery methods to protect your identity.
-
     - point: Use alternate delivery address
       priority: Advanced
       details: >-
@@ -3312,7 +3311,6 @@
       url: https://github.com/Lissy93/awesome-privacy#other-payment-methods
     - title: Budgeting Tools
       url: https://github.com/Lissy93/awesome-privacy#budgeting-tools
-
 - title: Human Aspect
   slug: human-aspect
   description: Avoiding social engineering security risks
@@ -3529,7 +3527,6 @@
       details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
 
   color: lime
-
 - title: OWASP Top 10
   slug: owasp-security
   description: Taking measures to comply OWASP security guidelines

@@ -2,7 +2,6 @@ import { component$, useResource$, Resource } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 // import Framework from "~/components/starter/icons/framework";
 
-import img from "~/components/core/images";
 import { projects, socials, intro, contributing, license } from './about-content';
 import { marked } from "marked";
 
