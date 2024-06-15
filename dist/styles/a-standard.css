@@ -1,0 +1,3191 @@
+﻿/**
+ * Inhalt: S4
+ *
+ * Allgemein
+ * Navigation    (beinhaltet Toolbar (=Hauptnavigation) und Akkordeons (=Subnavigation))
+ * MainContent
+ * DetailContent
+ * Suche
+ * Listen
+ * Druckvorschau
+ */
+
+/*** Allgemein ***************************************************************/
+#wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center; /*background-color: #ccccff;*/
+    margin: 0 auto;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; /* inserted for IE compatibility mode */
+}
+
+form {
+    height: 100%;
+    margin: 0;
+}
+
+table {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body.VisiOneBody {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 8pt;
+    padding: 0px; /*-moz-user-input: disabled;*/
+}
+
+div.AutocompleteFeld {
+    position: relative;
+    float: left;
+    left: 40px;
+    margin-top: 50px;
+    width: 443px;
+}
+
+div.JQueryComboBox {
+    width: 220px;
+    clear: left;
+    position: relative;
+    top: -23px;
+    left: 488px;
+    z-index: 1;
+}
+
+div.StartPageText {
+    left: 40px;
+    position: relative;
+    padding-top: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+div.StartPageToolBar {
+    text-align: left;
+    width: 769px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+iframe.VisiOneIFrame {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+}
+
+table.VisiOneTable {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+td#NavContentPanel {
+    margin: 0px;
+    padding: 0px;
+    width: 240px;
+}
+
+td#MainContentPanel {
+    margin: 0px;
+    padding: 0px;
+}
+
+td#DetailContentPanel {
+    margin: 0px;
+    padding: 0px;
+    width: 340px;
+}
+
+td#LeftSplitter {
+    margin: 0px;
+    padding: 0px;
+    width: 5px;
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+    cursor: w-resize;
+    background-image: url(images/splitter/lib_grippy2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #E2E2E2;
+}
+
+td#RightSplitter {
+    margin: 0px;
+    padding: 0px;
+    width: 5px;
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+    cursor: e-resize;
+    background-image: url(images/splitter/lib_grippy2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #E2E2E2;
+}
+
+td#TopBar {
+    height: 92px;
+    margin: 0px;
+    padding: 0px;
+}
+
+td#TopBar_SharePoint {
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+table#LayoutGrid {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    empty-cells: show;
+    -moz-user-select: none;
+}
+
+table.NestedTable {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    empty-cells: show;
+}
+
+td.Splitterss {
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: e-resize;
+    margin: 0px;
+    padding: 0px;
+    background-color: #A1C6EB;
+    background-image: url('images/splitter/lib_grippy2.gif');
+    border-left-color: #6593CF;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #6593CF;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+td.SplitterHoverss {
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: e-resize;
+    margin: 0px;
+    padding: 0px;
+    background-color: #A1C6EB;
+    background-image: url('images/splitter/lib_grippy2.gif');
+    border-left-color: #6593CF;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #6593CF;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+td.Splitter, img.Splitter {
+    width: 5px;
+}
+
+td.Splitter, img.Splitter {
+    width: 5px;
+}
+
+td.LeftRowTop {
+    width: 10px;
+    background-color: #E2E2E2;
+}
+
+td.LeftRow {
+    width: 5px;
+    background-color: #CCCCCC;
+}
+
+td.EmptyBar {
+    height: 5px;
+    background-color: #E2E2E2;
+    margin: 0px;
+    padding: 0px;
+}
+
+tr.EmptyBarTable {
+    height: 5px;
+}
+
+span.EmptyBarSpan {
+    height: 5px;
+    width: 5px;
+    background-color: #CCCCCC;
+}
+
+::-moz-selection {
+    background: #00457D;
+    color: #FFFFFF;
+}
+
+::selection {
+    background: #00457D;
+    color: #FFFFFF;
+}
+
+/*** Mehrfach-Hinterlegungs Popup *********************************************/
+
+div.NavigateDeeperContextMenuHeaderText {
+    border-bottom: 1px solid #999999;
+    background-color: #CCCCCC;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+span.NavigateDeeperContextMenuHeaderCloser {
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    right: 0px;
+    cursor: pointer;
+}
+
+div.NavigateDeeperContextMenuEntry, div.NavigateDeeperContextMenuEntry_OnMouseOver {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+/*** Zoom Popup ***************************************************************/
+
+input.zoomSliderValue {
+    color: #f6931f;
+    font-weight: bold;
+    width: 40px;
+    border: 1px solid #CCCCCC;
+}
+
+div.ZoomPopup {
+    position: absolute;
+    left: 600px;
+    top: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+    width: 150px;
+}
+
+div.ZoomPopupHeaderText {
+    background-color: #000000; /*width:100%; */
+    padding: 2px;
+    border-bottom: 1px solid #818181;
+    font-weight: bold;
+    color: #003F77;
+}
+
+div.ZoomPopupText {
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+div.ZoomPopupBorder {
+    border-bottom: 1px solid #818181;
+}
+
+div.ZoomPopupContent {
+    padding-left: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.ZoomPopupClose {
+    /*width:100%; */
+    padding: 2px;
+    border-top: 1px solid #818181;
+    text-align: center;
+    cursor: pointer;
+    color: #003F77;
+}
+
+div.ZoomLevelText {
+    color: #FFFFFF;
+}
+
+div.DialogFunctionNotAvailable {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #00457D;
+}
+/*** Watermark ****************************************************************/
+.watermark {
+    color: #AAAAAA !important;
+}
+
+/*** Link Popup ***************************************************************/
+
+div.LinkPopup {
+    position: absolute;
+    left: 500px;
+    top: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #818181;
+    width: 300px;
+}
+
+div.LinkPopupText {
+    background-color: #FFFFFF;
+    padding: 2px;
+    margin: 0px;
+    border-bottom: 1px solid #818181;
+    font-weight: bold;
+    color: #003F77;
+}
+
+div.LinkPopupTextBox {
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #515151;
+}
+
+div.LinkPopupInfoText {
+    padding-left: 5px;
+    color: #00457d;
+}
+
+div.LinkPopupInfoTextHidden {
+    padding-left: 5px;
+    color: #00457d;
+    display: none;
+}
+
+div.LinkPopupClose {
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 1px solid #818181;
+    text-align: center;
+    cursor: pointer;
+    color: #003F77;
+}
+
+div.SplitterShadow {
+    position: absolute;
+    left: 300px;
+    top: 90px;
+    width: 7px;
+    height: 100%;
+    cursor: e-resize;
+    background-color: #555555;
+    border: 1px solid #555555;
+}
+
+div.SplitterShadow_SharePoint {
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    width: 7px;
+    height: 100%;
+    cursor: e-resize;
+    background-color: #555555;
+    border: 1px solid #555555;
+}
+
+/*** Navigation **************************************************************/
+
+div.Toolbar {
+    position: static;
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 100%;
+    font-size: 12px;
+}
+
+div.Toolbar_SharePoint {
+    position: absolute;
+    background-color: #CCCCCC;
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 50px;
+}
+
+a:focus {
+    outline: none;
+}
+
+div.ToolbarLogoBox {
+    /*background-image: url(images/header/ico_vo_transparent.png);*/
+    background-image: url(images/header/Symbio_Logo_dunkelblau_h40px.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 200px;
+    min-height: 50px;
+    top: 25px;
+    left: 30px;
+    border: none;
+    z-index: 31;
+}
+
+img.ToolbarLogo {
+    /*background: url(images/ico_logostart.jpg);*/
+    src: url(images/ico_logostart.jpg);
+    border: none;
+    outline: none;
+}
+
+div.ToolbarLeftLogoBox {
+    background-image: url(images/header/ToolbarLeftLogo_h92px.png); /*position: absolute;*/
+    min-height: 92px;
+    min-width: 158px;
+    float: left;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+}
+
+div.ToolbarRightLogoBox {
+    background-image: url(images/header/ToolbarRightLogo_h92px.png); /*position: absolute;*/
+    min-height: 92px;
+    min-width: 326px;
+    float: right;
+    top: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+}
+
+div.ToolbarBox {
+    position: absolute;
+    top: 39px;
+    left: 260px; /*background-color: #FFFFFF;*/
+    width: 100%;
+    height: 40px;
+    z-index: 31;
+}
+
+div.ToolbarButtonContainer {
+    display: block;
+    padding-top: 0;
+    padding-left: 10px;
+    position: relative;
+    float: left;
+}
+
+span.ToolbarTitleName {
+    display: block;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    color: #62A4D3;
+}
+
+span.ToolbarTitleName2 {
+    display: block;
+    padding-top: 0px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    color: #62A4D3;
+}
+
+div.ToolbarSearchBox {
+    position: relative;
+    float: left;
+    left: 40px;
+}
+
+span.ToolbarLinkText {
+    color: #00457D;
+    font-family: Verdana, Arial, Sans-Serif;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom: 6px;
+    display: inline-block;
+    text-align: center;
+}
+
+.ToolbarGeneralButton {
+    border-color: #FFFFFF !important;
+}
+
+span.ToolbarLinkTextInactive {
+    color: #808080;
+    padding-right: 5px;
+}
+
+span.ToolbarText {
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+span.ToolbarLinkText a:link, span.ToolbarLinkText a:visited {
+    color: #003F77;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span.ToolbarLinkTextInactive a:link, span.ToolbarLinkTextInactive a:visited {
+    color: #808080;
+    text-decoration: none;
+    cursor: default;
+}
+
+img.ToolbarFlag {
+    border: none;
+    margin-bottom: -8px;
+}
+
+table.Toolbar {
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    overflow: visible;
+    white-space: nowrap; /*margin-top: 3px;*/
+}
+
+table.ToolbarSection {
+    height: 70px;
+    background-color: #CCCCCC;
+    background-repeat: repeat-x;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: 3px;
+    color: #1B88C0;
+}
+
+    table.ToolbarSection td {
+        background-color: transparent;
+        padding: 0px;
+    }
+
+td.ToolbarButton {
+    height: 56px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: bottom;
+    text-align: center;
+    width: 50px;
+    font-size: 8pt;
+    cursor: default;
+}
+
+td.ToolbarButtonHover {
+    height: 56px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center 2px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 50px;
+    font-size: 8pt;
+    cursor: pointer;
+}
+
+td.ToolbarButton2Rows {
+    height: 28px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 8pt;
+}
+
+input.ToolbarSearchBoxEmpty {
+    position: relative;
+    float: left;
+    top: 0px;
+    font-size: 8pt;
+    width: 120px;
+    height: 16px;
+    padding: 4px;
+    padding-right: 0px;
+    color: #000000;
+    margin-top: 0px;
+    border: 1px solid #00457D;
+}
+
+input.ToolbarSearchButton {
+    position: relative;
+    float: left;
+    height: 26px !important;
+    margin-left: 5px !important;
+}
+
+input.ToolbarSearchBox {
+    width: 120px;
+    color: #000000;
+}
+
+td.ToolbarSectionTitle {
+    height: 24px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+td.ToolbarLeftBorder {
+    /*background-image: url(images/toolbar/bg_links.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+td.ToolbarRightBorder {
+    /*background-image: url(images/toolbar/bg_rechts.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+div.ToolbarPrintDialogLink {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+}
+
+    div.ToolbarPrintDialogLink a {
+        color: #222222;
+        text-decoration: none;
+    }
+
+        div.ToolbarPrintDialogLink a:hover {
+            color: #00457D;
+            text-decoration: none;
+        }
+
+        div.ToolbarPrintDialogLink a:visited {
+            color: #00457D;
+            text-decoration: none;
+        }
+
+        div.ToolbarPrintDialogLink a:focus {
+            color: #00457D;
+            text-decoration: none;
+        }
+
+td.NavHeader {
+    margin: 0px;
+    padding: 0px;
+}
+
+td.NavMain {
+    margin: 0px;
+    padding: 0px;
+}
+
+td.NavFooter {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.NavTreeBox {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+div.NavBottomSpacer {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-left: 5px solid #CCCCCC;
+    background-color: #E2E2E2; /*bottom:169px;*/ /*line-height: 4px;*/
+}
+
+div.TopContentPic1 {
+    background: url(images/header/bg_top_middle.jpg) top repeat-x;
+    height: 100%;
+}
+
+div.TopContentPicLeft {
+    background: url(images/header/bg_top_left.jpg) left no-repeat;
+    height: 100%;
+}
+
+div.TopContentPicRight {
+    background: url(images/header/bg_top_right.jpg) right no-repeat;
+    height: 100%;
+}
+
+div.TopContentText {
+    float: left;
+    padding-top: 10px;
+    font-size: 22pt;
+    font-weight: normal;
+    color: #1B88C0;
+}
+
+div.ToolbarCustomText {
+    float: right;
+    padding-right: 20px;
+    font-size: x-large;
+}
+
+div.ToolbarCreationDate {
+    position: relative;
+    float: left;
+    top: 5px;
+    display: block;
+    left: 70px;
+    font-family: Verdana,Arial,sans-serif;
+    color: #555;
+    font-size: 10.6667px;
+}
+
+/*** Menu ********************************************************************/
+
+div.Breadcrumb {
+    /*NOTE: width and margin-left,margin-right handled via page load of DiagramMain and ListMain!*/
+    margin: 0px;
+    padding: 0px;
+    padding-top: 2px; /*width: 100%;*/
+    height: 40px; /*margin-left: 46px;     margin-right: 46px;*/
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #FFFFFF; /*padding-left: 12px; -- removed due to overflow in content frame. padding must be set in the child spans.*/
+}
+
+span.BreadcrumbFirstElems {
+    /*white-space: nowrap;*/
+    max-height: 26px;
+    overflow: hidden;
+    display: block;
+}
+
+span.BreadcrumbText {
+    color: #222222;
+    cursor: pointer;
+}
+
+span.BreadcrumbLastText {
+    margin-top: 2px;
+    display: block;
+    color: #222222;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial;
+    white-space: nowrap;
+}
+
+    span.BreadcrumbLastText:hover, span.BreadcrumbText[onclick]:hover {
+        color: #00457D;
+    }
+
+/*** MainContent ************************************************************/
+div.MainContentSizeParameter {
+    height: 32px;
+    width: 0px;
+}
+
+div.MainContentDiagramSizeParameter {
+    height: 44px;
+    width: 0px;
+}
+
+.VmlConnection * {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.ScrollableMainContent {
+    background-color: #FFFFFF;
+    position: absolute;
+    /*width: expression(this.offsetParent.clientWidth);*/
+    top: 45px;
+    /*height: expression(this.offsetParent.clientHeight - 45);*/
+    overflow: auto;
+}
+
+div.ScrollableMainContent_Html {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 45px;
+    overflow: auto;
+    width: 100%;
+}
+
+div.DiagramViewer {
+    position: absolute;
+    top: 50px;
+}
+
+div.NavigateDeeperContextMenu {
+    background-color: #FFFFFF;
+    color: #1b88c0;
+    font-size: 9pt;
+    border: 1px solid #6699cc;
+}
+
+div.NavigateDeeperHeader {
+    background-color: #c6ddff;
+}
+
+span.NavigateDeeperHeader {
+    background-color: Transparent;
+}
+
+span.NavigateDeeperHeader_OnMouseOver {
+    background-color: #ffdd66;
+}
+
+div.NavigateDeeperItemTemplate {
+    background-color: Transparent;
+}
+
+div.NavigateDeeperItemTemplate_OnMouseOver {
+    background-color: #ffdd66;
+}
+
+div.GlossaryScrollArea {
+    position: absolute;
+    top: 35px;
+    height: expression(this.offsetParent.clientHeight - 35);
+    width: 100%;
+    overflow: auto;
+}
+
+table.GlossaryTable {
+    border-collapse: collapse;
+    font-size: 8pt;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+td.GlossaryItem {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    background-color: #FFFFFF;
+    padding: 5px;
+    color: #515151;
+}
+
+td.GlossaryAlternatingItem {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    background-color: #F9F9F9;
+    padding: 5px;
+    color: #515151;
+}
+
+th.GlossaryHeader {
+    height: 20px;
+    background-color: #F9F9F9;
+    text-align: left;
+    padding: 5px;
+    color: #515151;
+}
+
+div.ContentBox {
+    border: 0px solid #222222;
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+    div.ContentBox div.ContentHead {
+        background-color: #FFFFFF;
+        color: #222222;
+        font-weight: bold;
+        padding-top: 1px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+    }
+
+.ContentBox.StartPageContentBox .ContentHead {
+    color: #222222;
+    display: block;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+
+div.FavoritContentBox {
+    position: relative;
+    margin-top: 50px;
+    left: 40px;
+    width: 443px;
+    border: 0px solid #222222;
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+    div.FavoritContentBox div.ContentHead {
+        background-color: #EEEEEE;
+        color: #62A4D3;
+        font-weight: bold;
+        padding-top: 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 0px;
+        height: 19px;
+        border: #62A4D3 solid 1px;
+        font-weight: bold;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+div.FavoritEntry {
+    padding-left: 2px;
+    padding-top: 3px;
+    height: 19px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: #EEEEEE;
+    width: 439px;
+    border: #62A4D3 solid 1px;
+    border-top: 0px;
+}
+
+div.FavoritContentBox a:link, div.FavoritContentBox a:visited {
+    color: #62A4D3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.ContentBox div.ContentBody {
+    color: #222222;
+    padding: 2px;
+}
+
+    div.ContentBox div.ContentBody a:link, div.ContentBox div.ContentBody a:visited {
+        color: #222222;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+/*** DetailContent ***********************************************************/
+
+div.DetailContentSizeParameter {
+    height: 45px;
+    width: 1px;
+}
+
+div.DetailedContentZone {
+    position: absolute;
+    width: 100%;
+    width: expression(this.offsetParent.clientWidth - 1 );
+    top: 45px;
+    height: expression(this.offsetParent.clientHeight - 45);
+    overflow: auto;
+}
+
+div.PaletteLink {
+    cursor: pointer;
+    margin-left: 6px;
+    padding-left: 13px;
+    background-position: left center;
+    background-image: url(images/collapsible_panel/ico_linkintern.gif);
+    background-repeat: no-repeat;
+}
+
+div.PaletteText {
+    cursor: default;
+    margin-left: 6px;
+    padding-left: 0px;
+    color: #000000;
+}
+
+div.PaletteNoLink {
+    padding-left: 15px;
+    cursor: default;
+}
+
+div.PaletteDiagramLink {
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+div.PaletteDiagramNoLink {
+    padding-left: 15px;
+    cursor: default;
+}
+
+div.PaletteNoLinkNoBulletPoint {
+    padding-left: 15px;
+    cursor: default;
+}
+
+div.PaletteInternHeader {
+    cursor: default;
+    margin-left: 6px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+div.PaletteSubInfo {
+    cursor: default;
+    margin-left: 20px;
+    padding-left: 15px;
+    background-position: left center;
+    background-image: url(images/collapsible_panel/ico_subinfo.gif);
+    background-repeat: no-repeat;
+}
+
+div.PaletteLinkDiagram {
+    cursor: pointer;
+    margin-left: 15px;
+    padding-left: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(images/collapsible_panel/ico_diagram.gif);
+}
+
+div.PaletteExtLink {
+    cursor: pointer;
+    margin-left: 15px;
+    padding-left: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+div.PaletteLinkDoc {
+    background-image: url(images/collapsible_panel/ico_doc.gif);
+}
+
+div.PaletteLinkXls {
+    background-image: url(images/collapsible_panel/ico_xls.gif);
+}
+
+div.PaletteLinkPpt {
+    background-image: url(images/collapsible_panel/ico_ppt.gif);
+}
+
+div.PaletteLinkHtm {
+    background-image: url(images/collapsible_panel/ico_htm_world.gif);
+}
+
+div.PaletteLinkTxt {
+    background-image: url(images/collapsible_panel/ico_txt.gif);
+}
+
+div.PaletteLinkPdf {
+    background-image: url(images/collapsible_panel/ico_pdf.gif);
+}
+
+div.PaletteLinkNone {
+    background-image: url(images/collapsible_panel/ico_none.gif);
+}
+
+div.PalletteIsEmtpy {
+    cursor: default;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+div.Palette {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.PaletteHeaderOpened, div.PaletteHeaderClosed, div.PaletteHeaderEmpty {
+    background-repeat: no-repeat;
+    background-color: #ffd38c;
+    padding-top: 2px;
+    padding-left: 16px;
+    height: 18px; /* if XHTML-Dtd set: 18px - padding-top; else: 18px + border-bottom-width */
+    border-color: #ff9e00;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    font-weight: bold;
+}
+
+div.PaletteHeaderOpened {
+    color: #000000;
+    background-image: url(images/collapsible_panel/ico_open.jpg);
+    background-position: 3px 6px;
+    cursor: pointer;
+}
+
+div.PaletteHeaderClosed {
+    color: #000000;
+    background-image: url(images/collapsible_panel/ico_close.jpg);
+    background-position: 3px 4px;
+    border-color: #FFFFFF;
+    border-bottom-width: 2px;
+    cursor: pointer;
+}
+
+div.PaletteHeaderEmpty {
+    color: #000000;
+    background-image: url(images/collapsible_panel/ico_empty.jpg);
+    background-position: 3px 6px;
+    border-color: #FFFFFF;
+    border-bottom-width: 2px;
+    cursor: default;
+}
+
+div.PaletteBody {
+    background-color: #FFFFFF;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-color: #ff9e00;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    color: #000000;
+}
+
+div.PaletteBodyEmpty {
+    display: none;
+}
+
+body.DetailContent {
+    background-color: #E2E2E2;
+}
+
+form.DetailContentForm {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+div.Content {
+    width: 100%;
+    height: 100%;
+}
+
+span.HeaderText {
+    color: #222222;
+    cursor: default;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-right: 10px; /*padding-left: 14px;*/
+}
+
+span.HeaderDescriptionText {
+}
+
+div.DetailsHeader {
+    /*vertical-align: bottom;*/
+    display: block;
+    background-color: #FFFFFF;
+    padding-top: 2px;
+    padding-left: 14px;
+    width: 100%;
+    height: 39px; /* if XHTML-Dtd set: 33px - padding-top; else: 33px + border-bottom-width */
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 4px;
+    border-bottom-color: #E2E2E2;
+    color: #222222;
+    position: absolute;
+}
+
+img.PreImage {
+    position: relative;
+    top: -2px;
+}
+
+div.Entry {
+    color: #222222;
+    background-color: #FFFFFF;
+}
+
+    div.Entry a:link, div.Entry a:visited {
+        color: #003F77;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+div.PaletteOpenedHeader, div.PaletteClosedHeader, div.PaletteEmptyHeader {
+    background-repeat: no-repeat;
+    background-color: #FFCF9F;
+    padding-top: 2px;
+    padding-left: 16px;
+    height: 18px; /* if XHTML-Dtd set: 18px - padding-top; else: 18px + border-bottom-width */
+    border-color: #E2E2E2;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+div.PaletteOpenedHeader {
+    color: #222222;
+    background-image: url(images/detail_content/ico_open.gif);
+    background-position: 3px 6px;
+    cursor: pointer;
+}
+
+div.PaletteClosedHeader {
+    color: #222222;
+    background-image: url(images/detail_content/ico_close.gif);
+    background-position: 3px 5px;
+    border-color: #E2E2E2;
+    border-bottom-width: 4px;
+    cursor: pointer;
+}
+
+div.PaletteEmptyHeader {
+    color: #222222;
+    background-image: url(images/collapsible_panel/ico_empty.jpg);
+    background-position: 3px 7px;
+    border-color: #FFFFFF;
+    border-bottom-width: 2px;
+    cursor: default;
+}
+
+div.PaletteOpenedBody {
+    background-color: #FFFFFF;
+    padding-top: 2px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    border-color: #E2E2E2;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 4px;
+    color: #818181;
+}
+
+div.PaletteClosedBody {
+    display: none;
+}
+
+div.SubPaletteHeader {
+    cursor: pointer;
+    margin-left: 0px;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #222222; /*background-position: left center; 	background-image: url(images/collapsible_panel/ico_open.jpg); 	background-repeat: no-repeat;*/
+}
+
+div.SubPaletteOpenedBody {
+    background-color: #FFFFFF;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    border-color: #ff9e00;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    color: #000000;
+    font-size: 11px;
+}
+
+div.SubPaletteClosedBody {
+    display: none;
+}
+
+div.SubPaletteEmpty {
+    background-color: #FFFFFF;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-color: #ff9e00;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    color: #000000;
+}
+
+/*** Suche *******************************************************************/
+
+table.SearchResultView {
+    background-color: #FFFFFF;
+    table-layout: fixed;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+}
+
+    table.SearchResultView tr.HeaderRow {
+        height: 25px;
+        position: relative;
+        top: expression(offsetParent.scrollTop); /*IE5+ only*/
+        color: #515151;
+    }
+
+        table.SearchResultView tr.HeaderRow th.HeaderCell {
+            font-size: 8pt;
+            font-weight: bold;
+            padding-left: 16px;
+            padding-right: 6px;
+            vertical-align: middle;
+            text-align: left;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+        }
+
+    table.SearchResultView tr.CategoryRow {
+        background-color: #FFFFFF;
+        display: none;
+        font-size: 8pt;
+        cursor: pointer;
+        font-style: normal;
+        height: 25px;
+        color: #515151;
+    }
+
+        table.SearchResultView tr.CategoryRow td.CategoryCell {
+            font-weight: bold;
+            padding-left: 14px;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            vertical-align: middle;
+        }
+
+    table.SearchResultView tr.Opened td.CategoryCell img.StateIndicator {
+        background-image: url(images/opened.gif);
+        background-repeat: no-repeat;
+        width: 11px;
+        height: 11px;
+    }
+
+    table.SearchResultView tr.Closed td.CategoryCell img.StateIndicator {
+        background-image: url(images/closed.gif);
+        background-repeat: no-repeat;
+        width: 11px;
+        height: 11px;
+    }
+
+    table.SearchResultView tr.CategoryFooterRow {
+        display: none;
+        font-size: 8pt;
+        cursor: pointer;
+        font-style: normal;
+        height: 25px;
+    }
+
+        table.SearchResultView tr.CategoryFooterRow td.CategoryFooterCell {
+            font-weight: normal;
+            padding-left: 28px;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+        }
+
+            table.SearchResultView tr.CategoryFooterRow td.CategoryFooterCell a:link, table.SearchResultView tr.CategoryFooterRow td.CategoryFooterCell a:visited {
+                color: #000000;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+    table.SearchResultView tr.EntryRow {
+        display: none;
+        font-size: 8pt;
+        cursor: pointer;
+        font-style: normal;
+        height: 25px;
+        color: #003F77;
+    }
+
+    table.SearchResultView tr.EntryRowSelected {
+        font-size: 8pt;
+        cursor: pointer;
+        font-style: normal;
+        height: 25px;
+        background-color: #FFFFFF;
+        color: #000000; /*border-bottom: 1px solid black;*/
+    }
+
+        table.SearchResultView tr.EntryRow td.EntryCellFirst, table.SearchResultView tr.EntryRowSelected td.EntryCellFirst {
+            /*width : 200px;*/
+            padding-left: 30px;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+        }
+
+            table.SearchResultView tr.EntryRow td.EntryCellFirst div.Arrow, table.SearchResultView tr.EntryRowSelected td.EntryCellFirst div.Arrow {
+                /*width : 200px;*/
+                padding-left: 14px;
+                background-image: url(images/detail_content/ico_linkintern.gif);
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+
+        table.SearchResultView tr.EntryRow td.EntryCell, table.SearchResultView tr.EntryRowSelected td.EntryCell {
+            /*width : 200px;*/
+            padding-left: 16px;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+        }
+
+    table.SearchResultView tr.NoResultRow {
+        font-size: 8pt;
+        cursor: pointer;
+        font-style: normal;
+        height: 25px;
+    }
+
+        table.SearchResultView tr.NoResultRow td.NoResultCell {
+            padding-left: 16px;
+            text-align: center;
+            background-image: url(images/underline.gif);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+        }
+
+table.SearchForm {
+    width: 100%;
+    text-align: right;
+}
+
+div#ExtOptionsPopup {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 520px;
+    z-index: 100;
+    padding: 10px;
+    border: 1px solid #818181;
+    background-color: #FFFFFF;
+}
+
+div.Scrollable {
+    position: absolute;
+    bottom: 0px;
+    top: 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+div#WaitingView {
+    position: absolute;
+    bottom: 0px;
+    top: 100px;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+span.SearchResultDisplayEntryDiagramNavigation {
+    background-image: url(images/ico_diagram.gif);
+    width: 25px;
+    height: 12px;
+    float: right;
+}
+
+span.SearchResultDisplayEntryDiagramNavigation_Hidden {
+    width: 0px;
+    height: 0px;
+}
+
+/*** Listen ******************************************************************/
+
+div.PagingListGlobal {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #FFFFFF;
+}
+
+div.PagingListContent {
+    overflow: auto;
+    position: absolute;
+    height: expression(this.offsetParent.clientHeight - 16);
+    width: 100%;
+}
+
+/* PagingList */
+div.PagingList {
+    font-size: 11px;
+    background-color: #E2E2E2;
+    border-left: #E2E2E2 8px solid;
+    overflow: hidden;
+}
+
+/* Pager Item */
+td.PagingListPagerItem, td.PagingListHoverPagerItem, td.SelectedPagingListPagerItem {
+    height: 18px;
+    width: 18px;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Pager Item */
+td.PagingListPagerItem {
+    background-color: #E2E2E2;
+    color: #003F77;
+    font-weight: bold;
+}
+
+/* Hover Pager Item */
+td.PagingListHoverPagerItem {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Selected Pager Item */
+td.SelectedPagingListPagerItem {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Pager Seperator */
+td.PagingListPagerSeparator {
+    background-color: #FFFFFF;
+    width: 1px;
+}
+
+/* Liste Überschrift */
+tr.ListHeader {
+    background-color: #FFFFFF;
+    height: 25px;
+}
+
+/* Item List */
+table.List {
+    min-height: 0;
+    height: auto;
+    width: 100%; /* border-bottom: #E2E2E2 1px solid;*/
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Item List */
+div.list {
+    background-color: #FFFFFF;
+}
+
+/* List Item Header */
+td.ListItemHeader {
+    padding-left: 16px;
+    padding-right: 6px;
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #818181;
+}
+
+/* List Item Seperator */
+td.PagingListItemSeperator {
+    width: 100%;
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+/* List Item */
+tr.PagingListItem, tr.SelectedPagingListItem {
+    font-size: 11px;
+    cursor: pointer;
+    font-style: normal;
+    height: 25px;
+}
+/* List Item */
+td.PagingListItem, td.SelectedPagingListItem {
+    padding-left: 16px;
+}
+
+/* List Item */
+tr.PagingListItem {
+    background: #FFFFFF;
+    color: #003F77;
+}
+
+/* Selected List Item */
+tr.SelectedPagingListItem {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+/*** Druckvorschau ***********************************************************/
+
+div.PrintConfigDiv {
+    background-color: #E2E2E2;
+    width: 400px;
+    border: 2px solid #CCCCCC;
+    padding: 4px;
+}
+
+div.PrintEntry {
+}
+
+    div.PrintEntry a:link, div.PrintEntry a:visited {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+div.PrintPaletteOpenedHeader, div.PrintPaletteClosedHeader, div.PrintPaletteEmptyHeader {
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    margin-top: 4px;
+    padding-top: 2px;
+    padding-left: 16px;
+    height: 18px; /* if XHTML-Dtd set: 18px - padding-top; else: 18px + border-bottom-width */
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+    font-weight: bold;
+}
+
+div.PrintPaletteOpenedHeader {
+    color: #000000;
+    background-image: url(images/collapsible_panel/ico_open.gif);
+    background-position: 3px 5px;
+    cursor: pointer;
+}
+
+div.PrintPaletteClosedHeader {
+    color: #222222;
+    background-image: url(images/collapsible_panel/ico_close.gif);
+    background-position: 3px 4px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+}
+
+div.PrintPaletteEmptyHeader {
+    color: #222222;
+    background-image: url(images/collapsible_panel/ico_empty.gif);
+    background-position: 3px 6px;
+    border-color: #ffffff;
+    border-bottom-width: 2px;
+    cursor: default;
+}
+
+div.PrintPaletteOpenedBody {
+    background-color: #ffffff;
+    padding-top: 2px;
+    padding-left: 16px;
+    padding-bottom: 5px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    color: #000000;
+}
+
+div.PrintPaletteClosedBody {
+    display: none;
+}
+
+div.PrintSubPaletteHeader {
+    cursor: pointer;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-weight: bold; /*background-position: left center; 	background-image: url(images/collapsible_panel/ico_open.jpg); 	background-repeat: no-repeat;*/
+}
+
+div.PrintSubPaletteOpenedBody {
+    background-color: #ffffff;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    color: #000000;
+}
+
+div.PrintSubPaletteClosedBody {
+    display: none;
+}
+
+div.PrintSubPaletteEmpty {
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    color: #000000;
+}
+
+/*** Feedback ***********************************************************/
+
+div.Feedback {
+    background-color: #FFFFFF;
+    border: solid 1px #222222;
+    margin: 2px;
+}
+
+div.FeedbackHead1 {
+    background-color: #FFFFFF;
+    padding: 4px;
+    border-bottom: solid 1px #222222;
+    font-size: larger;
+    font-weight: bold;
+}
+
+div.FeedbackHead2 {
+    background-color: #FFFFFF;
+    border-top: solid 1px #222222;
+    border-bottom: solid 1px #222222;
+    padding: 4px;
+    font-weight: bold;
+}
+
+div.FeedbackTextDiv {
+    background-color: #FFFFFF;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+div.FeedbackListDiv {
+    padding: 4px;
+}
+
+div.ImageButton_1 {
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    left: 40px;
+    float: left;
+}
+
+div.ImageButton_2 {
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    left: 43px;
+    float: left;
+}
+
+div.ImageButton_3 {
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    left: 46px;
+    float: left;
+}
+
+div.ImageButton1 {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #b7bfF9;
+    top: 50px;
+    left: 450px;
+}
+
+div.ImageButton1OnMouseOver {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 450px;
+}
+
+div.ImageButton1OnMouseUp {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 450px;
+}
+
+div.ImageButton1OnMouseDown {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffffff;
+    top: 50px;
+    left: 450px;
+}
+
+div.ImageButton2 {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #b7bfF9;
+    top: 50px;
+    left: 660px;
+}
+
+div.ImageButton2OnMouseOver {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 660px;
+}
+
+div.ImageButton2OnMouseUp {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 660px;
+}
+
+div.ImageButton2OnMouseDown {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffffff;
+    top: 50px;
+    left: 660px;
+}
+
+div.ImageButton3 {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #b7bfF9;
+    top: 50px;
+    left: 880px;
+}
+
+div.ImageButton3OnMouseOver {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 880px;
+}
+
+div.ImageButton3OnMouseUp {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffcb97;
+    top: 50px;
+    left: 880px;
+}
+
+div.ImageButton3OnMouseDown {
+    position: absolute;
+    border: 3px coral solid;
+    border-color: #b7bfF9;
+    background-color: #ffffff;
+    top: 50px;
+    left: 880px;
+}
+
+input.AutocompleteInputFeld {
+    padding-bottom: 0px;
+    font-family: Arial;
+    width: 360px;
+    height: 20px;
+    font-size: 15px;
+    color: #222222;
+    border-top: 1px solid #62A4D3;
+    border-bottom: 1px solid #62A4D3;
+    border-left: 1px solid #62A4D3;
+    border-right: 0px solid #62A4D3;
+    background-color: #EEEEEE;
+    float: left;
+}
+
+input.AutocompleteButtonSearch {
+    height: 23px;
+    width: 79px;
+    font-size: 15px;
+    color: #62A4D3;
+    background-color: #FFFFFF;
+    border-color: #62A4D3;
+    border-top: 1px solid #62A4D3;
+    border-bottom: 1px solid #62A4D3;
+    border-left: 0px solid #62A4D3;
+    border-right: 1px solid #62A4D3;
+    font-family: Arial;
+    cursor: pointer;
+    float: left;
+}
+
+.mouseBeOffMe {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: relative;
+    border-top: 10px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+    border-left: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+
+.mouseBeDown {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: relative;
+    border-top: 14px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+    border-left: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+
+.mouseBeUp {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: relative;
+    border-top: 10px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+    border-left: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+
+div.ImageButtonTitleMouseOff {
+    padding-bottom: 5px;
+    color: #78AFD7;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.ImageButtonTitleMouseOver {
+    padding-bottom: 5px;
+    color: #E9E9EA;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.BackgroundSite {
+    margin: 0px auto;
+    background-image: url(images/start_page/css_background.png);
+    background-position: center 130px;
+    background-repeat: no-repeat;
+    height: 750px;
+    text-align: center;
+}
+
+div.StartPageContent {
+    border: 1px #62A4D3 solid;
+    text-align: left;
+    width: 769px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+}
+
+.ui-combobox {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .ui-combobox .ui-combobox-toggleText {
+        height: 19px;
+        overflow: hidden;
+    }
+
+    .ui-combobox li {
+        margin: 0px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        cursor: pointer;
+    }
+
+        .ui-combobox li a {
+            padding: 0px;
+            margin: 0px;
+            display: block;
+            text-decoration: none;
+            width: 90%;
+            outline: transparent solid 0px;
+        }
+
+        .ui-combobox li .ui-icon {
+            padding: 0px;
+            margin: -20px 0px 0px 0px;
+            width: 17px;
+            height: 17px;
+            float: right;
+        }
+
+.ui-combobox-list {
+    border-width: 1px !important;
+    position: absolute;
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    display: none;
+    float: left;
+    overflow: auto;
+    left: -1px;
+}
+
+/***********************************************************
+************************************************************
+
+    IMPORTED TEST TEMPLATE STYLE BELOW
+
+************************************************************
+***********************************************************/
+
+/***********************************************************
+    GLOBAL STYLES
+*/
+/*
+*
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 8pt;
+}*/
+
+/***********************************************************
+    NAVIGATION STYLES
+*/
+
+.HiddenAccordionLink {
+    display: none;
+}
+
+#Accordion {
+}
+
+.AccordionTree {
+    font-size: 8pt;
+}
+
+.AccordionLinks {
+    font-size: 8pt;
+    margin-top: 1em;
+}
+
+.AccordionHeaderTextIndent {
+    text-indent: 25px;
+}
+
+.AccordionTreeShadowCopy {
+    display: none;
+}
+
+.NavigationContentHeadline {
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #00457D;
+    display: block;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: -1px;
+    z-index: -1;
+}
+
+/***********************************************************
+    MAIN & DETAILS STYLES
+*/
+
+.DetailContentHeadline {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #00457D;
+    display: block;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: -1px;
+}
+
+#DetailDisplay a:link {
+    color: #555555;
+    padding-left: 1px;
+    text-decoration: none;
+}
+
+#DetailDisplay a:hover {
+    background-color: #ffffff;
+    color: #00457D;
+}
+
+#DetailDisplay a:focus {
+    color: #00457D;
+    background-color: #ffffff;
+}
+
+#DetailDisplay a:visited {
+    color: #00457D;
+    background-color: #ffffff;
+}
+
+.GenericAggregationEntry .AttributeTextDisplay {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+.AttributeTextDisplay {
+    margin-left: 16px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.DetailLinkFirstLevel.ExternalRegexLinks .AttributeTextDisplay {
+    margin-left: 0px;
+}
+
+.AttributeTextDisplay > p {
+    margin-top: 5px;
+    margin-bottom: 5px; /*margin-left: 5px;     margin-right: 5px;*/
+}
+
+.DetailOccursInLinkIcon {
+    background-image: url(images/detail_content/ico_diagram_header.gif);
+    width: 15px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+}
+
+#DiagramDisplay {
+    margin: 1em;
+}
+
+#DetailDisplay {
+    margin: 0px;
+}
+
+.ListLinkIcon {
+    background-image: url(images/collapsible_menu/icon_list_16x16.png);
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.StandardLinkIcon {
+    background-image: url(images/detail_content/ico_none.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.NoMainContentLinkIcon {
+    background-image: url(images/detail_content/ico_linkintern.gif);
+    width: 9px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.DiagramLinkIcon {
+    background-image: url(images/detail_content/ico_diagram_header.gif);
+    width: 15px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+.ItemLinkIcon {
+    /*background-image: url(images/detail_content/ico_function_navmodel.gif);*/
+    background-image: url(images/detail_content/ico_child.gif);
+    width: 9px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
+.MovieLinkIcon {
+    background-image: url(images/detail_content/ico_movie.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.DocLinkIcon {
+    background-image: url(images/detail_content/ico_doc.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.ImageLinkIcon {
+    background-image: url(images/detail_content/ico_image.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.WebLinkIcon {
+    background-image: url(images/detail_content/ico_htm_world.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.PdfLinkIcon {
+    background-image: url(images/detail_content/ico_pdf.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.XlsLinkIcon {
+    background-image: url(images/detail_content/ico_xls.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.PptLinkIcon {
+    background-image: url(images/detail_content/ico_ppt.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+}
+
+.DetailLinkZeroLevel {
+    padding-left: 0px;
+}
+
+.DetailLinkSecondLevel {
+    padding-left: 16px;
+}
+
+.DetailLinkSipoc {
+    padding-left: 16px;
+}
+
+.DetailLinkFirstLevel {
+    padding-left: 16px;
+}
+
+    .DetailLinkFirstLevel .DetailLinkSecondLevel {
+        padding-left: 0px;
+    }
+
+.DetailLinkSecondLevel .DetailLinkSecondLevel {
+    padding-left: 0px;
+}
+
+.DetailLinkFirstLevel .DetailLinkFirstLevel {
+    padding-left: 13px;
+}
+
+.DetailLinkSecondLevel .DetailLinkFirstLevel {
+    padding-left: 0px;
+}
+
+.DetailLinkZeroLevel .DetailDisplayCategory {
+    padding-left: 16px;
+}
+
+.DetailDisplayLinkText {
+    margin-left: 23px;
+}
+
+.DiagramLinkIcon + .DetailDisplayLinkText {
+    margin-left: 19px;
+    margin-left: -1px;
+}
+
+.ItemLinkIcon + .DetailDisplayLinkText {
+    margin-left: 10px;
+}
+
+.StandardLinkIcon + .DetailDisplayLinkText {
+    margin-left: 10px;
+}
+
+.NoMainContentLinkIcon + .DetailDisplayLinkText {
+    margin-left: 13px;
+}
+
+.DetailDisplayCategory {
+    border-width: 0px;
+    border-style: solid;
+    border-color: Silver;
+    margin-bottom: 0em;
+}
+
+.DetailDisplayCategoryTitle {
+    font-weight: bold !important;
+    cursor: pointer;
+    margin: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden; /*border: 1px solid #d3d3d3;*/
+    background: #d1e3f4 !important;
+    color: #222222 !important;
+    border: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #d1e3f4 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.DetailDisplayCategoryTitleTriangle {
+}
+
+.DetailDisplayCategory .DetailDisplayCategory .DetailDisplayCategoryTitleTriangle {
+    display: none;
+}
+
+.DetailDisplayCategoryTitleLabel {
+    float: left;
+    padding-top: 2px;
+}
+
+.DetailDisplayCategory .DetailDisplayCategory .DetailDisplayCategoryTitleLabel {
+    float: left;
+    padding-top: 2px;
+    padding-left: 16px;
+}
+
+.DetailDisplayCategory .DetailDisplayCategory .DetailDisplayCategory {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    margin-bottom: 0.4em;
+}
+
+.DetailDisplayCategory .DetailDisplayCategory .DetailDisplayCategoryTitle {
+    font-weight: bold !important;
+    cursor: pointer;
+    margin: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden; /*border: 1px solid #d3d3d3;*/
+    background: #FFFFFF !important;
+    color: #555555 !important;
+    border: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #FFFFFF !important;
+    padding-top: 2px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.DetailDisplayCategoryContainer {
+    color: #555555;
+    padding-bottom: 3px;
+}
+
+/***********************************************************
+    TOGGLE CONTENTS STYLES
+*/
+
+div.ToggleNavigationContainer {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+div.ToggleDetailsContainer {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+div.ToggleNavigation {
+    position: relative;
+    z-index: -1;
+}
+
+span.ToggleNavigationIconOpened {
+    /*position: absolute;*/
+    margin-top: 2px;
+    margin-left: 14px;
+    border: solid 1px #ffffff;
+    float: left;
+    z-index: -1;
+}
+
+span.ToggleNavigationIconClosed {
+    /*position: absolute;*/
+    margin-top: 2px;
+    margin-left: 14px;
+    border: solid 1px #00457d;
+    float: left;
+    z-index: -1;
+}
+
+/* These are the classes for showing the Toggle-Arrows
+in the navigation */
+span.ToggleNavigationNavIconOpened {
+    /*position: absolute;*/
+    margin-left: 0px;
+    margin-top: 8px;
+    border: solid 1px #ffffff;
+    float: left;
+    z-index: -1;
+}
+
+span.ToggleNavigationNavIconClosed {
+    /*position: absolute;*/
+    margin-left: 0px;
+    margin-top: 8px;
+    border: solid 1px #00457d;
+    float: left;
+    z-index: -1;
+}
+
+span.ToggleNavigationText {
+    /*position: absolute;*/ /*margin-top: 1px;*/
+    float: left;
+    margin-left: 13px;
+    overflow: hidden;
+    z-index: -1;
+    padding-top: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+span.ToggleDetailContentPanelIconOpened {
+    /*position: absolute;*/
+    margin-top: 2px;
+    margin-right: 14px;
+    border: solid 1px #ffffff;
+    float: right;
+}
+
+span.ToggleDetailContentPanelIconClosed {
+    /*position: absolute;*/
+    margin-top: 2px;
+    margin-right: 14px;
+    border: solid 1px #00457d;
+    float: right;
+}
+
+/* These are the classes for showing the Toggle-Arrows
+in the navigation */
+span.ToggleDetailContentPanelDetailIconOpened {
+    /*position: absolute;*/
+    margin-right: 0px;
+    margin-top: 8px;
+    border: solid 1px #ffffff;
+    float: left;
+}
+
+span.ToggleDetailContentPanelDetailIconClosed {
+    /*position: absolute;*/
+    margin-right: 0px;
+    margin-top: 8px;
+    border: solid 1px #00457d;
+    float: left;
+}
+
+span.ToggleDetailContentPanelText {
+    /*position: absolute;*/
+    float: left;
+    margin-left: 13px;
+    overflow: hidden;
+    z-index: 30;
+    padding-top: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+/***********************************************************
+    LIST & SEARCH STYLES
+*/
+
+a.AccordionListLink {
+    font-weight: normal;
+    color: #222222;
+    text-decoration: none;
+}
+
+    a.AccordionListLink:hover {
+        /*background-color: #d1e3f4;*/
+        font-weight: bold;
+        color: #00457D !important;
+        text-decoration: none;
+    }
+
+    a.AccordionListLink:focus {
+        /*background-color: #d1e3f4;*/
+        font-weight: bold;
+        color: #00457D;
+        text-decoration: none;
+    }
+
+a.ClickedAccordionListLink {
+    /*background-color: #dbe9f2;*/
+    font-weight: bold;
+    color: #00457D !important;
+    text-decoration: none;
+}
+
+a.AccordionListLink:visited {
+    /*font-weight: normal;*/
+    color: #222222;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+div.AccordionListLinkContainer {
+    margin-left: 17px;
+}
+
+div.AccordionListSubLinkContainer {
+    margin-left: 26px;
+}
+
+div.ClickedAccordionListLinkContainer {
+    background-color: #ffffff;
+    border: 0px solid #ffffff; /*padding: 2px;*/
+}
+
+a.AccordionListSubLink {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+    a.AccordionListSubLink:hover {
+        /*background-color: #d1e3f4;*/
+        font-weight: bold;
+        color: #00457D !important;
+        text-decoration: none;
+    }
+
+    a.AccordionListSubLink:focus {
+        /*background-color: #d1e3f4;*/
+        font-weight: bold;
+        color: #00457D;
+        text-decoration: none;
+    }
+
+a.ClickedAccordionListSubLink {
+    /*background-color: #d1e3f4;*/
+    font-weight: bold;
+    color: #00457D !important;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+a.AccordionListSubLink:visited {
+    color: #222222;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+div.ClickedAccordionListSubLinkContainer {
+    background-color: #ffffff;
+    border: 0px solid #ffffff; /*padding: 2px;*/
+}
+
+.Accordion h3 {
+    overflow: hidden;
+}
+
+#SearchForm {
+    margin: 1em;
+}
+
+    #SearchForm td {
+        vertical-align: top;
+    }
+
+    #SearchForm #SearchTerm {
+    }
+
+#SearchDataMissingMessage .ui-state-error {
+    padding: 0.4em;
+}
+
+    #SearchDataMissingMessage .ui-state-error .ui-icon-alert {
+        float: left;
+        margin-right: 0.3em;
+    }
+
+#SearchCategoryDisplay {
+    /*position: absolute;*/
+}
+
+    #SearchCategoryDisplay .ui-widget-content {
+        padding: 0.7em;
+    }
+
+#SearchResultDisplay {
+    margin: 1em;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#ListDisplay {
+    /*margin: 1em;*/
+    margin: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: Silver;
+    display: none;
+}
+
+input.SearchResultSearchBoxEmpty {
+    position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
+    width: 120px;
+    height: 16px;
+    padding: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #000000;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #00457D;
+}
+
+.SearchResultSearchButton {
+    position: relative;
+    float: left;
+    height: 26px !important;
+}
+
+.SearchResultDisplayCategory {
+    border-width: 0px;
+    border-style: solid;
+    border-color: Silver;
+    margin-bottom: 0.4em;
+}
+
+.SearchResultDisplayCategoryTitle {
+    font-weight: bold !important;
+    cursor: pointer;
+    margin: -1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow: hidden; /*border: 1px solid #d3d3d3;*/
+    background: #E2E2E2 !important;
+    color: #222222 !important;
+    border: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #E2E2E2 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.SearchResultDisplayCategoryContainer {
+}
+
+.SearchResultDisplayCategoryContainerMoreEntries {
+}
+
+.SearchResultDisplayCategoryContainerMoreSwitch {
+    cursor: pointer;
+    margin: 0.4em;
+}
+
+.SearchResultDisplayEntry {
+    padding: 0.2em 0.4em;
+}
+
+.ListDisplayEntry {
+    padding: 0em 0em;
+    border: 1px solid transparent;
+    font-size: 11px;
+    cursor: pointer;
+    font-style: normal;
+    height: 25px;
+}
+
+    .ListDisplayEntry:hover {
+        background-color: #00457D;
+        border: 1px solid #00457D;
+    }
+
+        .ListDisplayEntry:hover .ListDisplayEntryModelLink, .ListDisplayEntry:hover .ListDisplayEntryTitle, .ListDisplayEntry:hover .ListDisplayEntryDescription, .ListDisplayEntry:hover .ListDisplayRemoveFavoriteEntry, .ListDisplayEntry:hover .ListDisplayCheckBoxEntry {
+            color: #FFFFFF;
+        }
+
+    .ListDisplayEntry:focus {
+    }
+
+    .ListDisplayEntry:active {
+        background-color: #00457D;
+        border: 1px solid #00457D;
+    }
+
+.ListDisplayRemoveFavoriteEntry {
+    width: 5px;
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+.FavoriteLink {
+    width: 10px;
+}
+
+.ListDisplayEntryTitle a:link {
+    text-decoration: none;
+}
+
+.ListDisplayEntry, .ListDisplayEntryPart, .ListDisplayEntryTitle, .ListDisplayEntryModelLink, .ListDisplayRemoveFavoriteEntry, .ListDisplayCheckBoxEntry {
+    padding-left: 16px;
+    border-top: #E2E2E2 1px solid; /*  border-bottom: #E2E2E2 1px solid;*/
+}
+
+.ChangedObject {
+    background-image: url(images/ico_exclamation.png);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    width: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.NotChangedObject {
+}
+
+.ListDisplayCheckBoxEntry {
+    width: 20px;
+    padding-left: 5px;
+}
+
+input.SearchResultSearchBoxEmpty {
+    padding: 2px;
+}
+
+.SearchResultSearchButton {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin: 0px !important;
+    height: 22px !important;
+}
+
+    .SearchResultSearchButton .ui-button-text {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        font-size: 1em !important;
+        line-height: 1.0 !important;
+    }
+
+    .SearchResultSearchButton.ui-state-hover .ui-button-text {
+        padding-top: 2px !important;
+        padding-bottom: 0px !important;
+        font-size: 1em !important;
+        line-height: 1.0 !important;
+    }
+
+.SearchResultDisplayEntryTitle {
+    padding-left: 12px;
+}
+
+.SearchResultDisplayEntryRelevance {
+    font-size: 0.8em;
+}
+
+a.SearchResultDisplayEntryTitleLink {
+    font-size: 8pt;
+    font-weight: bold;
+    color: #222222;
+    text-decoration: none;
+}
+
+    a.SearchResultDisplayEntryTitleLink:hover {
+        color: #57a1d5;
+        text-decoration: none;
+    }
+
+    a.SearchResultDisplayEntryTitleLink:visited {
+        color: #222222;
+        text-decoration: none;
+    }
+
+    a.SearchResultDisplayEntryTitleLink:focus {
+        color: #57a1d5;
+        text-decoration: none;
+    }
+
+.SearchResultDisplayEntryDescription {
+    padding-left: 16px;
+    display: block; /*width: 100%;*/
+    font-size: 0.9em; /*border-top: #E2E2E2 1px solid;     border-bottom: #E2E2E2 1px solid;*/
+    margin-bottom: 2px;
+}
+
+.ListDisplayEntryDescription a.link {
+    text-decoration: none;
+}
+
+.ListDisplayEntryDescription {
+    font-size: 0.8em;
+    padding-left: 16px;
+    padding-right: 17px;
+    font-size: 0.8em;
+    border-top: #E2E2E2 1px solid; /*  border-bottom: #E2E2E2 1px solid;*/
+}
+
+tr.ClickedSearchEntries,
+#Viewport table.dataTable tbody tr.ClickedSearchEntries,
+#Viewport table.dataTable tbody tr.odd.ClickedSearchEntries,
+#Viewport table.dataTable tbody tr.even.ClickedSearchEntries,
+#Viewport table.dataTable tbody tr:hover,
+#Viewport table.dataTable tbody tr.odd:hover,
+#Viewport table.dataTable tbody tr.even:hover {
+    background-color: #00457D;
+    border: 1px solid #00457D;
+}
+
+    tr.ClickedSearchEntries .ListDisplayEntryTitle,
+    tr.ClickedSearchEntries .ListDisplayEntryModelLink,
+    tr.ClickedSearchEntries .ListDisplayEntryDescription,
+    #Viewport table.dataTable tbody tr.ClickedSearchEntries .AttributeValue,
+    #Viewport table.dataTable tbody tr.ClickedSearchEntries .TableViewLink,
+    #Viewport table.dataTable tbody tr:hover .AttributeValue,
+    #Viewport table.dataTable tbody tr:hover .TableViewLink {
+        color: #FFFFFF;
+    }
+
+input.DiagramTable-ColumnSearch {
+    font-size: 10px !important;
+    width: 55px;
+    margin-left: 10px;
+}
+
+#Viewport table.dataTable tbody tr:hover,
+table.dataTable tbody tr .AttributeValue:hover {
+    cursor: pointer;
+}
+
+#Viewport table.dataTable.display tbody tr.ClickedSearchEntries .sorting_1,
+#Viewport table.dataTable.display tbody tr.ClickedSearchEntries .sorting_2,
+#Viewport table.dataTable.display tbody tr.ClickedSearchEntries .sorting_3,
+#Viewport table.dataTable.display tbody tr:hover .sorting_1,
+#Viewport table.dataTable.display tbody tr:hover .sorting_2,
+#Viewport table.dataTable.display tbody tr:hover .sorting_3 {
+    background-color: #0061b0;
+}
+
+#Viewport {
+    z-index: 10000 !important;
+}
+
+#VerticalHeader {
+    -ms-overflow-style: none !important;
+    /*overflow-x: hidden !important;*/
+    overflow: -moz-scrollbars-none !important;
+    overflow: -webkit-scrollbars-none !important;
+    z-index: 10000000 !important;
+    height: 50px;
+}
+
+    #VerticalHeader::-webkit-scrollbar {
+        display: none !important;
+    }
+
+#HorizontalHeader {
+    -ms-overflow-style: none !important;
+    overflow-y: hidden !important;
+    overflow: -moz-scrollbars-none !important;
+    overflow: -webkit-scrollbars-none !important;
+    z-index: 10000000 !important;
+    width: 102px;
+    background-color: #FFFFFF !important;
+}
+
+    #HorizontalHeader::-webkit-scrollbar {
+        display: none !important;
+    }
+
+#HorizontalSpacer {
+    height: 100%;
+    width: 33px;
+    background-color: #FFFFFF;
+    z-index: 2000000;
+    position: absolute;
+    top: 46px;
+}
+
+div.TabContent {
+    padding: 0 !important;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+div.WaitingViewImage {
+    background-image: url(images/loading_ani1.gif);
+    width: 100%;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: 50% 3px;
+}
+
+div.WaitingView {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 100;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #AAAAAA;
+}
+
+div.VerticalButtonset {
+    margin: 1px;
+    margin-top: 5px;
+}
+
+div.PopUpAttributeTypeValue {
+    position: absolute;
+    padding: 7px;
+    background-color: #DDDDDD;
+    opacity: 0.9;
+    /*text-align:justify;*/
+    font-weight: normal;
+    max-width: 200px;
+}
+
+    div.PopUpAttributeTypeValue .PopUpAttributeTypeValueHeader {
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin-top: -2px;
+        margin-bottom: 5px;
+    }
+
+/*NEW INTEGRATED START PAGE STYLES*/
+
+.StartPageTile_1x1 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.StartPageTile_2x1 {
+    width: 324px;
+    height: 160px;
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.StartPageTile_3x1 {
+    width: 488px;
+    height: 170px;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.StartPageTile_3x2 {
+    width: 488px;
+    height: 320px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.StartPageTileText {
+    padding-bottom: 5px;
+    color: #78AFD7;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.StartPageInnerTileText {
+    display: none;
+}
+
+.ProcessAgeTooltip {
+    display: none;
+    float: left;
+    min-width: 120px;
+    border: 1px solid #666666;
+}
+
+.ProcessAgeTooltipLabel {
+    font-family: Arial;
+    color: #FFFFFF;
+}
+
+.ProcessAgeChartTile, .ProcessCountGaugeTile {
+    cursor: auto;
+}
+
+.ProcessCountGaugeTile {
+    /*border: 1px solid #62A4D3;*/
+}
+
+.StartPageGaugeElement {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.StartPageReleaseDateSpacer {
+    height: 40px;
+}
+
+.StartPageReleaseDateTitle {
+    font-weight: bold;
+}
+
+.NotificationPermanent {
+    width: 100%;
+    height: 65px;
+    border: 2px solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #ff0000;
+    background: #ff9a9a;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 11000;
+    display: none;
+    font-family: "Segoe UI";
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    /*For webkit browsers the following would be necessary*/
+    /*text-align:-webkit-center;*/
+}
+
+.NotificationPermanentModal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #4e4e4e;
+    z-index: 10999;
+}
+
+.NotificationClosableCloseButton {
+    width: 200px;
+    height: auto;
+    border: 2px solid;
+    vertical-align: central;
+    border-color: #ff0000;
+    background: #ff9a9a;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    z-index: 11001;
+    display: none;
+    font-weight: normal;
+    font-family: "Segoe UI";
+    font-size: 10pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+.DxChartContainer {
+    width: 480px;
+    height: 200px;
+}
+
+.DxGaugeContainer {
+    width: 100%;
+    height: 120px;
+}
+
+.StartPageTileImageContainer {
+    display: inline-block;
+    background: #D1E3F4;
+    width: 160px;
+    height: 160px;
+}
+
+    .StartPageTileImageContainer:hover {
+        background: #D1D1D1;
+    }

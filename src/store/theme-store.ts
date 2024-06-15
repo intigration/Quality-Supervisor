@@ -3,7 +3,7 @@ import { useStore, useOnWindow, $ } from '@builder.io/qwik';
 import { useLocalStorage } from '~/hooks/useLocalStorage';
 
 const STORAGE_KEY = 'PSC_THEME';
-const defaultTheme = 'dark';
+const defaultTheme = 'light';
 
 export const useTheme = () => {
   const [theme, saveTheme] = useLocalStorage(STORAGE_KEY, defaultTheme);

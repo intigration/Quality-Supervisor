@@ -1,0 +1,77 @@
+
+/* This file contains all additional styles required for the Tailoring performed by the PEP Wizatd++ tool */ 
+/* This file will be merged into the existing a-user.css during the build's MAKE step*/
+
+.NoMainContentLinkIcon_noPNB
+{
+	/* no change (yet) */
+    background-image: url(images/detail_content/ico_noPNB.gif);
+    width: 23px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.NoMainContentLinkIcon_PNB
+{
+	/* no change (yet) */
+    background-image: url(images/detail_content/ico_linkPNB.gif);
+    width: 23px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.StandardLinkIcon_PNB
+{
+    background-image: url(images/detail_content/ico_linkPNB.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.StandardLinkIcon_PEP
+{
+    background-image: url(images/detail_content/ico_PEP.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.AttributeTextDisplay_Disabled
+{
+    margin-left: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	/* background changed to grey */
+	background-color: #C0C0C0;
+}
+
+.ListDisplayEntry_Disabled
+{
+    background-color: #C0C0C0 !important;
+}
+
+.ListDisplayEntry_Disabled:hover
+{
+    background-color: #990000;
+    border: 1px solid #990000;
+}
+
+.ListDisplayEntry_Disabled:active
+{
+    background-color: #990000;
+    border: 1px solid #990000;
+}

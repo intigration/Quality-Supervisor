@@ -1,0 +1,91 @@
+/* Accordion */
+.ui-accordion .ui-accordion-content
+{
+    padding: 5px 0px;
+}
+
+.ui-accordion .ui-accordion-header-active
+{
+	color: blue !important;
+}
+.ui-accordion .ui-state-active a
+{
+	background: #990000 !important;
+}
+.ui-accordion .ui-state-hover a
+{
+	background: #990000 !important;
+}
+
+/* jsTree */
+.jstree-default .jstree-hovered
+{
+    color: #990000;
+}
+
+.jstree-default .jstree-clicked
+{
+    color: #990000;
+}
+
+/* jQuery UI Buttons */
+.ui-state-hover .ui-button-text
+{
+    color: #FFFFFF !important;
+}
+
+.ui-button.ui-state-hover
+{
+	background: #990000 !important;
+	color: #FFFFFF !important;
+}
+
+/* jQuery UI Dialogs */
+.ui-dialog-titlebar
+{
+	background: #990000 !important;
+	color: #FFFFFF !important;
+}
+
+/* Tabs */
+.ui-tabs .ui-tabs-nav
+{
+    border-bottom-color: #990000 !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected
+{
+    background: #990000 !important;
+    border-color: #990000 !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a
+{
+    color: #FFFFFF !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover
+{
+    background: #990000 !important;
+    border-color: #990000 !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover a
+{
+    color: #FFFFFF !important;
+}
+
+/* Buttons */
+
+.ui-button.ui-widget.ui-state-hover, .ui-button.ui-widget.ui-state-active, .ui-button.ui-widget.ui-state-focus
+{
+	background: #990000 !important;
+	border-color: #990000 !important;
+	color: #FFFFFF !important;
+}
+
+.ui-dialog-titlebar-close:hover
+{
+	background: #999999 !important;
+	border-color: #DDDDDD !important;
+}

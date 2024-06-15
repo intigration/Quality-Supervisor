@@ -13,6 +13,10 @@ export default defineConfig((): UserConfig => {
       viteStaticCopy({
         targets: [
           {
+            src: 'framework.tsx',
+            dest: 'components/starter/icons'
+          },
+          {
             src: 'personal-security-checklist.yml',
             dest: 'public'
           }

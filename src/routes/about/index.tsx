@@ -21,7 +21,7 @@ export default component$(() => {
   };
 
   const contributorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://api.github.com/repos/lissy93/personal-security-checklist/contributors?per_page=100';
+    const url = 'https://api.github.com/repos/intigration/portfolio/contributors?per_page=100';
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error('Failed to fetch contributors');
@@ -30,7 +30,7 @@ export default component$(() => {
   });
 
   const sponsorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://github-sponsors.as93.workers.dev/lissy93';
+    const url = 'https://github-sponsors.as93.workers.dev/intigration';
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error('Failed to fetch sponsors');
