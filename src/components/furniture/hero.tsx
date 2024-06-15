@@ -10,6 +10,16 @@ export default component$(() => {
           <p>Dashboard</p>
           <h1 class="text-5xl font-bold">Quality Supervisor</h1>
           <p class="subtitle pb-6">An out-of-box continous quality and security compliance framework</p>
+          <ul>
+
+<li>
+Operational Qualification
+</li>
+
+<li>Performance Qualification</li><li>Environment Qualification (System Identification)</li>
+<li>OSS and Legal Compliance Qualification (Opensource clearance & ECC)</li>
+<li>Security, Data Privacy & Cyber Threats Qualification (OWASP Top 10)</li>
+          </ul>
           <img src="framework.png" width={1100} height={1080} />
 
           <a href="https://github.com/lissy93/personal-security-checklist">

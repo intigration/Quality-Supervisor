@@ -43,7 +43,7 @@ export default component$(() => {
     // Override function to handle links
     renderer.link = (href, title, text) => {
       if (href.startsWith('/')) {
-        href = `https://github.com/Lissy93/personal-security-checklist/blob/old-version/${href}`;
+        href = `https://github.com/initgration/quality-supervisor/blob/old-version/${href}`;
       }
       title = title ? `title="${title}"` : '';
       return `<a href="${href}" ${title} target="_blank" rel="noopener noreferrer">${text}</a>`;
@@ -80,7 +80,7 @@ export default component$(() => {
   });
 
   if (store.notFound) {
-    return <div>404 Article Not Found</div>;
+    return <div>404 Automation Not Found</div>;
   }
 
   return (
@@ -113,7 +113,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Article | Digital Defense",
+  title: "Automation | QA SUpervisor",
   meta: [
     {
       name: "description",
