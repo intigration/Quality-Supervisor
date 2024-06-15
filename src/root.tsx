@@ -9,6 +9,8 @@ import { RouterHead } from "./components/router-head/router-head";
 import tailwind from './styles/tailwind.css?inline';
 
 import "./styles/global.css";
+// import "../public/styles/";
+
 
 export default component$(() => {
 

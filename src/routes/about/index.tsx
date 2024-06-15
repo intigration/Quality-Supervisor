@@ -21,10 +21,10 @@ export default component$(() => {
   };
 
   const contributorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://api.github.com/repos/intigration/portfolio/contributors?per_page=100';
+    const url = 'https://api.github.com/repos/lissy93/personal-security-checklist/contributors?per_page=100';
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Failed to fetch contributors');
+      // throw new Error('Failed to fetch contributors');
     }
     return await response.json();
   });
@@ -42,7 +42,7 @@ export default component$(() => {
   return (
     <div class="m-4 md:mx-16">
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2">About the Security Checklist</h2>
+        <h2 class="text-3xl mb-2">About the QA Supervisor</h2>
         {intro.map((paragraph, index) => (
           <p class="mb-2" key={index}>{paragraph}</p>
         ))}        
@@ -61,10 +61,9 @@ export default component$(() => {
         <h2 class="text-3xl mb-2">Acknowledgments</h2>
 
 
-        <h3 class="text-2xl mb-2">Sponsors</h3>
+        {/* <h3 class="text-2xl mb-2">Sponsors</h3> */}
 
         <p>
-          Huge thanks to the following sponsors, for their ongoing support 💖
         </p>
 
         <div class="flex flex-wrap gap-4 my-4 mx-auto">
@@ -100,8 +99,8 @@ export default component$(() => {
 
         <h3 class="text-2xl mb-2">Contributors</h3>
         <p>
-          This project exists thanks to all the people who've helped build and maintain it.<br />
-          Special thanks to the below, top-100 contributors 🌟
+          <br />
+          Hi 🌟
         </p>
         <div class="flex flex-wrap gap-4 my-4 mx-auto">
           <Resource
@@ -138,13 +137,12 @@ export default component$(() => {
       <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
         <h2 class="text-3xl mb-2" id="author">About the Author</h2>
           <p>
-            This project was originally started by
-            me, <a href="https://aliciasykes.com" class="link link-primary">Alicia Sykes</a>
+            me, <a href="https://engr-farhan.netlify.app" class="link link-primary">Muhammad Farhan</a>
             - with a lot of help from the community.
           </p>
           <br />
           <div class="ml-4 float-right">
-            <img class="rounded-lg" width="180" height="240" alt="Alicia Sykes" src="https://i.ibb.co/fq10qhL/DSC-0597.jpg" />
+            <img class="rounded-lg" width="180" height="240" alt="Alicia Sykes" src="https://avatars.githubusercontent.com/u/25178774?v=4" />
             <div class="flex gap-2 my-2 justify-between">
               {
                 socials.map((social, index) => (
@@ -160,7 +158,7 @@ export default component$(() => {
           </p>
           <br />
           <p>
-            I have a particular interest in self-hosting, Linux, security and OSINT.<br />
+            I have a particular interest in process, self-hosting, Linux, security and automation testing.<br />
             So if this type of stuff interests you, check out these other projects:
           </p>
           <ul class="list-disc pl-8">
@@ -177,9 +175,9 @@ export default component$(() => {
           </ul>
           <br />
           <p>
-            For a more open source apps I've published,
-            see <a href="https://apps.aliciasykes.com/" class="link link-primary">apps.aliciasykes.com</a>,
-            or <a href="https://github.com/lissy93" class="link link-primary">follow me on GitHub</a>
+            For a more apps I've published,
+            see <a href="https://engr-farhan.netlify.app.com/" class="link link-primary">engr-farhan.netlify.app</a>,
+            or <a href="https://github.com/intigration" class="link link-primary">follow me on GitHub</a>
           </p>
 
       </article>
@@ -190,8 +188,8 @@ export default component$(() => {
         <h2 class="text-3xl mb-2">License</h2>
         <p>
           This project is split-licensed, with the checklist content (located
-          in <a class="link" href="https://github.com/Lissy93/personal-security-checklist/blob/HEAD/personal-security-checklist.yml">
-            <code>personal-security-checklist.yml</code>
+          in <a class="link" href="https://github.com/intigration/qa-supervisor/blob/HEAD/personal-security-checklist.yml">
+            <code>qa-checklist.yml</code>
           </a>) being licensed
           under <b><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></b>.
           And everything else (including all the code), licensed
@@ -206,13 +204,10 @@ export default component$(() => {
           </summary>
           <div class="collapse-content">
             <p class="mb-2">
-              This means that for everything (except the checklist YAML file), you have almost unlimited freedom to
-              use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software.
-              All that we ask is that you include the original copyright notice and permission notice in any copies of the software
+              
             </p>
             <p class="mb-2">
-              And for the security-list content you can share and adapt this content as long as you give appropriate credit,
-              don't use it for commercial purposes, and distribute your contributions under the same license.
+          
             </p>
           </div>
         </details>

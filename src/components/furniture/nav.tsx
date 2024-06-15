@@ -35,12 +35,12 @@ export default component$(() => {
         <div class="flex-1">
           <div class="flex-none md:hidden">
             <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
-            <img src="imfarhan.svg" width="204" height="44"></img>
+            <img src="../../imfarhan.svg" width="204" height="44"></img>
             </label>
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
-            <img src="imfarhan.svg" width="204" height="44" />              </label>
+            <img src="../../imfarhan.svg" width="204" height="44" />              </label>
             <h1>AI Accelerated Quality -PRO</h1>
           </a>
         </div>
@@ -65,9 +65,9 @@ export default component$(() => {
               </details>
             </li>
             <li>
-            <a href={`/article`}
+            <a href={`/automation`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                <Icon icon="github" width={16} height={16}  />Articles
+                <Icon icon="github" width={16} height={16}  />Automations
               </a>
             </li>
             <li>
@@ -114,7 +114,7 @@ export default component$(() => {
           {/* <Icon class="mr-2" icon="shield" width={16} height={16}  /> */}
 Supervisor          </h2>
           <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/lissy93/personal-security-checklist">
+          <li><a href="https://github.com/intigration/qa-supervisor">
             <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
           </li>
           <li>
@@ -131,13 +131,13 @@ Supervisor          </h2>
             </ul>
           </li>
           <li>
-            <a href="/article">
-              <Icon class="mr-2" icon="articles" width={16} height={16} />Articles
+            <a href="/automation">
+              <Icon class="mr-2" icon="articles" width={16} height={16} />Automations
             </a>
             <ul>
               {articles.map(article => (
                 <li key={article.slug}>
-                  <a href={`/article/${article.slug}`}>{article.title}</a>
+                  <a href={`/automation/${article.slug}`}>{article.title}</a>
                 </li>
               ))}
             </ul>
@@ -148,19 +148,19 @@ Supervisor          </h2>
             </a>
             <ul>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
+                <a href="https://github.com/intigration/qa-supervisor/?tab=readme-ov-file#contributing">Contributing</a>
               </li>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE">License</a>
+                <a href="https://github.com/intigration/qa-supervisor/blob/master/LICENSE">License</a>
               </li>
             </ul>
             <ul>
             <li>
               <a href="/about#author">Author</a>
               <ul>
-                <li><a href="https://aliciasykes.com/contact">Contact</a></li>
+                <li><a href="mailto:engr.farhan@icloud.com">Contact</a></li>
                 <li>
-                  <a href="https://apps.aliciasykes.com">More Apps</a>
+                  <a href="https://engr-farhan.netlify.app">More Apps</a>
                 </li>
                 <li class="flex flex-row">
                   <a href="https://github.com/intigration"><Icon icon="hub" width={16} height={16} /></a>
