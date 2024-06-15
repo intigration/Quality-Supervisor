@@ -1,10 +1,13 @@
-import * as React from "react"
-const Framework = (props) => (
+import { component$, PropsOf } from "@builder.io/qwik";
+
+
+export default component$((PropsOf) => {
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     shapeRendering="crispEdges"
     textRendering="crispEdges"
-    {...props}
+    {...PropsOf}
   >
     <script type="text/javascript" />
     <rect
@@ -6396,4 +6399,4 @@ const Framework = (props) => (
     </script>
   </svg>
 )
-export default Framework
+})
