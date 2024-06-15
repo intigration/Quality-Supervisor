@@ -108,7 +108,7 @@ export default component$(() => {
           {/* <Icon class="mr-2" icon="shield" width={16} height={16}  /> */}
 Supervisor          </h2>
           <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/lissy93/personal-security-checklist">
+          <li><a href="https://github.com/intigration/qa-supervisor">
             <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
           </li>
           <li>
@@ -142,10 +142,10 @@ Supervisor          </h2>
             </a>
             <ul>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
+                <a href="https://github.com/intigration/qa-supervisor/?tab=readme-ov-file#contributing">Contributing</a>
               </li>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE">License</a>
+                <a href="https://github.com/intigration/qa-supervisor/blob/master/LICENSE">License</a>
               </li>
             </ul>
             <ul>
@@ -157,10 +157,10 @@ Supervisor          </h2>
                   <a href="https://apps.aliciasykes.com">More Apps</a>
                 </li>
                 <li class="flex flex-row">
-                  <a href="https://github.com/lissy93"><Icon icon="hub" width={16} height={16} /></a>
-                  <a href="https://x.com/lissy_sykes"><Icon icon="twitter" width={16} height={16} /></a>
-                  <a href="https://mastodon.social/@lissy93"><Icon icon="mastodon" width={16} height={16} /></a>
-                  <a href="https://dev.to/lissy93"><Icon icon="dev" width={16} height={16} /></a>
+                  <a href="https://github.com/intigration"><Icon icon="hub" width={16} height={16} /></a>
+                  {/* <a href="https://x.com/lissy_sykes"><Icon icon="twitter" width={16} height={16} /></a>
+                  <a href="https://mastodon.social/@intigration"><Icon icon="mastodon" width={16} height={16} /></a>
+                  <a href="https://dev.to/intigration"><Icon icon="dev" width={16} height={16} /></a> */}
                   <a href="https://linkedin.com/in/aliciasykes"><Icon icon="linkedin" width={16} height={16} /></a>
                 </li>
               </ul>

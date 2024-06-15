@@ -1,30 +1,27 @@
 export const intro = [
-  `The objective of this project is to give you practical guidance on how to improve your digital security, and protect your privacy online.`,
+  `The objective of this project is to give you practical guidance on how to improve product quality, security, and further scale.`,
   `
-  The checklist is a living document, and will be updated regularly to reflect the latest threats and best practices.
-  This is made possible by open sourcing the content, and making it a community maintained resource,
-  meaning that anyone can suggest changes, make additions or update the guidance.
-  All edits are then reviewed by maintainers before being merged and going live.
+
   `];
 
 export const contributing = [
-  `This project is only possible thanks to contributors like you!`,
-  `You can make changes to any of the checklist content, by editing `
-  + `[\`personal-security-checklist.yml\`](https://github.com/Lissy93/personal-security-checklist/blob/master/personal-security-checklist.yml)`,
+  `These are some of the projects that I have been contrbuted in open source trajectory`,
+  `You can get the fork of these projects `
+  + `[\`personal-security-checklist.yml\`](https://github.com/intigration/qa-supervisor/blob/master/qa-supervisor.yml)`,
 ];
 
 export const projects = [
   {
-    title: 'Web-Check',
-    description: 'OSINT tool for analysing any website',
+    title: 'linux-runtime-automation-framework',
+    description: 'Automation Framework',
     icon: 'https://icon.horse/icon/web-check.xyz',
-    link: 'https://github.com/lissy93/web-check',
+    link: 'https://github.com/intigration/automation-framework',
   },
   {
-    title: 'Dashy',
-    description: 'Dashboard app, for organising your self-hosted services',
+    title: 'A Road to Qualified Tester - ISTQB',
+    description: 'ISTQB based QA material and guide',
     icon: 'https://dashy.to/img/dashy.png',
-    link: 'https://github.com/lissy93/dashy',
+    link: 'https://github.com/intigration/quality-assurance-istqb',
   },
   {
     title: 'Email Comparison',
@@ -68,48 +65,30 @@ export const socials = [
   {
     title: 'GitHub',
     icon: 'hub',
-    link: 'https://github.com/lissy93',
+    link: 'https://github.com/intigration',
   },
-  {
-    title: 'Twitter',
-    icon: 'twitter',
-    link: 'https://x.com/lissy_sykes',
-  },
-  {
-    title: 'Mastodon',
-    icon: 'mastodon',
-    link: 'https://mastodon.social/@lissy93',
-  },
-  {
-    title: 'Dev',
-    icon: 'dev',
-    link: 'https://dev.to/lissy93',
-  },
+  // {
+  //   title: 'Twitter',
+  //   icon: 'twitter',
+  //   link: 'https://x.com/lissy_sykes',
+  // },
+  // {
+  //   title: 'Mastodon',
+  //   icon: 'mastodon',
+  //   link: 'https://mastodon.social/@lissy93',
+  // },
+  // {
+  //   title: 'Dev',
+  //   icon: 'dev',
+  //   link: 'https://dev.to/lissy93',
+  // },
   {
     title: 'LinkedIn',
     icon: 'linkedin',
-    link: 'https://linkedin.com/in/aliciasykes',
+    link: 'https://linkedin.com/in/engr-farhan',
   },
 ];
 
 export const license = `
-The MIT License (MIT)
-Copyright (c) Alicia Sykes <alicia@aliciasykes.com> 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy 
-of this software and associated documentation files (the "Software"), to deal 
-in the Software without restriction, including without limitation the rights 
-to use, copy, modify, merge, publish, distribute, sub-license, and/or sell 
-copies of the Software, and to permit persons to whom the Software is furnished 
-to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included install 
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, 
-FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL 
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 `;
