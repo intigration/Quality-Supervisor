@@ -30,10 +30,10 @@ Operational Qualification
             <button class="btn btn-secondary">
               <Icon icon="email" width={20} height={20}   />
             </button>
-            <a>
-            <button class="btn">
+            
+            
             <a href="https://linkedin.com/in/engr-farhan">
-
+<button class="btn">
               <Icon icon="linkedin" width={20} height={20}  />
               {/* View on GitHub */}
             </button>
