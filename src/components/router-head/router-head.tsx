@@ -32,15 +32,15 @@ export const RouterHead = component$(() => {
       <meta name="twitter:description" content="The ultimate quality checklist and framework" />
       <meta name="twitter:image" content="/banner.png" />
       {/* <link href="styles/a-standard.css" type="text/css" rel="stylesheet" /> */}
-      <link href="styles/a-user.css" type="text/css" rel="stylesheet" />
+      {/* <link href="styles/a-user.css" type="text/css" rel="stylesheet" />
       <link href="styles/jQuery/datatables/css/jquery.dataTables.css" type="text/css" rel="stylesheet" />
       <link href="styles/jQuery/jstree/default/style.css" type="text/css" rel="stylesheet" />
       <link href="styles/jQuery/smoothness/jquery-ui-1.8.21.custom.css" type="text/css" rel="stylesheet" />
       <link href="styles/z-standard.css" type="text/css" rel="stylesheet" />
       <link href="styles/z-user.css" type="text/css" rel="stylesheet" />
 	    <link rel="stylesheet" href="style.css" />
-      <script type="text/javascript" src="Scripts/jQuery/jquery-1.7.1.min.js" />
-      <script type="text/javascript" src="Scripts/jQuery/jquery-pzalias.js" />
+      {/* <script type="text/javascript" src="Scripts/jQuery/jquery-1.7.1.min.js" /> */}
+      {/* <script type="text/javascript" src="Scripts/jQuery/jquery-pzalias.js" />
       <script type="text/javascript" src="Scripts/jQuery/jquery-ui-1.8.18.custom.min.js" />
       <script type="text/javascript" src="Scripts/jQuery/jquery.cookie.js" />
       <script type="text/javascript" src="Scripts/jQuery/jquery.jstree.js" />
@@ -52,8 +52,8 @@ export const RouterHead = component$(() => {
       <script type="text/javascript" src="Scripts/WebApp.min.js" />
       <script type="text/javascript" src="Scripts/Standard.min.js" />
       <script type="text/javascript" src="Scripts/Json2.min.js" />
-      <script type="text/javascript" src="Scripts/Custom.min.js" />
-      {/* <script type="text/javascript" src="Scripts/test.js" /> */}
+      <script type="text/javascript" src="Scripts/Custom.min.js" /> */}
+
 
 
 
