@@ -52,14 +52,14 @@ const articles: Article[] = [
   {
     title: 'Selenium Resources',
     description: 'This automated framework is a collection of Selenium resources and specific test-suite definition file. .',
-    slug: 'selenium/resources.md',
+    slug: 'selenium',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/resources.md',
     warningMessage: 'If you know: what are you doing? then here is list of Selenium Resources',
   },
   {
     title: 'Application Security',
     description: 'A curated list of resources for learning about application security. Contains books, websites, blog posts, and self-assessment quizzes.',
-    slug: 'application/resources.md',
+    slug: 'security',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/security/application/resources.md',
     warningMessage: 'There might some content are outdated with latest development in Application Security',
   },

@@ -43,7 +43,7 @@ export default component$(() => {
     // Override function to handle links
     renderer.link = (href, title, text) => {
       if (href.startsWith('/')) {
-        href = `https://github.com/initgration/quality-supervisor/blob/old-version/${href}`;
+        href = `https://github.com/intigration/quality-supervisor/blob/public/${href}`;
       }
       title = title ? `title="${title}"` : '';
       return `<a href="${href}" ${title} target="_blank" rel="noopener noreferrer">${text}</a>`;
