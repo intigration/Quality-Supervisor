@@ -8,8 +8,7 @@ export default component$(() => {
  
 
   return (
-    <img src="/download.png" width={800} height={700}></img>
-
+    <img src="/download.png" width={800} height={700} />
   );
 });
 
