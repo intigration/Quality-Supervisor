@@ -166,7 +166,7 @@ export default component$(() => {
             </div>
           </div>
           <p class="text-lg italic font-thin">
-            I write apps which aim to help people <b>escape big tech, secure their data, and protect their privacy</b>.
+            I worked with various organizations<b>, such as Siemens, Mentor Graphics, Intech and Imperious Tech</b>.
           </p>
           <br />
           <p>
@@ -187,7 +187,7 @@ export default component$(() => {
           </ul>
           <br />
           <p>
-            For a more apps I've published,
+            For apps I've published,
             see <a href="https://engr-farhan.netlify.app.com/" class="link link-primary">engr-farhan.netlify.app</a>,
             or <a href="https://github.com/intigration" class="link link-primary">follow me on GitHub</a>
           </p>
