@@ -46,8 +46,22 @@ const articles: Article[] = [
     title: 'Shell,C,  Python, Linux / Ubuntu OS Runtime,Docker, Github actions',
     description: 'This automated framework is a collection of automated test-scripts for a debian system, which can be run on LAVA or Non-Lava environment. It will have the coverage for all the linux-packages, networking,  filesystem and I/Os.Each test-suite has a yaml based test definition file for LAVA environment.To run a lava based test, boot your device in lava and submit the specific test-suite definition file. .',
     slug: 'awesome-privacy',
-    markdown: 'https://raw.githubusercontent.com/Lissy93/awesome-privacy/main/README.md',
+    markdown: 'https://raw.githubusercontent.com/paragonie/awesome-appsec/master/README.md',
     warningMessage: 'This resource has moved! You can now access it at github.com/Lissy93/awesome-privacy',
+  },
+  {
+    title: 'Selenium Resources',
+    description: 'This automated framework is a collection of Selenium resources and specific test-suite definition file. .',
+    slug: 'selenium/resources.md',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/resources.md',
+    warningMessage: 'If you know: what are you doing? then here is list of Selenium Resources',
+  },
+  {
+    title: 'Application Security',
+    description: 'A curated list of resources for learning about application security. Contains books, websites, blog posts, and self-assessment quizzes.',
+    slug: 'application/resources.md',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/security/application/resources.md',
+    warningMessage: 'There might some content are outdated with latest development in Application Security',
   },
 ];
 
