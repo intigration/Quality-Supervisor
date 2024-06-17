@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import Icon from "~/components/core/icon";
-import { projects, socials, intro } from './about-content';
+// import Icon from "~/components/core/icon";
+// import { projects, socials, intro } from './about-content';
 // import { marked } from "marked";
 
 export default component$(() => {
