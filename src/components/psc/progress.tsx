@@ -326,6 +326,10 @@ export default component$(() => {
       </div>
       {/* Something ??? */}
       <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
+    
+
+
+
       <h3 class="text-primary text-2xl">Risk Board</h3>
  
         <p class="text-lg">

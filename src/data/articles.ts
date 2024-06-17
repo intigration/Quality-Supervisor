@@ -62,7 +62,13 @@ const articles: Article[] = [
     slug: 'security',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/security/application/resources.md',
     warningMessage: 'There might some content are outdated with latest development in Application Security',
-  },
+  },  {
+    title: 'Gettings all images over a webpage',
+    description: 'Selenium uses as all images crawler over a webpage',
+    slug: 'security',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/crawler.md',
+    warningMessage: 'There might some content are outdated with latest development in Application Security',
+  }
 ];
 
 export default articles;

@@ -9,7 +9,8 @@ import styles from './article.module.css';
 export default component$(() => {
 
   return (
-    <main class="p-8">
+<div class="carousel w-full">
+      
       <div class="bg-back p-8 mx-auto w-full max-w-[1200px] rounded-lg shadow-md">
       <div class="hero-content text-center bg-front shadow-sm lg:rounded-xl w-full">
         <div class="max-w-2xl flex flex-col place-items-center">
@@ -28,22 +29,33 @@ export default component$(() => {
           ]}
           >
 
-      <ul class="flex p-8 justify-between gap-6 mx-auto w-full rounded-lg shadow-md">
+      {/* <ul class="flex p-8 justify-between gap-6 mx-auto w-full rounded-lg shadow-md"> */}
         {articles.map(article => (
-          <li key={article.slug}
-            class={`rounded-box bg-front shadow-md p-4 max-w-96 drop-shadow-md
-            transition hover:drop-shadow-xl hover:scale-105 bg-blue-400 hover:bg-white-600`}
-            >
-            <a href={`/automation/${article.slug}`}>
-              <h3 class="text-2xl mb-2">{article.title}</h3>
-              <p class="text-lg">{article.description}</p>
-            </a>
-          </li>
+         
+         <div key={article.slug} id="slide1" class="carousel-item relative w-full">
+  {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
+  <div class="card-body">  
+    <h2 class="card-title">{article.title}</h2>
+    <p>{article.description}</p>  <a href={`/automation/${article.slug}`}>
+    <div class="card-actions justify-end">
+  <button class="btn btn-primary">See more details</button>
+    </div></a>
+  </div>
+</div>
+        //  <li key={article.slug}
+        //     class={`rounded-box bg-front shadow-md p-4 max-w-96 drop-shadow-md
+        //     transition hover:drop-shadow-xl hover:scale-105 bg-blue-400 hover:bg-white-600`}
+        //     >
+        //     <a href={`/automation/${article.slug}`}>
+        //       <h3 class="text-2xl mb-2">{article.title}</h3>
+        //       <p class="text-lg">{article.description}</p>
+        //     </a>
+        //   </li>
         ))}
-      </ul>
+      {/* </ul> */}
       </div>
       </div>
-      </main>
+      </div>
   
   );
 });

@@ -20,6 +20,7 @@ export default component$(() => {
         <p>State of art quality advisory.</p>
         <h1 class="text-5xl font-bold">Quality Supervisor</h1>
       </div>
+      
       <Hero />
       <Progress />
       <SectionLinkGrid sections={localChecklist.checklist.checklist || checklists.value} />
