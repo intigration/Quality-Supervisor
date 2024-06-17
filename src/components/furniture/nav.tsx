@@ -71,6 +71,13 @@ export default component$(() => {
               </a>
             </li>
             <li>
+            <a href={`/blogs`}
+                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+                Hacker News
+              </a>
+            </li>
+           
+            <li>
             <a href={`/about`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
                 ImFarhan

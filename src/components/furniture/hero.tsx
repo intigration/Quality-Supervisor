@@ -11,24 +11,24 @@ export default component$(() => {
       <div class="hero-content text-center bg-front shadow-sm lg:rounded-xl w-full">
         <div class="max-w-2xl flex flex-col place-items-center">
           <p>Automation Board</p>
-          <div className="stats shadow">
+          <div class="stats shadow">
   
-  <div className="stat place-items-center">
-    <div className="stat-title">Total Checks</div>
-    <div className="stat-value">741</div>
-    <div className="stat-desc">From June 1st to June 30st</div>
+  <div class="stat place-items-center">
+    <div class="stat-title">Total Checks</div>
+    <div class="stat-value">741</div>
+    <div class="stat-desc">From June 1st to June 30st</div>
   </div>
   
-  <div className="stat place-items-center">
-    <div className="stat-title">Total Scanning Jobs</div>
-    <div className="stat-value text-secondary">985</div>
-    <div className="stat-desc text-secondary">↗︎ 40 (2%)</div>
+  <div class="stat place-items-center">
+    <div class="stat-title">Total Scanning Jobs</div>
+    <div class="stat-value text-secondary">985</div>
+    <div class="stat-desc text-secondary">↗︎ 40 (2%)</div>
   </div>
   
-  <div className="stat place-items-center">
-    <div className="stat-title">New Issues Detected</div>
-    <div className="stat-value">22</div>
-    <div className="stat-desc">↘︎ 27 (14%)</div>
+  <div class="stat place-items-center">
+    <div class="stat-title">New Issues Detected</div>
+    <div class="stat-value">22</div>
+    <div class="stat-desc">↘︎ 27 (14%)</div>
   </div>
   <ul class="timeline timeline-vertical">
   <li>
