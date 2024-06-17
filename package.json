@@ -48,5 +48,15 @@
   },
   "resolutions": {
     "sharp": "^0.32.6"
-  }
+  },
+  "name": "quality-supervisor",
+  "description": "```\r $map($, function($Service) {\r   $Service {\r     \"point\": 'CWE-ID:' & $.'CWE-ID' &' '& $.Name,\r     \"priority\":\"Essential\",\r     \"details\":$.Description &'Guidelines:'& $.Notes,\r     \"howto\": $.'Detection Methods'\r   }\r })",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "keywords": [
+    "checklist",
+    "cwe",
+    "nits"
+  ],
+  "author": "muhammad.farhan"
 }

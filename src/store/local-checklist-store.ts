@@ -7,7 +7,7 @@ export const useChecklist = () => {
   const state = useStore<{ checklist: Sections | null }>({ checklist: null });
 
   const fetchChecklist = $(async () => {
-    const localUrl = '/security.yml';
+    const localUrl = '/tester.yml';
     return fetch(localUrl)
       .then((res) => res.text())
       .then((yamlText) => {

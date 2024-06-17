@@ -67,8 +67,21 @@ const articles: Article[] = [
     description: 'Selenium uses as all images crawler over a webpage',
     slug: 'crawler',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/crawler.md',
-    warningMessage: 'There might some content are outdated with latest development in Application Security',
+    warningMessage: 'A crawler for getting all the links in a given webpage.',
+  },{
+    title: 'Open Source and Closed Source AI Agents',
+    description: 'Welcome to our list of AI agents, structured the list into two parts:',
+    slug: 'agents',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/agents.md',
+    warningMessage: 'Welcome to our list of AI agents.We structured the list into two parts:',
+  },{
+    title: 'OpenAI chat APIs integration with React App',
+    description: '    Chat models take a list of messages as input and return a model-generated message as output. Although the chat format is designed to make multi-turn conversations easy, it’s just as useful for single-turn tasks without any conversation.',
+    slug: 'llm-agent',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/chatgpt.md',
+    warningMessage: 'GenAI LLM Chat-Client Use-case',
   }
+
 ];
 
 export default articles;

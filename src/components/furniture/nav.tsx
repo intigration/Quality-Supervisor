@@ -40,8 +40,10 @@ export default component$(() => {
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
-            <img src="../../imfarhan.svg" width="204" height="44" />              </label>
-            <h1>AI Accelerated Quality -PRO</h1>
+            {/* <img src="../../imfarhan.svg" width="204" height="44" />              
+            */}
+            <img class="place-items-center" src="/Farhan.png"  width={75} height={75}></img>
+            </label><h1>AI Accelerated Quality -PRO</h1>
           </a>
         </div>
         <div class="flex-none hidden md:flex">

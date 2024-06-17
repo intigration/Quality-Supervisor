@@ -18,7 +18,7 @@ export default component$(() => {
     <>
       <div class="max-w-2xl flex flex-col place-items-center">
         <p>State of art quality advisory.</p>
-        <h1 class="text-5xl font-bold">Quality Supervisor</h1>
+        {/* <h1 class="text-5xl font-bold">Quality Supervisor</h1> */}
       </div>
       
       <Hero />

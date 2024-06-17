@@ -10,6 +10,7 @@ export function useLocalStorage(key: string, initialState: any): [any, QRL<(valu
         window.localStorage.setItem(key, JSON.stringify(initialState));
       }
       store.value = item ? JSON.parse(item) : initialState;
+      console.log(store.value)
     } catch (error) {
       console.log(error);
       store.value = initialState;

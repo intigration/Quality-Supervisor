@@ -82,7 +82,7 @@ export const Stories = component$<{ data: any }>((props) => {
         {stories && (
           <ul>
             {stories.map((story: IStory) => (
-              <StoryPreview story={story} />
+              <StoryPreview key={story.id} story={story} />
             ))}
           </ul>
         )}
