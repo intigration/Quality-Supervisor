@@ -9,6 +9,13 @@ interface Article {
 
 const articles: Article[] = [
   
+
+  {
+    title: 'Python',
+    description: 'My Python Scripting',
+    slug: 'python',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/python/README.md'
+    },
   {
     title: 'Kubernates, garafana, promethus, postman  Linux agents,Load testingPerformance testingScaling test',
     description: 'This automates the functional verification using postman and flow to deploy an app mock metrics which will generate a count at /metrics. These metrics will be scraped by Prometheus, With the help of  k8is-Promethus-  Automation creates APIService custom.metrics.k8s.io, which then will be utilized by HPA to scale the deployment of mock metrics app (increase number of replicas).This automation is the base-template and can be extended orchestrate the environment and metric reporting for the following settings.Load testingPerformance testingScaling test',
@@ -38,7 +45,7 @@ const articles: Article[] = [
     title: 'Playwright,Typescript, Nodejs, express, gitlab, docker, swagger',
     description: 'An automation strategy to test the front-end component by considering  page objects modeling identifiers and DOM events.Here playwright is selected build an automated test bench that will navigate and cover all the website pages, and verify the functionality which could be interacted with by user with any possible interface.The test has recorded all the page opening, interaction states measurements and stats. Please see the Gitlab project repo that has the code, results logs',
     slug: 'privacy-gadgets',
-    markdown: 'https://raw.githubusercontent.com/Lissy93/personal-security-checklist/old-version/6_Privacy_and-Security_Gadgets.md',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/chatgpt.md',
     warningMessage: 'can be outdated and may contain incorrect information. '
       +'',
   },
@@ -72,7 +79,7 @@ const articles: Article[] = [
     title: 'Open Source and Closed Source AI Agents',
     description: 'Welcome to our list of AI agents, structured the list into two parts:',
     slug: 'agents',
-    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/agents.md',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/chatgpt.md',
     warningMessage: 'Welcome to our list of AI agents.We structured the list into two parts:',
   },{
     title: 'OpenAI chat APIs integration with React App',
