@@ -17,7 +17,7 @@ export default component$(() => {
           <h1 class="text-5xl font-bold">Infrastructure</h1>
     
           {/* <img src="framework.png" width={1100} height={1080} /> */}
-          <img src="/sdio.gif" width={800} height={400}></img>
+          <img src="/kube.gif" width={800} height={400}></img>
 
  </div>
    </div>
@@ -38,7 +38,7 @@ export default component$(() => {
     <h2 class="card-title">{tool.title}</h2>
     <p>{tool.description}</p>  <a href={`/infra/${tool.slug}`}>
     <div class="card-actions justify-end">
-  <button class="btn btn-primary">See more details</button>
+  <button class="btn btn-primary">Get Started</button>
     </div></a>
   </div>
 </div>

@@ -12,7 +12,7 @@ export default component$(() => {
   const data = useContext(ChecklistContext);
 
   const { theme, setTheme } = useTheme();
-  const tech = ['tools','infra' ];
+  const tech = ['tools','infra', 'research' ];
   const themes = [
     'dark', 'light', 'night', 'cupcake', 
     'bumblebee', 'corporate', 'synthwave', 'retro', 

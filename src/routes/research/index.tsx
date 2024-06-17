@@ -7,14 +7,14 @@ import { projects, socials, intro } from './about-content';
 
 export default component$(() => {
 
-  interface Contributor {
-    login: string;
-    avatar_url: string;
-    avatarUrl: string;
-    html_url: string;
-    contributions: number;
-    name: string;
-  }
+  // interface Contributor {
+  //   login: string;
+  //   avatar_url: string;
+  //   avatarUrl: string;
+  //   html_url: string;
+  //   contributions: number;
+  //   name: string;
+  // }
 
   // const parseMarkdown = (text: string | undefined): string => {
   //   return marked.parse(text || '', { async: false }) as string || '';
