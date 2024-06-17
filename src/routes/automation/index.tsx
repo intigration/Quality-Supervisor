@@ -1,5 +1,5 @@
 // src/routes/articles/index.tsx
-import { component$, useContext } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import articles from '~/data/articles';
 // import SectionLinkGrid from "~/components/psc/section-link-grid";
 import styles from './article.module.css';
