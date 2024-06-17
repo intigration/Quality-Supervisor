@@ -12,7 +12,7 @@ export default component$(() => {
   const data = useContext(ChecklistContext);
 
   const { theme, setTheme } = useTheme();
-  const tech = ['devops'];
+  const tech = ['tools','infra' ];
   const themes = [
     'dark', 'light', 'night', 'cupcake', 
     'bumblebee', 'corporate', 'synthwave', 'retro', 
@@ -40,8 +40,7 @@ export default component$(() => {
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
-            {/* <img src="../../imfarhan.svg" width="204" height="44" />              
-            */}
+        
             <img class="place-items-center" src="/Farhan.png"  width={75} height={75}></img>
             </label><h1>AI Accelerated Quality -PRO</h1>
           </a>
@@ -76,14 +75,14 @@ export default component$(() => {
               <details>
                 <summary>
                   <Icon icon="checklist" width={16} height={16}  />
-                  Checklists
+                  Expertise
                 </summary>
                 <ul class="p-2 bg-base-100 rounded-t-none z-10">
-                  {data.value.map((item: Section, index: number) => (
-                    <li key={`checklist-nav-${index}`} class={`hover:bg-${item.color}-600 hover:bg-opacity-15`}>
-                      <a href={`/checklist/${item.slug}`}>
-                      <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  />
-                        {item.title}
+                {tech.map((num:string,index:number) => (
+                    <li key={`checklist-nav-${tech[index]}`} class={`hover:bg-blue-600 hover:bg-opacity-15`}>
+                      <a href={`/${num}`}>
+                      {/* <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  /> */}
+                        {num}
                       </a>
                     </li>
                   ))}
@@ -175,12 +174,12 @@ Supervisor          </h2>
               <Icon class="mr-2" icon="about" width={16} height={16} />About
             </a>
             <ul>
-              <li>
+              {/* <li>
                 <a href="https://github.com/intigration/qa-supervisor/?tab=readme-ov-file#contributing">Contributing</a>
               </li>
               <li>
                 <a href="https://github.com/intigration/qa-supervisor/blob/master/LICENSE">License</a>
-              </li>
+              </li> */}
             </ul>
             <ul>
             <li>
@@ -193,9 +192,7 @@ Supervisor          </h2>
                 <li class="flex flex-row">
                   <a href="https://github.com/intigration"><Icon icon="hub" width={16} height={16} /></a>
                   <a href="https://x.com/f3rhan1"><Icon icon="twitter" width={16} height={16} /></a>
-                  {/* <a href="https://mastodon.social/@lissy93"><Icon icon="mastodon" width={16} height={16} /></a> */}
-                  {/* <a href="https://dev.to/lissy93"><Icon icon="dev" width={16} height={16} /></a> */}
-                  <a href="https://linkedin.com/in/engr-farhan"><Icon icon="linkedin" width={16} height={16} /></a>
+                    <a href="https://linkedin.com/in/engr-farhan"><Icon icon="linkedin" width={16} height={16} /></a>
                 </li>
               </ul>
             </li>
