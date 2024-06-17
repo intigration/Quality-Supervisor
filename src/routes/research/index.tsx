@@ -1,9 +1,9 @@
-import { component$, useResource$, Resource } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Icon from "~/components/core/icon";
-import { projects, socials, intro, contributing, license } from './about-content';
-import { marked } from "marked";
+import { projects, socials, intro } from './about-content';
+// import { marked } from "marked";
 
 export default component$(() => {
 
@@ -16,27 +16,27 @@ export default component$(() => {
     name: string;
   }
 
-  const parseMarkdown = (text: string | undefined): string => {
-    return marked.parse(text || '', { async: false }) as string || '';
-  };
+  // const parseMarkdown = (text: string | undefined): string => {
+  //   return marked.parse(text || '', { async: false }) as string || '';
+  // };
 
-  const contributorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://api.github.com/repos/intigration/ocr/contributors?per_page=100';
-    const response = await fetch(url);
-    if (!response.ok) {
-      // throw new Error('Failed to fetch contributors');
-    }
-    return await response.json();
-  });
+  // const contributorsResource = useResource$<Contributor[]>(async () => {
+  //   const url = 'https://api.github.com/repos/intigration/ocr/contributors?per_page=100';
+  //   const response = await fetch(url);
+  //   if (!response.ok) {
+  //     // throw new Error('Failed to fetch contributors');
+  //   }
+  //   return await response.json();
+  // });
 
-  const sponsorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://github-sponsors.as93.workers.dev/intigration';
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error('Failed to fetch sponsors');
-    }
-    return await response.json();
-  });
+  // const sponsorsResource = useResource$<Contributor[]>(async () => {
+  //   const url = 'https://github-sponsors.as93.workers.dev/intigration';
+  //   const response = await fetch(url);
+  //   if (!response.ok) {
+  //     throw new Error('Failed to fetch sponsors');
+  //   }
+  //   return await response.json();
+  // });
 
 
   return (
@@ -231,7 +231,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "About | Digital Defense",
+  title: "Research | Quality Supervisor Defense",
   meta: [
     {
       name: "description",
