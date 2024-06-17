@@ -1,0 +1,1 @@
+import{f as l}from"./q-ad056fda.js";const o=()=>l("div",null,null,[l("h1",null,null,"404 Not Found",3,null),l("p",null,null,"The page you're looking for doesn't exist.",3,null),l("a",null,{href:"/"},"Go back to the homepage",3,null)],3,"vb_0");export{o as s_jQ2DXBsQgOs};

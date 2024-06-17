@@ -1,0 +1,1 @@
+import{B as e,q as o,e as t}from"./q-ad056fda.js";const r=e(o(()=>t(()=>import("./q-5b981d4a.js"),[]),"s_FjKdwURDmSA")),a={title:"Research | Quality Supervisor Defense",meta:[{name:"description",content:"This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online"}]};export{r as default,a as head};
