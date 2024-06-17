@@ -52,7 +52,7 @@ const articles: Article[] = [
   {
     title: 'Selenium Resources',
     description: 'This automated framework is a collection of Selenium resources and specific test-suite definition file. .',
-    slug: 'selenium',
+    slug: 'resources',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/resources.md',
     warningMessage: 'If you know: what are you doing? then here is list of Selenium Resources',
   },
@@ -65,7 +65,7 @@ const articles: Article[] = [
   },  {
     title: 'Gettings all images over a webpage',
     description: 'Selenium uses as all images crawler over a webpage',
-    slug: 'security',
+    slug: 'crawler',
     markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/automation/selenium/crawler.md',
     warningMessage: 'There might some content are outdated with latest development in Application Security',
   }
