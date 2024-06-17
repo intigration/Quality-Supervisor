@@ -1,13 +1,16 @@
 // src/routes/articles/index.tsx
-import { component$ } from '@builder.io/qwik';
+import { component$, useContext } from '@builder.io/qwik';
 import articles from '~/data/articles';
+// import SectionLinkGrid from "~/components/psc/section-link-grid";
+import styles from './article.module.css';
+
 
 
 export default component$(() => {
 
   return (
- 
-      <div class="bg-back shadow-md rounded-box">
+    <main class="p-8">
+      <div class="bg-back p-8 mx-auto w-full max-w-[1200px] rounded-lg shadow-md">
       <div class="hero-content text-center bg-front shadow-sm lg:rounded-xl w-full">
         <div class="max-w-2xl flex flex-col place-items-center">
           <h1 class="text-5xl font-bold">SW Automation Testing</h1>
@@ -15,11 +18,17 @@ export default component$(() => {
           {/* <img src="framework.png" width={1100} height={1080} /> */}
           <img src="/sdio.gif" width={800} height={400}></img>
 
+ </div>
    </div>
-   </div>
-     
-      {/* <h2 class="text-4xl mb-4">Automations</h2> */}
-      <ul class="flex justify-between gap-6">
+   {/* <SectionLinkGrid sections={checklists.value} /> */}
+   <div  class={[
+          'prose bg-back my-4 mx-auto rounded-lg shadow-lg p-8',
+          'max-w-max ',
+          styles.psc_article
+          ]}
+          >
+
+      <ul class="flex p-8 justify-between gap-6 mx-auto w-full rounded-lg shadow-md">
         {articles.map(article => (
           <li key={article.slug}
             class={`rounded-box bg-front shadow-md p-4 max-w-96 drop-shadow-md
@@ -32,8 +41,9 @@ export default component$(() => {
           </li>
         ))}
       </ul>
-
       </div>
+      </div>
+      </main>
   
   );
 });

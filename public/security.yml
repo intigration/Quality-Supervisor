@@ -487,95 +487,147 @@
     - title: News Readers and Aggregation
       url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
   color: blue
-- title: OWASP Top 10
+- title: Application Container Security
   slug: owasp-security
   description: Taking measures to comply OWASP security guidelines
   icon: physical
-  intro: >-
-    Public records often include sensitive personal data (full name, date of
-    birth, phone number, email, address, ethnicity etc), and are gathered from a
-    range of sources (census records, birth/ death/ marriage certificates, voter
-    registrants, marketing information, customer databases, motor vehicle
-    records, professional/ business licenses and all court files in full
-    detail). This sensitive personal information is [easy and legal to
-    access](https://www.consumerreports.org/consumerist/its-creepy-but-not-illegal-for-this-website-to-provide-all-your-public-info-to-anyone/),
-    which raises some [serious privacy
-    concerns](https://privacyrights.org/resources/public-records-internet-privacy-dilemma)
-    (identity theft, personal safety risks/ stalkers, destruction of
-    reputations, dossier society)
-
-
-    CCTV is one of the major ways that the corporations, individuals and the government tracks your movements. In London, UK the average person is caught on camera about 500 times per day. This network is continuing to grow, and in many cities around the world, facial recognition is being rolled out, meaning the state can know the identity of residents on the footage in real-time.
-
-    Strong authentication, encrypted devices, patched software and anonymous web browsing may be of little use if someone is able to physically compromise you, your devices and your data. This section outlines some basic methods for physical security
+  intro: 
+    "Operating system (OS) virtualization provides a separate virtualized view
+    of the OS to each application,  thereby keeping each application isolated
+    from all others on the server. 
+    <br />Each application can only see and  affect itself. Recently, OS virtualization 
+    has become increasingly popular due to advances in its ease of  use and a greater 
+    focus on developer agility as a key benefit. 
+    <br />Today’s OS virtualization technologies are  primarily focused on providing a portable, 
+    reusable, and automatable way to package and run applications (apps).
+    <br />The terms application container or simply container are frequently used to refer to these technologies."
   checklist:
-    - point: Destroy Sensitive Documents
-      priority: Essential
-      details: |
-        Shred or redact sensitive documents before disposal to protect against
-        identity theft and maintain confidentiality.
-    - point: Opt-Out of Public Records
-      priority: Essential
-      details: >
-        Contact people search websites to opt-out from listings that show
-        persona
-
-        information, using guides like Michael Bazzell's Personal Data Removal Workbook.
-    - point: Watermark Documents
-      priority: Essential
-      details: |
-        Add a watermark with the recipient's name and date to digital copies of
-        personal documents to trace the source of a breach.
-    - point: Don't Reveal Info on Inbound Calls
-      priority: Essential
-      details: >
-        Only share personal data on calls you initiate and verify the
-        recipient's phone number.
-    - point: Stay Alert
-      priority: Essential
-      details: Be aware of your surroundings and assess potential risks in new
-        environments.
-    - point: Secure Perimeter
-      priority: Essential
-      details: Ensure physical security of locations storing personal info devices,
-        minimizing external access and using intrusion detection systems.
-    - point: Physically Secure Devices
-      priority: Essential
-      details: Use physical security measures like Kensington locks, webcam covers,
-        and privacy screens for devices.
-    - point: Keep Devices Out of Direct Sight
-      priority: Essential
-      details: Prevent devices from being visible from outside to mitigate risks from
-        lasers and theft.
-    - point: Protect your PIN
-      priority: Essential
-      details: Shield your PIN entry from onlookers and cameras, and clean
-        touchscreens after use.
-    - point: Check for Skimmers
-      priority: Essential
-      details: Inspect ATMs and public devices for skimming devices and tampering
-        signs before use.
-    - point: Protect your Home Address
-      priority: Optional
-      details: Use alternative locations, forwarding addresses, and anonymous payment
-        methods to protect your home address.
-    - point: Use a PIN, Not Biometrics
-      priority: Advanced
-      details: Prefer PINs over biometrics for device security in situations where
-        legal coercion to unlock devices may occur.
-    - point: Reduce exposure to CCTV
-      priority: Advanced
-      details: Wear disguises and choose routes with fewer cameras to avoid
-        surveillance.
-    - point: Anti-Facial Recognition Clothing
-      priority: Advanced
-      details: Wear clothing with patterns that trick facial-recognition technology.
-    - point: Reduce Night Vision Exposure
-      priority: Advanced
-      details: Use IR light sources or reflective glasses to obstruct night vision
-        cameras.
-    - point: Protect your DNA
-      priority: Advanced
-      details: Avoid sharing DNA with heritage websites and be cautious about leaving
-        DNA traces.
-  color: lime
+      - point: ID.AM-3
+        priority: Essential
+        details: Organizational communication and data flows are mapped
+      - point: ID.AM-5
+        priority: Essential
+        details: Resources (e.g., hardware, devices, data, and software) are prioritized
+          based on their classification, criticality, and business value
+      - point: ID.RA-1
+        priority: Essential
+        details: Asset vulnerabilities are identified and documented
+      - point: ID.RA-3
+        priority: Essential
+        details: Threats, both internal and external, are identified and documented
+      - point: ID.RA-4
+        priority: Essential
+        details: Potential business impacts and likelihoods are identified
+      - point: ID.RA-5
+        priority: Essential
+        details: Threats, vulnerabilities, likelihoods, and impacts are used to
+          determine risk
+      - point: ID.RA-6
+        priority: Essential
+        details: Risk responses are identified and prioritized
+      - point: PR.AC-1
+        priority: Essential
+        details: Identities and credentials are managed for authorized devices and users
+      - point: PR.AC-2
+        priority: Essential
+        details: Physical access to assets is managed and protected
+      - point: PR.AC-3
+        priority: Essential
+        details: Remote access is managed
+      - point: PR.AC-4
+        priority: Essential
+        details: Access permissions are managed, incorporating the principles of least
+          privilege and separation of duties
+      - point: PR.AT-2
+        priority: Essential
+        details: Privileged users understand roles & responsibilities
+      - point: PR.AT-5
+        priority: Essential
+        details: Physical and information security personnel understand roles &
+          responsibilities
+      - point: PR.DS-2
+        priority: Essential
+        details: Data-in-transit is protected
+      - point: PR.DS-4
+        priority: Essential
+        details: Adequate capacity to ensure availability is maintained
+      - point: PR.DS-5
+        priority: Essential
+        details: Protections against data leaks are implemented
+      - point: PR.DS-6
+        priority: Essential
+        details: Integrity checking mechanisms are used to verify software, firmware,
+          and information integrity
+      - point: PR.IP-1
+        priority: Essential
+        details: A baseline configuration of information technology/industrial control
+          systems is created and maintained
+      - point: PR.IP-3
+        priority: Essential
+        details: Configuration change control processes are in place
+      - point: PR.IP-6
+        priority: Essential
+        details: Data is destroyed according to policy
+      - point: PR.IP-9
+        priority: Essential
+        details: Response plans (Incident Response and Business Continuity) and recovery
+          plans (Incident Recovery and Disaster Recovery) are in place and
+          managed
+      - point: PR.IP-12
+        priority: Essential
+        details: A vulnerability management plan is developed and implemented
+      - point: PR.MA-1
+        priority: Essential
+        details: Maintenance and repair of organizational assets is performed and logged
+          in a timely manner, with approved and controlled tools
+      - point: PR.MA-2
+        priority: Essential
+        details: Remote maintenance of organizational assets is approved, logged, and
+          performed in a manner that prevents unauthorized access
+      - point: PR.PT-1
+        priority: Essential
+        details: Audit/log records are determined, documented, implemented, and reviewed
+          in accordance with policy
+      - point: PR.PT-3
+        priority: Essential
+        details: Access to systems and assets is controlled, incorporating the principle
+          of least functionality
+      - point: DE.AE-2
+        priority: Essential
+        details: Detected events are analyzed to understand attack targets and methods
+      - point: DE.CM-1
+        priority: Essential
+        details: The network is monitored to detect potential cybersecurity events
+      - point: DE.CM-7
+        priority: Essential
+        details: Monitoring for unauthorized personnel, connections, devices, and
+          software is performed
+      - point: RS.RP-1
+        priority: Essential
+        details: Response plan is executed during or after an event
+      - point: RS.AN-1
+        priority: Essential
+        details: Notifications from detection systems are investigated
+      - point: RS.AN-3
+        priority: Essential
+        details: Forensics are performed
+      - point: RS.MI-1
+        priority: Essential
+        details: Incidents are contained
+      - point: RS.MI-2
+        priority: Essential
+        details: Incidents are mitigated
+      - point: RS.MI-3
+        priority: Essential
+        details: Newly identified vulnerabilities are mitigated or documented as
+          accepted risks
+  softwareLinks:
+    - title: Alternative Social Media
+      url: https://github.com/Lissy93/awesome-privacy#social-networks
+    - title: Alternative Video Platforms
+      url: https://github.com/Lissy93/awesome-privacy#video-platforms
+    - title: Alternative Blogging Platforms
+      url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
+    - title: News Readers and Aggregation
+      url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
+  color: blue
