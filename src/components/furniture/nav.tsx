@@ -12,7 +12,7 @@ export default component$(() => {
   const data = useContext(ChecklistContext);
 
   const { theme, setTheme } = useTheme();
-
+  const tech = ['devops'];
   const themes = [
     'dark', 'light', 'night', 'cupcake', 
     'bumblebee', 'corporate', 'synthwave', 'retro', 
@@ -73,6 +73,24 @@ export default component$(() => {
               </a>
             </li>
             <li>
+              <details>
+                <summary>
+                  <Icon icon="checklist" width={16} height={16}  />
+                  Checklists
+                </summary>
+                <ul class="p-2 bg-base-100 rounded-t-none z-10">
+                  {data.value.map((item: Section, index: number) => (
+                    <li key={`checklist-nav-${index}`} class={`hover:bg-${item.color}-600 hover:bg-opacity-15`}>
+                      <a href={`/checklist/${item.slug}`}>
+                      <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  />
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+            <li>
             <a href={`/blogs`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
                 Hacker News
@@ -92,6 +110,7 @@ export default component$(() => {
               </a>
             </li>
           </ul>
+          
           <div class="tooltip tooltip-bottom" data-tip="Theme">
             <label class="cursor-pointer grid place-items-center">
               <input
