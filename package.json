@@ -27,7 +27,6 @@
     "daisyui": "^3.0.2",
     "eslint": "^8.56.0",
     "eslint-plugin-qwik": "^1.4.3",
-    "firebase-tools": "^12.6.2",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
@@ -49,14 +48,5 @@
   },
   "resolutions": {
     "sharp": "^0.32.6"
-  },
-  "name": "quality-supervisor",
-  "description": "```\r $map($, function($Service) {\r   $Service {\r     \"point\": 'CWE-ID:' & $.'CWE-ID' &' '& $.Name,\r     \"priority\":\"Essential\",\r     \"details\":$.Description &'Guidelines:'& $.Notes,\r     \"howto\": $.'Detection Methods'\r   }\r })",
-  "version": "1.0.0",
-  "keywords": [
-    "checklist",
-    "cwe",
-    "nits"
-  ],
-  "author": "muhammad.farhan"
+  }
 }
