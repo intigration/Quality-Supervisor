@@ -1,1 +1,0 @@
-import{i as t,D as u,q as r,e as _}from"./q-b628c5ca.js";function l(e,s){const o=t({value:s});return u("load",r(()=>_(()=>import("./q-ebabd747.js"),[]),"s_fImMiDAwYlk",[s,e,o])),[o,r(()=>_(()=>import("./q-ebabd747.js"),[]),"s_YA1PxnWXCFk",[e,o])]}export{l as u};

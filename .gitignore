@@ -42,3 +42,7 @@ lerna-debug.log*
 
 # Vercel
 .vercel
+
+# Firebase
+functions/server
+functions/node_modules

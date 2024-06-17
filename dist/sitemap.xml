@@ -2,7 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://yoursite.qwik.dev/</loc></url>
 <url><loc>https://yoursite.qwik.dev/framework/</loc></url>
-<url><loc>https://yoursite.qwik.dev/checklist/</loc></url>
+<url><loc>https://yoursite.qwik.dev/automation%20copy/</loc></url>
 <url><loc>https://yoursite.qwik.dev/automation/</loc></url>
+<url><loc>https://yoursite.qwik.dev/checklist/</loc></url>
+<url><loc>https://yoursite.qwik.dev/blogs/</loc></url>
 <url><loc>https://yoursite.qwik.dev/about/</loc></url>
 </urlset>

@@ -123,8 +123,8 @@ export default component$(() => {
           {/* <Icon class="mr-2" icon="shield" width={16} height={16}  /> */}
 Supervisor          </h2>
           <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/intigration/qa-supervisor">
-            <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
+          <li><a href="https://github.com/intigration/quality-supervisor">
+            <Icon class="mr-2" icon="github" width={16} height={16}  />Repository</a>
           </li>
           <li>
             <a href="/checklist"><Icon class="mr-2" icon="all" width={16} height={16} />Checklists</a>
