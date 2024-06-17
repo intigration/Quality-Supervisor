@@ -36,7 +36,7 @@ export default component$(() => {
   {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
   <div class="card-body">  
     <h2 class="card-title">{tool.title}</h2>
-    <p>{tool.description}</p>  <a href={`/automation/${tool.slug}`}>
+    <p>{tool.description}</p>  <a href={`/infra/${tool.slug}`}>
     <div class="card-actions justify-end">
   <button class="btn btn-primary">See more details</button>
     </div></a>

@@ -6,128 +6,131 @@ interface Tools {
     warningMessage?: string;
 }
 
-const tool: Tools[] = [
+const tool: Tools[] = 
+
+[
     {
-      title: "1password.md",
-      description: "1password.md",
-      slug: "1password.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/1password.md"
+        "title": "1Password",
+        "description": "Secure password manager to store and manage your passwords.",
+        "slug": "1password",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/1password.md"
     },
     {
-      title: "ansible.md",
-      description: "ansible.md",
-      slug: "ansible.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/ansible.md"
+        "title": "Ansible",
+        "description": "Automation tool for IT tasks such as configuration management, application deployment, and task automation.",
+        "slug": "ansible",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/ansible.md"
     },
     {
-      title: "bitwarden.md",
-      description: "bitwarden.md",
-      slug: "bitwarden.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/bitwarden.md"
+        "title": "Bitwarden",
+        "description": "Open-source password manager to manage and secure passwords and sensitive information.",
+        "slug": "bitwarde",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/bitwarden.md"
     },
     {
-      title: "chocolatey.md",
-      description: "chocolatey.md",
-      slug: "chocolatey.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/chocolatey.md"
+        "title": "Chocolatey",
+        "description": "Package manager for Windows, simplifying the installation and management of software.",
+        "slug": "chocolatey",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/chocolatey.md"
     },
     {
-      title: "datree.md",
-      description: "datree.md",
-      slug: "datree.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/datree.md"
+        "title": "Datree",
+        "description": "Policy enforcement tool for Kubernetes to prevent misconfigurations.",
+        "slug": "datree",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/datree.md"
     },
     {
-      title: "direnv.md",
-      description: "direnv.md",
-      slug: "direnv.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/direnv.md"
+        "title": "Direnv",
+        "description": "Extension for managing environment variables based on directory context.",
+        "slug": "direnv",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/direnv.md"
     },
     {
-      title: "git.md",
-      description: "git.md",
-      slug: "git.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/git.md"
+        "title": "Git",
+        "description": "Version control system for tracking changes in source code during software development.",
+        "slug": "git",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/git.md"
     },
     {
-      title: "homebrew.md",
-      description: "homebrew.md",
-      slug: "homebrew.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/homebrew.md"
+        "title": "Homebrew",
+        "description": "Package manager for macOS to simplify the installation of software.",
+        "slug": "homebrew",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/homebrew.md"
     },
     {
-      title: "iterm2.md",
-      description: "iterm2.md",
-      slug: "iterm2.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/iterm2.md"
+        "title": "iTerm2",
+        "description": "Terminal emulator for macOS that offers advanced features and customization.",
+        "slug": "iterm2",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/iterm2.md"
     },
     {
-      title: "nmap.md",
-      description: "nmap.md",
-      slug: "nmap.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/nmap.md"
+        "title": "Nmap",
+        "description": "Network scanning tool to discover hosts and services on a computer network.",
+        "slug": "nmap",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/nmap.md"
     },
     {
-      title: "openssh.md",
-      description: "openssh.md",
-      slug: "openssh.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/openssh.md"
+        "title": "OpenSSH",
+        "description": "Suite of secure networking utilities based on the SSH protocol.",
+        "slug": "openssh",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/openssh.md"
     },
     {
-      title: "openssl.md",
-      description: "openssl.md",
-      slug: "openssl.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/openssl.md"
+        "title": "OpenSSL",
+        "description": "Toolkit for the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols.",
+        "slug": "openssl",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/openssl.md"
     },
     {
-      title: "packer.md",
-      description: "packer.md",
-      slug: "packer.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/packer.md"
+        "title": "Packer",
+        "description": "Tool for creating machine and container images for multiple platforms from a single source configuration.",
+        "slug": "packer",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/packer.md"
     },
     {
-      title: "starship.md",
-      description: "starship.md",
-      slug: "starship.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/starship.md"
+        "title": "Starship",
+        "description": "Customizable, minimal, and fast prompt for any shell.",
+        "slug": "starship",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/starship.md"
     },
     {
-      title: "tcpdump.md",
-      description: "tcpdump.md",
-      slug: "tcpdump.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/tcpdump.md"
+        "title": "tcpdump",
+        "description": "Network packet analyzer that allows the user to display TCP/IP and other packets being transmitted or received over a network.",
+        "slug": "tcpdump",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/tcpdump.md"
     },
     {
-      title: "terraform.md",
-      description: "terraform.md",
-      slug: "terraform.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/terraform.md"
+        "title": "Terraform",
+        "description": "Tool for building, changing, and versioning infrastructure safely and efficiently.",
+        "slug": "terraform",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/terraform.md"
     },
     {
-      title: "vagrant.md",
-      description: "vagrant.md",
-      slug: "vagrant.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/vagrant.md"
+        "title": "Vagrant",
+        "description": "Tool for building and maintaining portable virtual software development environments.",
+        "slug": "vagrant",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/vagrant.md"
     },
     {
-      title: "vscode.md",
-      description: "vscode.md",
-      slug: "vscode.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/vscode.md"
+        "title": "VSCode",
+        "description": "Source-code editor made by Microsoft for Windows, Linux, and macOS.",
+        "slug": "vscode",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/vscode.md"
     },
     {
-      title: "wireshark.md",
-      description: "wireshark.md",
-      slug: "wireshark.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/wireshark.md"
+        "title": "Wireshark",
+        "description": "Network protocol analyzer to capture and interactively browse the traffic running on a computer network.",
+        "slug": "wireshark",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/wireshark.md"
     },
     {
-      title: "wsl.md",
-      description: "wsl.md",
-      slug: "wsl.md",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/wsl.md"
+        "title": "WSL",
+        "description": "Windows Subsystem for Linux allows developers to run a GNU/Linux environment directly on Windows.",
+        "slug": "wsl",
+        "markdown": "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/tools/wsl.md"
     }
-  ]
+]
+
 
 
 export default tool;

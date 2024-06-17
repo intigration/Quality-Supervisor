@@ -3,7 +3,7 @@ import { component$, Resource, useResource$, useStore } from '@builder.io/qwik';
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city';
 import { marked } from "marked";
 
-import articles from '~/data/articles';
+import tool from '~/data/tooling';
 
 import styles from './article.module.css';
 
@@ -12,7 +12,7 @@ export default component$(() => {
   const store = useStore({ article: null, notFound: false });
 
   const slug = location.params.slug;
-  const article = articles.find(a => a.slug === slug);
+  const article = tool.find(a => a.slug === slug);
 
   // useDocumentHead(() => {
   //   if (!article) {
@@ -80,7 +80,7 @@ export default component$(() => {
   });
 
   if (store.notFound) {
-    return <div>404 Automation Not Found</div>;
+    return <div>404 Tool is Not Found</div>;
   }
 
   return (
@@ -113,7 +113,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Automation | QA SUpervisor",
+  title: "Tooling | QA Supervisor",
   meta: [
     {
       name: "description",
