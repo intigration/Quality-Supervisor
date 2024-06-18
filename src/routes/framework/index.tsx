@@ -13,7 +13,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "About | Digital Defense",
+  title: "Framework | Digital Defense",
   meta: [
     {
       name: "description",

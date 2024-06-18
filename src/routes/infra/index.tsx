@@ -4,7 +4,7 @@ import infra from '~/data/infra';
 // import SectionLinkGrid from "~/components/psc/section-link-grid";
 import styles from './article.module.css';
 
-
+import { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
 
@@ -59,3 +59,14 @@ export default component$(() => {
   
   );
 });
+
+
+export const head: DocumentHead = {
+  title: "Infra | QA Supervisor",
+  meta: [
+    {
+      name: "description",
+      content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
+    },
+  ],
+};
