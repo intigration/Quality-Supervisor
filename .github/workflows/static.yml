@@ -58,6 +58,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
+          baseurl: /Quality-Supervisor/
+
 
   # Deployment job
   deploy:
