@@ -21,6 +21,7 @@ export default component$(() => {
 
  </div>
    </div>
+   </div>
    {/* <SectionLinkGrid sections={checklists.value} /> */}
    <div  class={[
           'prose bg-back my-4 mx-auto rounded-lg shadow-lg p-8',
