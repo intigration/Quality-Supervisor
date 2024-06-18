@@ -12,7 +12,7 @@ export default component$(() => {
   const data = useContext(ChecklistContext);
 
   const { theme, setTheme } = useTheme();
-
+  const tech = ['tools','infra', 'research' ];
   const themes = [
     'dark', 'light', 'night', 'cupcake', 
     'bumblebee', 'corporate', 'synthwave', 'retro', 
@@ -35,11 +35,14 @@ export default component$(() => {
         <div class="flex-1">
           <div class="flex-none md:hidden">
             <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <img src="../../imfarhan.svg" width="204" height="44"></img>
             </label>
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
-</label>            <h1>AI Accelerated Quality -PRO</h1>
+        
+            <img class="place-items-center" src="/Farhan.png"  width={75} height={75}></img>
+            </label><h1>AI Accelerated Quality -PRO</h1>
           </a>
         </div>
         <div class="flex-none hidden md:flex">
@@ -63,18 +66,50 @@ export default component$(() => {
               </details>
             </li>
             <li>
-            <a href={`/article`}
+            <a href={`/automation`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                <Icon icon="github" width={16} height={16}  />Articles
+                <Icon icon="github" width={16} height={16}  />Automations
               </a>
             </li>
+            <li>
+              <details>
+                <summary>
+                  <Icon icon="checklist" width={16} height={16}  />
+                  Expertise
+                </summary>
+                <ul class="p-2 bg-base-100 rounded-t-none z-10">
+                {tech.map((num:string,index:number) => (
+                    <li key={`checklist-nav-${tech[index]}`} class={`hover:bg-blue-600 hover:bg-opacity-15`}>
+                      <a href={`/${num}`}>
+                      {/* <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  /> */}
+                        {num}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+            <li>
+            <a href={`/blogs`}
+                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+                Hacker News
+              </a>
+            </li>
+           
             <li>
             <a href={`/about`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
                 ImFarhan
               </a>
             </li>
+            <li>
+            <a href={`/framework`}
+                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+                Framework
+              </a>
+            </li>
           </ul>
+          
           <div class="tooltip tooltip-bottom" data-tip="Theme">
             <label class="cursor-pointer grid place-items-center">
               <input
@@ -106,8 +141,8 @@ export default component$(() => {
           {/* <Icon class="mr-2" icon="shield" width={16} height={16}  /> */}
 Supervisor          </h2>
           <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/lissy93/personal-security-checklist">
-            <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
+          <li><a href="https://github.com/intigration/quality-supervisor">
+            <Icon class="mr-2" icon="github" width={16} height={16}  />Repository</a>
           </li>
           <li>
             <a href="/checklist"><Icon class="mr-2" icon="all" width={16} height={16} />Checklists</a>
@@ -123,13 +158,13 @@ Supervisor          </h2>
             </ul>
           </li>
           <li>
-            <a href="/article">
-              <Icon class="mr-2" icon="articles" width={16} height={16} />Articles
+            <a href="/automation">
+              <Icon class="mr-2" icon="articles" width={16} height={16} />Automations
             </a>
             <ul>
               {articles.map(article => (
                 <li key={article.slug}>
-                  <a href={`/article/${article.slug}`}>{article.title}</a>
+                  <a href={`/automation/${article.slug}`}>{article.title}</a>
                 </li>
               ))}
             </ul>
@@ -139,27 +174,25 @@ Supervisor          </h2>
               <Icon class="mr-2" icon="about" width={16} height={16} />About
             </a>
             <ul>
-              <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
+              {/* <li>
+                <a href="https://github.com/intigration/qa-supervisor/?tab=readme-ov-file#contributing">Contributing</a>
               </li>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE">License</a>
-              </li>
+                <a href="https://github.com/intigration/qa-supervisor/blob/master/LICENSE">License</a>
+              </li> */}
             </ul>
             <ul>
             <li>
               <a href="/about#author">Author</a>
               <ul>
-                <li><a href="https://aliciasykes.com/contact">Contact</a></li>
+                <li><a href="mailto:engr.farhan@icloud.com">Contact</a></li>
                 <li>
-                  <a href="https://apps.aliciasykes.com">More Apps</a>
+                  <a href="https://engr-farhan.netlify.app">More Apps</a>
                 </li>
                 <li class="flex flex-row">
-                  <a href="https://github.com/lissy93"><Icon icon="hub" width={16} height={16} /></a>
-                  <a href="https://x.com/lissy_sykes"><Icon icon="twitter" width={16} height={16} /></a>
-                  <a href="https://mastodon.social/@lissy93"><Icon icon="mastodon" width={16} height={16} /></a>
-                  <a href="https://dev.to/lissy93"><Icon icon="dev" width={16} height={16} /></a>
-                  <a href="https://linkedin.com/in/aliciasykes"><Icon icon="linkedin" width={16} height={16} /></a>
+                  <a href="https://github.com/intigration"><Icon icon="hub" width={16} height={16} /></a>
+                  <a href="https://x.com/f3rhan1"><Icon icon="twitter" width={16} height={16} /></a>
+                    <a href="https://linkedin.com/in/engr-farhan"><Icon icon="linkedin" width={16} height={16} /></a>
                 </li>
               </ul>
             </li>

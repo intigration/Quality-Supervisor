@@ -1,6 +1,6 @@
 // src/routes/articles/[slug].tsx
 import { component$, Resource, useResource$, useStore } from '@builder.io/qwik';
-import { type DocumentHead, useLocation } from '@builder.io/qwik-city';
+import {  useLocation } from '@builder.io/qwik-city';
 import { marked } from "marked";
 
 import tool from '~/data/tooling';
@@ -112,13 +112,4 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: "Tooling | QA Supervisor",
-  meta: [
-    {
-      name: "description",
-      content: "",
-    },
-  ],
-};
 

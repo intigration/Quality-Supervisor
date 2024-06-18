@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { type DocumentHead } from "@builder.io/qwik-city";
+
 
 export default component$(() => {
 
@@ -12,12 +12,12 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: "Framework | Digital Defense",
-  meta: [
-    {
-      name: "description",
-      content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
-    },
-  ],
-};
+// export const head: DocumentHead = {
+//   title: "Framework | Digital Defense",
+//   meta: [
+//     {
+//       name: "description",
+//       content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
+//     },
+//   ],
+// };

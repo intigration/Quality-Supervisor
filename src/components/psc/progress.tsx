@@ -5,7 +5,7 @@ import { useLocalStorage } from "~/hooks/useLocalStorage";
 import { ChecklistContext } from "~/store/checklist-context";
 import type { Priority, Sections, Section } from '~/types/PSC';
 import Icon from '~/components/core/icon';
-import { builtinModules } from "module";
+// import { builtinModules } from "module";
 
 /**
  * Component for client-side user progress metrics.
@@ -326,6 +326,20 @@ export default component$(() => {
       </div>
       {/* Something ??? */}
       <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
+    
+      <div class="stats shadow">
+  
+
+  
+
+  
+  <div class="stat place-items-center">
+    <div class="stat-title">Total CheckItems</div>
+    <div class="stat-value">{checklists.value.length}</div>
+    <div class="stat-desc">↘︎ {totalProgress.value.outOf}</div>
+  </div>
+  
+</div>
       <h3 class="text-primary text-2xl">Risk Board</h3>
  
         <p class="text-lg">
@@ -336,6 +350,11 @@ export default component$(() => {
           value={totalProgress.value.completed}
           max={totalProgress.value.outOf}>
         </progress>
+        <div class="stat place-items-center">
+    <div class="stat-title">      74</div>
+    <div class="stat-value text-secondary">4,200</div>
+    <div class="stat-desc text-secondary">↗︎ 40 </div>
+  </div>
       </div>
     </div>
 

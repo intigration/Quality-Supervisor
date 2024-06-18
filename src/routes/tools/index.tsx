@@ -4,7 +4,6 @@ import tool from '~/data/tooling';
 // import SectionLinkGrid from "~/components/psc/section-link-grid";
 import styles from './article.module.css';
 
-import { type DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
 
@@ -60,12 +59,3 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = {
-  title: "About | Digital Defense",
-  meta: [
-    {
-      name: "description",
-      content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
-    },
-  ],
-};

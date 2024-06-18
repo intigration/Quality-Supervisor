@@ -3,7 +3,7 @@
 /lib
 /lib-types
 /server
-
+/public
 # Development
 node_modules
 *.local

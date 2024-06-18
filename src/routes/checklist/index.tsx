@@ -1,4 +1,5 @@
 import { component$, useContext } from "@builder.io/qwik";
+// import { DocumentHead } from "@builder.io/qwik-city";
 
 import { ChecklistContext } from '~/store/checklist-context';
 import { useLocalStorage } from "~/hooks/useLocalStorage";
@@ -58,3 +59,12 @@ export default component$(() => {
     </main>
   );
 });
+// export const head: DocumentHead = {
+//   title: "About | Digital Defense",
+//   meta: [
+//     {
+//       name: "description",
+//       content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
+//     },
+//   ],
+// };

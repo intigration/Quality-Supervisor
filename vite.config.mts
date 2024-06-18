@@ -23,6 +23,13 @@ export default defineConfig((): UserConfig => {
       headers: {
         "Cache-Control": "public, max-age=0",
       },
+      proxy: {
+        '/': {
+          target: 'https://intigration.github.io/Quality-Supervisor/'
+        },
+  
+       
+      }
     },
     preview: {
       headers: {

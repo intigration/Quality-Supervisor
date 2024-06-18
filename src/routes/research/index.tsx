@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { type DocumentHead } from "@builder.io/qwik-city";
 
 // import Icon from "~/components/core/icon";
 // import { projects, socials, intro } from './about-content';
@@ -174,13 +173,3 @@ export default component$(() => {
     </div>
   );
 });
-
-export const head: DocumentHead = {
-  title: "Research | Quality Supervisor Defense",
-  meta: [
-    {
-      name: "description",
-      content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
-    },
-  ],
-};

@@ -1,7 +1,7 @@
 import { component$, useTask$, useStore, useStyles$ } from '@builder.io/qwik';
 import { isServer } from '@builder.io/qwik/build';
 import HackerNewsCSS from './hacker-news.css?inline';
-import { type DocumentHead } from "@builder.io/qwik-city";
+// import { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   useStyles$(HackerNewsCSS);
@@ -152,12 +152,12 @@ export interface IStory {
   comments: IComment[];
 }
 
-export const head: DocumentHead = {
-  title: "Blogs | Digital Articles",
-  meta: [
-    {
-      name: "description",
-      content: "This project aims to give you practical guidance on how to improve release quality, and protect your privacy online",
-    },
-  ],
-};
+// export const head: DocumentHead = {
+//   title: "Blogs | Digital Articles",
+//   meta: [
+//     {
+//       name: "description",
+//       content: "This project aims to give you practical guidance on how to improve release quality, and protect your privacy online",
+//     },
+//   ],
+// };
