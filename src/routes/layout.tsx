@@ -8,14 +8,12 @@ import { ChecklistContext } from "~/store/checklist-context";
 import type { Sections } from "~/types/PSC";
 
 export const useChecklists = routeLoader$(async () => {
-  const remoteUrl = 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/security.yml';
-  // const remoteUrl = 'http://localhost:5173/tester.yml';
+  const remoteUrl = 'http://localhost:5173/personal-security-checklist.yml';
   return fetch(remoteUrl)
     .then((res) => res.text())
     .then((res) => jsyaml.load(res) as Sections)
     .catch(() => []);
 });
-
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   cacheControl({
