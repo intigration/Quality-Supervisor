@@ -59,12 +59,12 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
+          baseurl: /Quality-Supervisor/
 
   # Deployment job
   deploy:
     environment:
       name: github-pages
-      url: /Quality-Supervisor/
     runs-on: ubuntu-latest
     needs: build
     steps:
