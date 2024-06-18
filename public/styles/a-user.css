@@ -1,0 +1,476 @@
+td#TopBar
+{
+    height: 65px;
+    margin: 0px;
+    padding: 0px;
+}
+
+td#NavContentPanel
+{
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+}
+
+.DiagramLinkIcon
+{
+    background-image: url(images/detail_content/ico_diagram_header.gif);
+    width: 15px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+
+body.VisiOneBody_Disabled
+{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 8pt;
+    background-color: #C0C0C0;
+}
+
+table.ToolbarSection
+{
+    height: 65px;
+    background-color: #CCCCCC;
+    background-repeat: repeat-x;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-left: 3px;
+    color: #1B88C0;
+}
+
+.ItemLinkIcon_Disabled
+{
+    /*background-image: url(images/detail_content/ico_function_navmodel.gif);*/
+    background-image: url(images/detail_content/ico_child.gif);
+    width: 9px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    margin-left: 0px;
+    background-color: #C0C0C0;
+}
+
+.DetailDisplayLinkText_Disabled
+{
+    margin-left: 23px;
+    background-color: #C0C0C0;
+}
+
+.DetailDisplayCategoryTitle_Disabled
+{
+    font-weight: bold !important;
+    cursor: pointer;
+    margin: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden; /*border: 1px solid #d3d3d3;*/
+    background: #c0c0c0 !important;
+    color: #222222 !important;
+    border: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #c0c0c0 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.DetailDisplayCategory .DetailDisplayCategory .DetailDisplayCategoryTitle_Disabled
+{
+    font-weight: bold !important;
+    cursor: pointer;
+    margin: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden; /*border: 1px solid #d3d3d3;*/
+    background: #C0C0C0 !important;
+    color: #555555 !important;
+    border: 0px !important;
+    border-bottom: solid 1px !important;
+    border-color: #FFFFFF !important;
+    padding-top: 2px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+div.Toolbar
+{
+    position: static;
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 100%;
+    font-size: 12px;
+}
+
+div.ToolbarBox
+{
+    position: absolute;
+    top: 13px;
+    left: 60px; /*background-color: #FFFFFF;*/
+    width: 100%;
+    height: 40px;
+    z-index: 31;
+}
+
+div.ToolbarLeftLogoBox
+{
+    background-image: url(images/header/PEP_Logo.jpg); /*position: absolute;*/
+    min-height: 80px;
+    min-width: 54px;
+    float: left;
+    margin: 1px;
+    background-repeat: no-repeat;
+}
+
+div.ToolbarRightLogoBox
+{
+    background-image: url(images/header/160px-SBT_logo.jpg); /*position: absolute;*/
+    min-height: 75px;
+    min-width: 160px;
+    float: right;
+    top: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.ToolbarRightFeedbackBox
+{
+    /*background-image: url(images/header/Thumbs.png);*/
+    min-height: 50px;
+    min-width: 160px;
+	text-align: center;
+    float: right;
+    top: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.ToolbarRightLogoLink
+{
+	position: absolute;
+	left: 6px;
+	bottom: 2px;
+	height: fit-content;
+}
+
+div.ToolbarRightLogoLink a 
+{
+	color: #222222;
+	text-decoration: none;
+}
+
+div.ToolbarRightLogoLink a:hover
+{
+	color: #990000;
+	text-decoration: none;
+}
+
+div.ToolbarLogoBox
+{
+    background: none;
+    min-width: 0px;
+    min-height: 0px;
+    /*background-image: url(images/header/SymbioLogo_h40px.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    min-width: 200px;
+    min-height: 50px;
+    left: 30px;
+    border: none;
+    z-index: 31;*/
+}
+
+.DetailContentHeadline
+{
+    background: #990000 !important;
+}
+
+    .DetailContentHeadline a:link
+    {
+        text-decoration: none;
+    }
+
+.DetailDisplayCategoryTitle
+{
+    background: #DDDDDD !important;
+}
+
+.ToolbarLinkText
+{
+    color: #990000 !important;
+}
+
+.ToolbarSearchBoxEmpty
+{
+    border-color: #990000 !important;
+}
+
+.ToolbarSearchButton.ui-state-hover
+{
+    border-color: #990000 !important;
+}
+
+a.AccordionListLink:hover
+{
+    color: #990000 !important;
+}
+
+a.AccordionListLink:focus
+{
+    color: #990000;
+}
+
+a.ClickedAccordionListLink
+{
+    color: #990000 !important;
+}
+
+div.ToolbarPrintDialogLink a
+{
+    color: #222222;
+}
+
+    div.ToolbarPrintDialogLink a:hover
+    {
+        color: #990000;
+    }
+
+    div.ToolbarPrintDialogLink a:visited
+    {
+        color: #222222;
+    }
+
+    div.ToolbarPrintDialogLink a:focus
+    {
+        color: #990000;
+    }
+
+.LinkPopupTextBox input:hover
+{
+    background: red !important;
+}
+
+div.SearchToolbarSelectionBox
+{
+    margin-right: 5px;
+    float: left;
+    color: #606060;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+selection.SearchToolbarSelection
+{
+    width: 100px;
+    background-color: #F0F0F0;
+}
+
+option.SearchToolbarSelection
+{
+    background-color: #F0F0F0;
+}
+
+/* Search list related */
+
+div.SearchResultTextTitle, div.SearchResultTextTitle a:link, div.SearchResultTextTitle a:visited
+{
+    color: #990000;
+}
+
+div.SearchResultTextLinks a:link, div.SearchResultTextLinks a:visited
+{
+    color: #990000;
+}
+
+/* Details related */
+#DetailDisplay a:hover
+{
+    color: #990000 !important;
+}
+
+#DetailDisplay a:focus
+{
+    color: #990000 !important;
+}
+
+/* Lists */
+
+.ListDisplayEntry:hover
+{
+    background-color: #990000 !important;
+    border: 1px solid #990000 !important;
+}
+
+.ListDisplayEntry:active
+{
+    background-color: #990000 !important;
+    border: 1px solid #990000 !important;
+}
+
+tr.ClickedSearchEntries
+{
+    background-color: #990000 !important;
+    border: 1px solid #990000 !important;
+}
+
+.SearchResultSearchBoxEmpty
+{
+    border-color: #990000 !important;
+}
+
+.ListDisplayEntryDescription
+{
+    font-size: 1.0em !important;
+}
+
+/* Dialogs */
+.DialogFunctionNotAvailable
+{
+    color: #990000 !important;
+}
+
+.LinkPopupInfoText
+{
+    color: #990000 !important;
+}
+
+/* Main */
+
+.ToggleNavigationIconClosed, .ToggleDetailContentPanelIconClosed
+{
+    border-color: #990000 !important;
+}
+
+.SBT_Page_Header
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+    position: relative;
+}
+
+.SBT_WebLinkText
+{
+    color: rgb(153, 0, 0) !important;
+    text-decoration: none !important;
+}
+
+.SBT_TrainingLink
+{
+    padding-left: 16px;
+}
+
+.DetailLinkSecondLevel .SBT_TrainingLink
+{
+    padding-left: 0px;
+}
+
+.SBT_TrainingLink .DetailDisplayLinkText
+{
+    padding-top: 10px;
+}
+
+.SBT_TrainingLink .StandardLinkIcon
+{
+    background-image: url(images/detail_content/Graduation_Hat.gif);
+    width: 34px;
+    height: 34px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.Breadcrumb span
+{
+    width: 0px !important;
+    height: 0px !important;
+}
+/* This file contains all additional styles required for the Tailoring performed by the PEP Wizatd++ tool */ 
+/* This file will be merged into the existing a-user.css during the build's MAKE step*/
+
+.NoMainContentLinkIcon_noPNB
+{
+	/* no change (yet) */
+    background-image: url(images/detail_content/ico_noPNB.gif);
+    width: 23px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.NoMainContentLinkIcon_PNB
+{
+	/* no change (yet) */
+    background-image: url(images/detail_content/ico_linkPNB.gif);
+    width: 23px;
+    height: 7px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    margin-left: 0px;
+}
+
+.StandardLinkIcon_PNB
+{
+    background-image: url(images/detail_content/ico_linkPNB.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.StandardLinkIcon_PEP
+{
+    background-image: url(images/detail_content/ico_PEP.gif);
+    width: 23px;
+    height: 12px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    margin-left: 0px;
+}
+
+.AttributeTextDisplay_Disabled
+{
+    margin-left: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	/* background changed to grey */
+	background-color: #C0C0C0;
+}
+
+.ListDisplayEntry_Disabled
+{
+    background-color: #C0C0C0 !important;
+}
+
+.ListDisplayEntry_Disabled:hover
+{
+    background-color: #990000;
+    border: 1px solid #990000;
+}
+
+.ListDisplayEntry_Disabled:active
+{
+    background-color: #990000;
+    border: 1px solid #990000;
+}
+
