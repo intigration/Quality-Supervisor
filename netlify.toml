@@ -1,6 +1,5 @@
 [build]
 	command = "pnpm run build"
-	publish = "pnpm run qwik"
 
 [functions]
 	directory = "functions"
