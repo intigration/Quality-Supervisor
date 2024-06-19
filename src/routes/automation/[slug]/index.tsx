@@ -3,16 +3,16 @@ import { component$, Resource, useResource$, useStore } from '@builder.io/qwik';
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city';
 import { marked } from "marked";
 
-import articles from '~/data/articles';
+import Automations from '~/data/automations';
 
-import styles from './article.module.css';
+import styles from './automation.module.css';
 
 export default component$(() => {
   const location = useLocation();
   const store = useStore({ article: null, notFound: false });
 
   const slug = location.params.slug;
-  const article = articles.find(a => a.slug === slug);
+  const article = Automations.find(a => a.slug === slug);
 
   // useDocumentHead(() => {
   //   if (!article) {

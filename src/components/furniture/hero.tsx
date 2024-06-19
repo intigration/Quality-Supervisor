@@ -80,7 +80,7 @@ export default component$(() => {
       <div class="xl:max-w-7xl max-w-6xl w-full xl:px-10">    <h1 class="text-5xl font-bold">Quality Supervisor</h1>
           <p class="subtitle pb-6">An out-of-box continous quality and security compliance framework</p>
           {/* <img src="framework.png" width={1100} height={1080} /> */}
-          <img class="place-items-center" src="/Farhan.png"  width={400} height={400}></img>
+          {/* <img class="place-items-center" src="/Farhan.png"  width={400} height={400}></img> */}
 
           <a href="https://github.com/intigration/quality-supervisor">
             <button class="btn btn- btn-bg">

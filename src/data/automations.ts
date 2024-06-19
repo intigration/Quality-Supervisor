@@ -1,4 +1,4 @@
-interface Tool {
+interface Automation {
     title: string;
     description: string;
     slug: string;
@@ -6,7 +6,7 @@ interface Tool {
     warningMessage?: string;
 }
 
-const Tools: Tool[] = 
+const Automations: Automation[] = 
 
 [
     {
@@ -133,4 +133,4 @@ const Tools: Tool[] =
 
 
 
-export default Tools;
+export default Automations;

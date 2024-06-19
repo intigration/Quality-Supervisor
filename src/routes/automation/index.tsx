@@ -1,8 +1,8 @@
-// src/routes/articles/index.tsx
+// src/routes/automation./index.tsx
 import { component$ } from '@builder.io/qwik';
-import articles from '~/data/articles';
+import Automations from '~/data/automations';
 // import SectionLinkGrid from "~/components/psc/section-link-grid";
-import styles from './article.module.css';
+import styles from './automation.module.css';
 
 
 
@@ -31,25 +31,25 @@ export default component$(() => {
         >
 
           {/* <ul class="flex p-8 justify-between gap-6 mx-auto w-full rounded-lg shadow-md"> */}
-          {articles.map(article => (
+          {Automations.map(automation=> (
 
-            <div key={article.slug} id="slide1" class="carousel-item relative w-full">
+            <div key={automation.slug} id="slide1" class="carousel-item relative w-full">
               {/* <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
               <div class="card-body">
-                <h2 class="card-title">{article.title}</h2>
-                <p>{article.description}</p>  <a href={`/automation/${article.slug}`}>
+                <h2 class="card-title">{automation.title}</h2>
+                <p>{automation.description}</p>  <a href={`/automation/${automation.slug}`}>
                   <div class="card-actions justify-end">
                     <button class="btn btn-primary">See more details</button>
                   </div></a>
               </div>
             </div>
-            //  <li key={article.slug}
+            //  <li key={automation.slug}
             //     class={`rounded-box bg-front shadow-md p-4 max-w-96 drop-shadow-md
             //     transition hover:drop-shadow-xl hover:scale-105 bg-blue-400 hover:bg-white-600`}
             //     >
-            //     <a href={`/automation/${article.slug}`}>
-            //       <h3 class="text-2xl mb-2">{article.title}</h3>
-            //       <p class="text-lg">{article.description}</p>
+            //     <a href={`/automation/${automation.slug}`}>
+            //       <h3 class="text-2xl mb-2">{automation.title}</h3>
+            //       <p class="text-lg">{automation.description}</p>
             //     </a>
             //   </li>
           ))}
