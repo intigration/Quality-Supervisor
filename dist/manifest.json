@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qa-supervisor",
-  "short_name": "QA Supervisor",
-  "start_url": "/Quality-Supervisor/",
-  "display": "standalone",
-  "background_color": "#5616c6",
-  "description": "The ultimate quality checklist and framework"
-}
