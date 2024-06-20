@@ -68,14 +68,20 @@ export default component$(() => {
             <li>
             <a href={`/automation`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                <Icon icon="github" width={16} height={16}  />Automations
+                <i class="devicon-reactrouter-plain colored"></i>Automations
+              </a>
+            </li>
+            <li>
+            <a href={`/scripts`}
+                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+                <i class="devicon-python-plain"></i>Python
               </a>
             </li>
             <li>
               <details>
                 <summary>
                   <Icon icon="checklist" width={16} height={16}  />
-                  Expertise
+                  Technologies & Tooling
                 </summary>
                 <ul class="p-2 bg-base-100 rounded-t-none z-10">
                 {tech.map((num:string,index:number) => (
@@ -99,7 +105,7 @@ export default component$(() => {
             <li>
             <a href={`/about`}
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
-                ImFarhan
+                About
               </a>
             </li>
             <li>
