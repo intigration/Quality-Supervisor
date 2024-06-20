@@ -70,9 +70,9 @@ export const RouterHead = component$(() => {
         <style key={s.key} {...s.props} dangerouslySetInnerHTML={s.style} />
       ))}
 
-      {head.scripts.map((s) => (
+{/*       {head.scripts.map((s) => (
         <script key={s.key} {...s.props} dangerouslySetInnerHTML={s.script} />
-      ))}
+      ))} */}
       {/* <script defer data-domain="digital-defense.io" src="https://no-track.as93.net/js/script.js" /> */}
     </>
   );
