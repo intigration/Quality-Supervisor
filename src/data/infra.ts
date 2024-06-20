@@ -8,6 +8,12 @@ interface Infra {
   }
   
   const infra: Infra[] =[{
+    
+      title: "Selenium Automtion",
+      description: "My Python Scripting",
+      slug: "python1",
+      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/infra/pf_com_pk_selenium_automation.ipynb"
+    },{
     title: "Helm",
     description: "Package manager for Kubernetes, enabling the management of Kubernetes applications.",
     slug: "helm",

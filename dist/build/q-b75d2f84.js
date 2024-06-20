@@ -1,0 +1,1 @@
+import{h as t,D as u,q as r,d as _}from"./q-142ebcff.js";function n(e,s){const o=t({value:s});return u("load",r(()=>_(()=>import("./q-8de2fd42.js"),[]),"s_fImMiDAwYlk",[s,e,o])),[o,r(()=>_(()=>import("./q-8de2fd42.js"),[]),"s_YA1PxnWXCFk",[e,o])]}export{n as u};

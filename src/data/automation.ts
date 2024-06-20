@@ -13,7 +13,7 @@ const Automations: Automation[] =
       title: "Python: ASCIIfy_Image",
       description: "My Python Scripting",
       slug: "python1",
-      markdown: "https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/python/ASCIIfy_Image/README.md"
+      markdown: "https://raw.githubusercontent.com/intigration/API-Security-Checklist/master/pf_com_pk_selenium_automation.ipynb"
     },
     {
       title: "Python: AWS_Scripts",

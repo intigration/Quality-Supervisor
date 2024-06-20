@@ -1,0 +1,631 @@
+---
+- title: Test Coverage Method
+  slug: web-browsing
+  description: How can I track the test coverage?
+  icon: browser
+  intro: <ul><li>Create Product and System Test Design</li> <li>Create SW Test
+    Design (Standard)</li> <li>Create SW Test Design and Test Cases (CS)</li>
+    <li>Perform Module Test (Standard)</li> <li>Perform Pre-Integration Testing
+    (Standard)</li> <li>Perform SW Integration Tests (CS)</li></ul>
+  checklist:
+    - point: Create Product and System Test Design
+      priority: Essential
+      details: Using an ad-blocker can help improve your privacy, by blocking the
+        trackers that ads implement. [uBlock
+        Origin](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin)
+        is a very efficient and open source browser addon, developed by Raymond
+        Hill. When 3rd-party ads are displayed on a webpage, they have the
+        ability to track you, gathering personal information about you and your
+        habits, which can then be sold, or used to show you more targeted ads,
+        and some ads are plain malicious or fake. Blocking ads also makes pages
+        load faster, uses less data and provides a less cluttered experience.
+    - point: Create SW Test Design (Standard)
+      priority: Optional
+      details: "It may sound obvious, but when you logging into any online accounts,
+        double check the URL is correct. Storing commonly visited sites in your
+        bookmarks is a good way to ensure the URL is easy to find. When visiting
+        new websites, look for common signs that it could be unsafe: Browser
+        warnings, redirects, on-site spam and pop-ups. You can also check a
+        website using a tool, such as: [Virus
+        Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-to\
+        tal), [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing
+        Status](https://transparencyreport.google.com/safe-browsing/search) if
+        you are unsure."
+    - point: Create SW Test Design and Test Cases (CS)
+      priority: Essential
+      details: "Your system or browser can be compromised by spyware, miners, browser
+        hijackers, malicious redirects, adware etc. You can usually stay
+        protected, just by: ignoring pop-ups, be wary of what your clicking,
+        don't proceed to a website if your browser warns you it may be
+        malicious. Common signs of browser malware include: default search
+        engine or homepage has been modified, toolbars, unfamiliar extensions or
+        icons, significantly more ads, errors and pages loading much slower than
+        usual. These articles from Heimdal explain [signs of browser
+        malware](https://heimdalsecurity.com/blog/warning-signs-operating-syste\
+        m-infected-malware), [how browsers get
+        infected](https://heimdalsecurity.com/blog/practical-online-protection-\
+        where-malware-hides) and [how to remove browser
+        malware](https://heimdalsecurity.com/blog/malware-removal)."
+    - point: Perform Module Test (Standard)
+      priority: Essential
+      details: "[Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox)
+        (with a few tweaks) and
+        [Brave](https://awesome-privacy.xyz/essentials/browsers/brave-browser)
+        are secure, private-respecting browsers. Both are fast, open source,
+        user-friendly and available on all major operating systems. Your browser
+        has access to everything that you do online, so if possible, avoid
+        Google Chrome, Edge and Safari as (without correct configuration) all
+        three of them, collect usage data, call home and allow for invasive
+        tracking. Firefox requires a few changes to achieve optimal security,
+        for example - [arkenfox](https://github.com/arkenfox/user.js/wiki) or
+        [12byte](https://12bytes.org/firefox-configuration-guide-for-privacy-fr\
+        eaks-and-performance-buffs/)'s user.js configs. See more: [Privacy
+        Browsers](https://github.com/Lissy93/awesome-privacy#browsers)."
+    - point: Perform Pre-Integration Testing (Standard)
+      priority: Essential
+      details: Using a privacy-preserving, non-tracking search engine, will reduce
+        risk that your search terms are not logged, or used against you.
+        Consider
+        [DuckDuckGo](https://awesome-privacy.xyz/essentials/search-engines/duckduckgo),
+        or [Qwant](https://awesome-privacy.xyz/essentials/search-engines/qwant).
+        Google implements some [incredibly
+        invasive](https://hackernoon.com/data-privacy-concerns-with-google-b946f2b7afea)
+        tracking policies, and have a history of displaying [biased search
+        results](https://www.businessinsider.com/evidence-that-google-search-results-are-biased-2014-10).
+        Therefore Google, along with Bing, Baidu, Yahoo and Yandex are
+        incompatible with anyone looking to protect their privacy. It is
+        recommended to update your [browsers default
+        search](https://duckduckgo.com/install) to a privacy-respecting search
+        engine.
+    - point: Perform SW Integration Tests (CS)
+      priority: Essential
+      details: Extensions are able to see, log or modify anything you do in the
+        browser, and some innocent looking browser apps, have malicious
+        intentions. Websites can see which extensions you have installed, and
+        may use this to enhance your fingerprint, to more accurately identify/
+        track you. Both
+        [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) and
+        Chrome web stores allow you to check what permissions/access rights an
+        extension requires before you install it. Check the reviews. Only
+        install extensions you really need, and removed those which you haven't
+        used in a while.
+  softwareLinks:
+    - title: Privacy Browsers
+      url: https://github.com/Lissy93/awesome-privacy#browsers
+    - title: Search Engines
+      utl: https://github.com/Lissy93/awesome-privacy#search-engines
+    - title: Browser Extensions
+      url: https://github.com/Lissy93/awesome-privacy#browser-extensions
+    - title: Browser & Bookmark Sync
+      url: https://github.com/Lissy93/awesome-privacy#browser-sync
+  color: orange
+- title: Software Clearing Methods and Tools
+  slug: email
+  description: Third Party Software Components Compliance (aka Product Clearing)
+  icon: email
+  intro: "Collect all OEM/SP Requirements <br /> Create SW High Level Design
+    (Standard) <br /> Evaluate Technology Feasibility <br /> Perform Third Party
+    Software Clearing <br /> Perform Variant Analysis <br /> Specify
+    Architecture and High Level Designs <br /> Third Party Software Components
+    Evaluation & Planning <br /> Update Product and System Architecture <br />
+    Verify Third Party Software Components Compliance (aka Product Clearing). "
+  checklist:
+    - point: Collect all OEM/SP Requirements
+      priority: Essential
+      details: Consider using a different email address for security-critical
+        communications from trivial mail such as newsletters. This
+        compartmentalization could reduce the amount of damage caused by a data
+        breach, and also make it easier to recover a compromised account.
+    - point: Create SW High Level Design (Standard)
+      priority: Essential
+      details: Do not share your primary email publicly, as mail addresses are often
+        the starting point for most phishing attacks.
+    - point: Evaluate Technology Feasibility
+      priority: Essential
+      details: Use a long and unique password, enable 2FA and be careful while logging
+        in. Your email account provides an easy entry point to all your other
+        online accounts for an attacker.
+    - point: Specify Architecture and High Level Designs
+      priority: Essential
+      details: Email messages can contain remote content such as images or
+        stylesheets, often automatically loaded from the server. You should
+        disable this, as it exposes your IP address and device information, and
+        is often used for tracking. For more info, see [this
+        article](https://www.theverge.com/2019/7/3/20680903/email-pixel-trackers-how-to-stop-images-automatic-download).
+    - point: Third Party Software Components Evaluation & Planning
+      priority: Optional
+      details: "There are two main types of emails on the internet: plaintext and
+        HTML. The former is strongly preferred for privacy & security as HTML
+        messages often include identifiers in links and inline images, which can
+        collect usage and personal data. There's also numerous risks of remote
+        code execution targeting the HTML parser of your mail client, which
+        cannot be exploited if you are using plaintext. For more info, as well
+        as setup instructions for your mail provider, see
+        [UsePlaintext.email](https://useplaintext.email/)."
+    - point: Update Product and System Architecture
+      priority: Optional
+      details: If you give a third-party app or plug-in full access to your inbox,
+        they effectively have full unhindered access to all your emails and
+        their contents, which poses significant security and privacy risks.
+    - point: Verify Third Party Software Components Compliance
+      priority: Optional
+      details: Emails are very easily intercepted. Furthermore, you can’t be sure of
+        how secure your recipient's environment is. Therefore, emails cannot be
+        considered safe for exchanging confidential information, unless it is
+        encrypted.
+  color: red
+- title: Pre-Requisites
+  slug: web-browsing
+  description: Avoiding tracking, censorship, and data collection online
+  icon: browser
+  intro: "Process Variant and Master Documentation are initiated. "
+  checklist:
+    - point: Project Notebook Startup Version
+      priority: Essential
+      details: Typical project folder structure are in placed
+    - point: Process Variant determined and Tailoring
+      priority: Essential
+      details: Any tailoring need might be needed according to budget, timelines and
+        delivery nature
+- title: Requirements Engineering Workflow
+  slug: requirements
+  description: Requirements Engineering Workflow where Competitors and their
+    products are analyzed and rated
+  icon: password
+  color: yellow
+  intro: Product Portfolio
+  checklist:
+    - point: Analyze Competition
+      priority: Essential
+      details: Competitors and their products are analyzed and rated
+    - point: Perform Positioning
+      priority: Essential
+      details: Perform Positioning Classification of the new product is established in
+        the SBT and the divisional product portfolio. The position of the new
+        product in the market is determined
+    - point: Analyze Market Opportunities
+      priority: Essential
+      details: The current market situation is rated and opportunities and risks are
+        analyzed
+    - point: Identify Requirements
+      priority: Advanced
+      details: The market assessment will be performed to collect market data,
+        conditions, and user information
+    - point: Define User Scenarios
+      priority: Advanced
+      details: The relevant work processes of the customer, the users of the
+        product/system, and the user tasks are analyzed by the product manager
+    - point: Specify customer Benefits
+      priority: Advanced
+      details: The advantages attained by the customer through use of the
+        product/system are compiled
+    - point: Analyze Customers
+      priority: Advanced
+      details: Customers are analyzed and classified in consultation with experts from
+        sales and marketing
+    - point: Benchmark competition
+      priority: Advanced
+      details: The competition’s products are benchmarked
+    - point: Create Service Concept
+      priority: Advanced
+      details: Define the product-specific service concept and the serviceability
+        requirements determining how, in what depth and who performs service on
+        the product and components Define service documentation requests
+  softwareLinks:
+    - title: Requirement Engineering a complete overview
+      url: https://www.theknowledgeacademy.com/blog/requirements-engineering/
+    - title: Requirements Engineering
+      url: https://link.springer.com/journal/766
+- title: Product Management
+  slug: product-management
+  description: Product Management workflow initiation
+  icon: browser
+  intro: Typically covers the product vision and roadmap ownership
+  checklist:
+    - point: Project Summary created
+      priority: Essential
+      details: Project Summary creation
+    - point: Phase in Roadmap created
+      priority: Basic
+      details: Phase In Roadmap Project Summary
+    - point: Product Manager is nominated
+      priority: Basic
+      details: Product Manager is nominated
+- title: Planning / Project Management
+  slug: pm
+  description: Standard guidlines for Project Management Actcities, Reporting and
+    Measurement Tool
+  icon: email
+  intro: Standard guidlines for Project Management Actcities, Reporting and
+    Measurement Tool
+  checklist:
+    - point: A Project Leader is nominated.
+      priority: Essential
+      details: Consider using a different email address for security-critical
+        communications from trivial mail such as newsletters. This
+        compartmentalization could reduce the amount of damage caused by a data
+        breach, and also make it easier to recover a compromised account.
+    - point: A Project Quality Manager is nominated.
+      priority: Essential
+      details: Do not share your primary email publicly, as mail addresses are often
+        the starting point for most phishing attacks.
+    - point: A Project Architect is nominated
+      priority: Essential
+      details: Use a long and unique password, enable 2FA and be careful while logging
+        in. Your email account provides an easy entry point to all your other
+        online accounts for an attacker.
+    - point: Disable Automatic Loading of Remote Content
+      priority: Essential
+      details: Email messages can contain remote content such as images or
+        stylesheets, often automatically loaded from the server. You should
+        disable this, as it exposes your IP address and device information, and
+        is often used for tracking. For more info, see [this
+        article](https://www.theverge.com/2019/7/3/20680903/email-pixel-trackers-how-to-stop-images-automatic-download).
+    - point: Start-up version of Planning Document
+      priority: Optional
+      details: "There are two main types of emails on the internet: plaintext and
+        HTML. The former is strongly preferred for privacy & security as HTML
+        messages often include identifiers in links and inline images, which can
+        collect usage and personal data. There's also numerous risks of remote
+        code execution targeting the HTML parser of your mail client, which
+        cannot be exploited if you are using plaintext. For more info, as well
+        as setup instructions for your mail provider, see
+        [UsePlaintext.email](https://useplaintext.email/)."
+    - point: All required QA activities for the next phase are planned and given in
+        the project planning.
+      priority: Optional
+      details: If you give a third-party app or plug-in full access to your inbox,
+        they effectively have full unhindered access to all your emails and
+        their contents, which poses significant security and privacy risks.
+    - point: Requirements for project team members have been specified
+      priority: Optional
+      details: Emails are very easily intercepted. Furthermore, you can’t be sure of
+        how secure your recipient's environment is. Therefore, emails cannot be
+        considered safe for exchanging confidential information, unless it is
+        encrypted.
+- title: Product and Solution Security
+  slug: pss
+  description: Keeping your communications private and secure
+  icon: messaging
+  intro: <ul> <li>Create Product and System Test Design</li> <li>Create Product
+    and System Test Plan</li> <li>Create SW Detailed Design (Standard)</li>
+    <li>Create SW High Level Design (Standard)</li> <li>Define SW Development
+    Infrastructure (Standard)</li> <li>Specify Product Line Enhancements</li>
+    <li>Specify SW Detailed Design (CS)</li> <li>Update Product and System
+    Architecture</li> <li>Update and Maintain System Architecture</li> </ul>
+  checklist:
+    - point: Only Use Fully End-to-End Encrypted Messengers
+      priority: Essential
+      details: End-to-end encryption is a system of communication where messages are
+        encrypted on your device and not decrypted until they reach the intended
+        recipient. This ensures that any actor who intercepts traffic cannot
+        read the message contents, nor can anybody with access to the central
+        servers where data is stored.
+    - point: Collect all OEM/SP Requirements
+      priority: Essential
+      details: Gather and document all Original Equipment Manufacturer and Service
+        Provider requirements."}
+    - point: Identify, Analyze and Specify Product Line Enhancements
+      priority: Essential
+      details: Evaluate existing products and identify necessary enhancements."}
+    - point: Substantiate and Rank Requirements
+      priority: Essential
+      details: Validate and prioritize the gathered requirements."}
+    - point: Create Product and System Test Design
+      priority: Essential
+      details: Design test cases and plans for product and system testing."}
+    - point: Create Product and System Test Plan
+      priority: Essential
+      details: Develop a comprehensive test plan for product and system testing."}
+    - point: Create SW Detailed Design (Standard)
+      priority: Essential
+      details: Develop a detailed design for software following standard guidelines."}
+    - point: Create SW High Level Design (Standard)
+      priority: Essential
+      details: Develop a high-level software design following standard guidelines."}
+    - point: Define SW Development Infrastructure (Standard)
+      priority: Essential
+      details: Set up the necessary infrastructure for software development as per
+        standards."}
+    - point: Specify Product Line Enhancements
+      priority: Essential
+      details: Define detailed specifications for the identified product line
+        enhancements."}
+    - point: Specify SW Detailed Design (CS)
+      priority: Essential
+      details: Create a detailed software design for custom solutions."}
+    - point: Update Product and System Architecture
+      priority: Essential
+      details: Revise and update the product and system architecture as needed."}
+    - point: Update and Maintain System Architecture
+      priority: Essential
+      details: Continuously update and maintain the overall system architecture."}
+    - point: Implement Software (CS)
+      priority: Essential
+      details: Develop and implement custom software solutions."}
+    - point: Implement Software (Standard)
+      priority: Essential
+      details: Develop and implement software following standard practices."}
+    - point: Perform Incremental Product Test
+      priority: Essential
+      details: Conduct incremental testing on the product to ensure functionality."}
+    - point: Perform Incremental System Test
+      priority: Essential
+      details: Conduct incremental testing on the system to ensure functionality."}
+    - point: Perform Penetration Testing (Standard)
+      priority: Essential
+      details: Perform standard penetration testing to identify security
+        vulnerabilities."}
+    - point: Perform Product Security Threat and Risk Analysis
+      priority: Essential
+      details: Analyze and identify potential security threats and risks to the
+        product."}
+    - point: Perform Product Test
+      priority: Essential
+      details: Conduct comprehensive testing on the product."}
+    - point: Perform System Test
+      priority: Essential
+      details: Conduct comprehensive testing on the system."}
+    - point: Update Overall Test Plan
+      priority: Essential
+      details: Revise and update the overall test plan as needed."}
+    - point: Monitor and Handle Security Vulnerabilities
+      priority: Essential
+      details: Continuously monitor and address any security vulnerabilities."}
+    - point: Incident Handling
+      priority: Essential
+      details: Manage and resolve incidents as they occur."}
+    - point: Provide Architecture Coaching
+      priority: Essential
+      details: Offer guidance and coaching on system architecture."}
+    - point: Perform PSS Project Classification (Standard)
+      priority: Essential
+      details: Classify projects based on standard Product Security Standards (PSS)."}
+    - point: Third Party Software Components Evaluation & Planning
+      priority: Essential
+      details: Evaluate and plan the integration of third-party software components."}
+        with your data and meta-data. You cannot verify that the system running
+        is authentic without back doors.
+  color: cyan
+- title: Process Compliance
+  slug: social-media
+  description: Minimizing the risks associated with using online communities
+  icon: social
+  intro: >
+    Online communities have existed since the invention of the internet, and
+    give people around the world the opportunity to connect, communicate and
+    share. Although these networks are a great way to promote social interaction
+    and bring people together, that have a dark side - there are some serious
+    [Privacy Concerns with Social Networking
+    Services](https://en.wikipedia.org/wiki/Privacy_concerns_with_social_networking_services),
+    and these social networking sites are owned by private corporations, and
+    that they make their money by collecting data about individuals and selling
+    that data on, often to third party advertisers.
+
+    Secure your account, lock down your privacy settings, but know that even after doing so, all data intentionally and non-intentionally uploaded is effectively public. If possible, avoid using conventional social media networks.
+  checklist:
+    - point: Secure your Account
+      priority: Essential
+      details: "Social media profiles get stolen or taken over all too often. To
+        protect your account: use a unique and strong password, and enable
+        2-factor authentication."
+    - point: Check Privacy Settings
+      priority: Essential
+      details: Most social networks allow you to control your privacy settings. Ensure
+        that you are comfortable with what data you are currently exposing and
+        to whom.
+    - point: Think of All Interactions as Public
+      priority: Essential
+      details: There are still numerous methods of viewing a users 'private' content
+        across many social networks. Therefore, before uploading, posting or
+        commenting on anything, think "Would I mind if this was totally public?"
+    - point: Think of All Interactions as Permanent
+      priority: Essential
+      details: Pretty much every post, comment, photo etc is being continuously backed
+        up by a myriad of third-party services, who archive this data and make
+        it indexable and publicly available almost forever.
+    - point: Don't Reveal too Much
+      priority: Essential
+      details: Profile information creates a goldmine of info for hackers, the kind of
+        data that helps them personalize phishing scams. Avoid sharing too much
+        detail (DoB, Hometown, School etc).
+    - point: Be Careful what you Upload
+      priority: Essential
+      details: Status updates, comments, check-ins and media can unintentionally
+        reveal a lot more than you intended them to. This is especially relevant
+        to photos and videos, which may show things in the background.
+    - point: Don't Share Email or Phone Number
+      priority: Essential
+      details: Posting your real email address or mobile number, gives hackers, trolls
+        and spammers more munition to use against you, and can also allow
+        separate aliases, profiles or data points to be connected.
+    - point: Don't Grant Unnecessary Permissions
+      priority: Essential
+      details: By default many of the popular social networking apps will ask for
+        permission to access your contacts, call log, location, messaging
+        history etc. If they don’t need this access, don’t grant it.
+    - point: Be Careful of 3rd-Party Integrations
+      priority: Essential
+      details: Avoid signing up for accounts using a Social Network login, revoke
+        access to social apps you no longer use.
+    - point: Avoid Publishing Geo Data while still Onsite
+      priority: Essential
+      details: If you plan to share any content that reveals a location, then wait
+        until you have left that place. This is particularly important when you
+        are taking a trip, at a restaurant, campus, hotel/resort, public
+        building or airport.
+    - point: Remove metadata before uploading media
+      priority: Optional
+      details: Most smartphones and some cameras automatically attach a comprehensive
+        set of additional data (called EXIF data) to each photograph. Remove
+        this data before uploading.
+    - point: Implement Image Cloaking
+      priority: Advanced
+      details: Tools like Fawkes can be used to very subtly, slightly change the
+        structure of faces within photos in a way that is imperceptible by
+        humans, but will prevent facial recognition systems from being able to
+        recognize a given face.
+    - point: Consider Spoofing GPS in home vicinity
+      priority: Advanced
+      details: Even if you yourself never use social media, there is always going to
+        be others who are not as careful, and could reveal your location.
+    - point: Consider False Information
+      priority: Advanced
+      details: If you just want to read, and do not intend on posting too much-
+        consider using an alias name, and false contact details.
+    - point: Don’t have any social media accounts
+      priority: Advanced
+      details: Social media is fundamentally un-private, so for maximum online
+        security and privacy, avoid using any mainstream social networks.
+  softwareLinks:
+    - title: Alternative Social Media
+      url: https://github.com/Lissy93/awesome-privacy#social-networks
+    - title: Alternative Video Platforms
+      url: https://github.com/Lissy93/awesome-privacy#video-platforms
+    - title: Alternative Blogging Platforms
+      url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
+    - title: News Readers and Aggregation
+      url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
+  color: blue
+- title: Application Container Security
+  slug: owasp-security
+  description: Taking measures to comply OWASP security guidelines
+  icon: physical
+  intro: Operating system (OS) virtualization provides a separate virtualized view
+    of the OS to each application,  thereby keeping each application isolated
+    from all others on the server. Each application can only see and  affect
+    itself. Recently, OS virtualization has become increasingly popular due to
+    advances in its ease of  use and a greater focus on developer agility as a
+    key benefit. Today’s OS virtualization technologies are  primarily focused
+    on providing a portable, reusable, and automatable way to package and run
+    applications (apps). The terms application container or simply container are
+    frequently used to refer to these technologies.
+  checklist:
+    - point: ID.AM-3
+      priority: Essential
+      details: Organizational communication and data flows are mapped
+    - point: ID.AM-5
+      priority: Essential
+      details: Resources (e.g., hardware, devices, data, and software) are prioritized
+        based on their classification, criticality, and business value
+    - point: ID.RA-1
+      priority: Essential
+      details: Asset vulnerabilities are identified and documented
+    - point: ID.RA-3
+      priority: Essential
+      details: Threats, both internal and external, are identified and documented
+    - point: ID.RA-4
+      priority: Essential
+      details: Potential business impacts and likelihoods are identified
+    - point: ID.RA-5
+      priority: Essential
+      details: Threats, vulnerabilities, likelihoods, and impacts are used to
+        determine risk
+    - point: ID.RA-6
+      priority: Essential
+      details: Risk responses are identified and prioritized
+    - point: PR.AC-1
+      priority: Essential
+      details: Identities and credentials are managed for authorized devices and users
+    - point: PR.AC-2
+      priority: Essential
+      details: Physical access to assets is managed and protected
+    - point: PR.AC-3
+      priority: Essential
+      details: Remote access is managed
+    - point: PR.AC-4
+      priority: Essential
+      details: Access permissions are managed, incorporating the principles of least
+        privilege and separation of duties
+    - point: PR.AT-2
+      priority: Essential
+      details: Privileged users understand roles & responsibilities
+    - point: PR.AT-5
+      priority: Essential
+      details: Physical and information security personnel understand roles &
+        responsibilities
+    - point: PR.DS-2
+      priority: Essential
+      details: Data-in-transit is protected
+    - point: PR.DS-4
+      priority: Essential
+      details: Adequate capacity to ensure availability is maintained
+    - point: PR.DS-5
+      priority: Essential
+      details: Protections against data leaks are implemented
+    - point: PR.DS-6
+      priority: Essential
+      details: Integrity checking mechanisms are used to verify software, firmware,
+        and information integrity
+    - point: PR.IP-1
+      priority: Essential
+      details: A baseline configuration of information technology/industrial control
+        systems is created and maintained
+    - point: PR.IP-3
+      priority: Essential
+      details: Configuration change control processes are in place
+    - point: PR.IP-6
+      priority: Essential
+      details: Data is destroyed according to policy
+    - point: PR.IP-9
+      priority: Essential
+      details: Response plans (Incident Response and Business Continuity) and recovery
+        plans (Incident Recovery and Disaster Recovery) are in place and managed
+    - point: PR.IP-12
+      priority: Essential
+      details: A vulnerability management plan is developed and implemented
+    - point: PR.MA-1
+      priority: Essential
+      details: Maintenance and repair of organizational assets is performed and logged
+        in a timely manner, with approved and controlled tools
+    - point: PR.MA-2
+      priority: Essential
+      details: Remote maintenance of organizational assets is approved, logged, and
+        performed in a manner that prevents unauthorized access
+    - point: PR.PT-1
+      priority: Essential
+      details: Audit/log records are determined, documented, implemented, and reviewed
+        in accordance with policy
+    - point: PR.PT-3
+      priority: Essential
+      details: Access to systems and assets is controlled, incorporating the principle
+        of least functionality
+    - point: DE.AE-2
+      priority: Essential
+      details: Detected events are analyzed to understand attack targets and methods
+    - point: DE.CM-1
+      priority: Essential
+      details: The network is monitored to detect potential cybersecurity events
+    - point: DE.CM-7
+      priority: Essential
+      details: Monitoring for unauthorized personnel, connections, devices, and
+        software is performed
+    - point: RS.RP-1
+      priority: Essential
+      details: Response plan is executed during or after an event
+    - point: RS.AN-1
+      priority: Essential
+      details: Notifications from detection systems are investigated
+    - point: RS.AN-3
+      priority: Essential
+      details: Forensics are performed
+    - point: RS.MI-1
+      priority: Essential
+      details: Incidents are contained
+    - point: RS.MI-2
+      priority: Essential
+      details: Incidents are mitigated
+    - point: RS.MI-3
+      priority: Essential
+      details: Newly identified vulnerabilities are mitigated or documented as
+        accepted risks
+  softwareLinks:
+    - title: Alternative Social Media
+      url: https://github.com/Lissy93/awesome-privacy#social-networks
+    - title: Alternative Video Platforms
+      url: https://github.com/Lissy93/awesome-privacy#video-platforms
+    - title: Alternative Blogging Platforms
+      url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
+    - title: News Readers and Aggregation
+      url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
+  color: blue

@@ -1,0 +1,1 @@
+import{B as o,J as r,q as t,d as e}from"./q-142ebcff.js";import{q as a}from"./q-2da6f8b8.js";const m=a(r("s_R4G1hVIrQpw")),i=()=>{throw"Symbol removed by Qwik Optimizer, it can not be called from current platform"},n=o(t(()=>e(()=>import("./q-9877561c.js"),[]),"s_cP1MN6aKI1E"));export{n as default,i as onGet,m as useChecklists};

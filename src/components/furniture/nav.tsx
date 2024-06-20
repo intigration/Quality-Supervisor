@@ -80,8 +80,8 @@ export default component$(() => {
             <li>
               <details>
                 <summary>
-                  <Icon icon="checklist" width={16} height={16}  />
-                  Technologies & Tooling
+                <i class="devicon-opentelemetry-plain colored"></i>
+                Technologies & Tooling
                 </summary>
                 <ul class="p-2 bg-base-100 rounded-t-none z-10">
                 {tech.map((num:string,index:number) => (
