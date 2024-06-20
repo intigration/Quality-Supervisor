@@ -1,5 +1,5 @@
 # Build
-#/dist
+/dist
 /lib
 /lib-types
 /server
@@ -12,7 +12,7 @@ node_modules
 .cache
 .mf
 .rollup.cache
-# tsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
 
 # Logs
 logs
