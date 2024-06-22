@@ -122,7 +122,7 @@ export default component$(() => {
                 type="checkbox"
                 checked={theme.theme === 'halloween'}
                 onClick$={() => {
-                  setTheme(theme.theme === 'halloween' ? 'light' : 'halloween');
+                  setTheme(theme.theme === 'halloween' ? 'dark' : 'halloween');
                 }}
                 class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
               />

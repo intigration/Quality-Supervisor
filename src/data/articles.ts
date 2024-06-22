@@ -11,10 +11,10 @@ const articles: Article[] = [
   
 
   {
-    title: 'Python',
-    description: 'My Python Scripting',
-    slug: 'python',
-    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/python/README.md'
+    title: 'Llama3 Eval Results',
+    description: 'Model Eval result of Llama3 by Meta',
+    slug: 'llama',
+    markdown: 'https://raw.githubusercontent.com/intigration/Quality-Supervisor/main/public/ai/llama-eval.md'
     },
   {
     title: 'Kubernates, garafana, promethus, postman  Linux agents,Load testingPerformance testingScaling test',
