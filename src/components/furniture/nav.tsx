@@ -42,7 +42,7 @@ export default component$(() => {
             <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages">
         
             <img class="place-items-center" src="/Farhan.png"  width={75} height={75}></img>
-            </label><h1>AI Accelerated Quality -PRO</h1>
+            </label><h1>AI Accelerated Supervisor</h1>
           </a>
         </div>
         <div class="flex-none hidden md:flex">
@@ -70,6 +70,12 @@ export default component$(() => {
                 class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
                 <Icon icon="github" width={16} height={16}  />Automations
               </a>
+            </li>
+            <li>
+            <a href={`/ml`}
+                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+                  <Icon icon="computer" width={16} height={16}  /> Machine Learning
+                  </a>
             </li>
             <li>
               <details>

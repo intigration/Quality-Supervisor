@@ -14,19 +14,19 @@ export default component$(() => {
           <div class="stats shadow">
   
   <div class="stat place-items-center">
-    <div class="stat-title">Total Checks</div>
+    <div class="stat-title">Total Tasks</div>
     <div class="stat-value">741</div>
     <div class="stat-desc">From June 1st to June 30st</div>
   </div>
   
   <div class="stat place-items-center">
-    <div class="stat-title">Total Scanning Jobs</div>
+    <div class="stat-title">Total Models Jobs</div>
     <div class="stat-value text-secondary">985</div>
     <div class="stat-desc text-secondary">↗︎ 40 (2%)</div>
   </div>
   
   <div class="stat place-items-center">
-    <div class="stat-title">New Issues Detected</div>
+    <div class="stat-title">New Issues Sensed</div>
     <div class="stat-value">22</div>
     <div class="stat-desc">↘︎ 27 (14%)</div>
   </div>
@@ -79,9 +79,9 @@ export default component$(() => {
 </div>
 </div>
       <div class="xl:max-w-7xl max-w-6xl w-full xl:px-10">    
-        <h1 class="text-5xl font-bold">Quality Supervisor</h1>
+        <h1 class="text-5xl font-bold">AI Supervisor</h1>
           <p class="subtitle pb-6">An out-of-box continous quality and security compliance framework</p>
-          {/* <img src="framework.png" width={1100} height={1080} /> */}
+          <img src="https://th.bing.com/th/id/R.303102fce713209b217000d7c2e0fb18?rik=8xSMR9BcFD6EsQ&pid=ImgRaw&r=0" width={1100} height={1080} />
 
           <a href="https://github.com/intigration/quality-supervisor">
             <button class="btn btn- btn-bg">
